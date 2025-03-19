@@ -1,3 +1,4 @@
+import "../../vendor/normalize.css";
 import "./App.css";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
