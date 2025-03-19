@@ -1,0 +1,9 @@
+.header {
+  padding: 2rem 0%;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
