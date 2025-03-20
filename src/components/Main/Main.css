@@ -5,12 +5,17 @@
 
 .main__content {
   display: flex;
+  justify-content: space-between;
 }
 .main__title {
   font-size: 2em;
   font-weight: 200;
 }
 
+.main__text {
+  margin-right: 15px;
+}
+
 .main__portrait {
-  max-width: 300px;
+  max-width: 320px;
 }
