@@ -2,7 +2,15 @@
   margin-top: 6em;
   min-height: 73vh;
 }
+
+.main__content {
+  display: flex;
+}
 .main__title {
   font-size: 2em;
   font-weight: 200;
+}
+
+.main__portrait {
+  max-width: 300px;
 }

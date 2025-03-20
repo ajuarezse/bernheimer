@@ -1,4 +1,5 @@
 import "./Main.css";
+import heroImage from "../../assets/heroImage.jpg";
 
 function Main() {
   return (
@@ -19,6 +20,7 @@ function Main() {
             The quick brown fox jumped over the lazy dog.
           </p>
         </div>
+        <img src={heroImage} alt="" className="main__portrait" />
       </div>
     </main>
   );
