@@ -1,4 +1,10 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 .main {
+  font-family: Montserrat;
   margin-top: 6em;
   min-height: 73vh;
   max-width: 900px;
@@ -13,7 +19,7 @@
 
 .main__title {
   font-size: 2em;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .main__text {
