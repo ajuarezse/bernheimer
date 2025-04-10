@@ -25,10 +25,3 @@
 .main__text {
   margin-right: 30px;
 }
-
-.main__portrait {
-  max-width: 320px;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}

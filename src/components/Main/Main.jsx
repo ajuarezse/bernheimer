@@ -36,7 +36,6 @@ function Main() {
             freedom-of-information activist.
           </p>
         </div>
-        <img src={heroImage} alt="" className="main__portrait" />
       </div>
     </main>
   );
