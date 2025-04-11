@@ -1,16 +1,18 @@
 import { useState } from "react";
 import "./Main.css";
-import cafeImage from "../../assets/cafe_isotope_250.jpg"; // Proper image import
+import cafeImage from "../../assets/cafe_isotope_250.webp";
+import LostProfiles from "../../assets/LostProfiles.webp";
+import Guidereal from "../../assets/Guidereal.webp";
 
 function Main() {
   const categories = [
     {
       name: "Poetry",
-      image: cafeImage, // Use the imported image
-      fallbackColor: "#FF6B6B", // Fallback if image fails
+      image: cafeImage,
+      fallbackColor: "#FF6B6B",
     },
-    { name: "Essays", color: "#4ECDC4" },
-    { name: "Translations", color: "#45B7D1" },
+    { name: "Essays", image: Guidereal, fallbackColor: "#4ECDC4" },
+    { name: "Translations", image: LostProfiles, fallbackColor: "#45B7D1" },
     { name: "Anthologies", color: "#FFBE85" },
     { name: "Plays", color: "#A78BFA" },
   ];
