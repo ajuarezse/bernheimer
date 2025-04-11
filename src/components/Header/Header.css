@@ -5,19 +5,19 @@
 
 .header {
   font-family: Montserrat;
-  max-width: 1000px;
   margin: 0 auto;
+  height: 80px;
+  min-height: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.81);
+  backdrop-filter: blur(16px);
   z-index: 100;
-}
-
-.header.scrolled {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
 .header__logo {

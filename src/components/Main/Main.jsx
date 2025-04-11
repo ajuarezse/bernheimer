@@ -1,9 +1,14 @@
 import { useState } from "react";
 import "./Main.css";
+import cafeImage from "../../assets/cafe_isotope_250.jpg"; // Proper image import
 
 function Main() {
   const categories = [
-    { name: "Poetry", color: "#FF6B6B" },
+    {
+      name: "Poetry",
+      image: cafeImage, // Use the imported image
+      fallbackColor: "#FF6B6B", // Fallback if image fails
+    },
     { name: "Essays", color: "#4ECDC4" },
     { name: "Translations", color: "#45B7D1" },
     { name: "Anthologies", color: "#FFBE85" },
@@ -18,7 +23,14 @@ function Main() {
         <div
           key={category.name}
           className={`category ${hoveredIndex === index ? "hovered" : ""}`}
-          style={{ backgroundColor: category.color }}
+          style={{
+            backgroundColor: category.color || category.fallbackColor,
+            ...(category.image && {
+              backgroundImage: `url(${category.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }),
+          }}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
