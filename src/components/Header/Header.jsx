@@ -9,13 +9,13 @@ function Header() {
         </a>
         <nav className="header__nav">
           <a href="#about" className="header__nav-link">
-            About Me
+            Link
           </a>
           <a href="#projects" className="header__nav-link">
-            Projects
+            Link
           </a>
           <a href="#photos" className="header__nav-link">
-            Photos
+            Contact
           </a>
         </nav>
       </div>
