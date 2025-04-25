@@ -1,10 +1,9 @@
 import { useState } from "react";
-import "./Main.css";
+import "./Home.css";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
 import LostProfiles from "../../assets/LostProfiles.webp";
-import Guidereal from "../../assets/Guidereal.webp";
 
-function Main() {
+function Home() {
   const categories = [
     {
       name: "About",
@@ -19,7 +18,7 @@ function Main() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <main className="main">
+    <main className="home">
       {categories.map((category, index) => (
         <div
           key={category.name}
@@ -42,4 +41,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;
