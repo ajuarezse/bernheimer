@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
@@ -8,11 +9,30 @@ function Home() {
     {
       name: "About",
       fallbackColor: "#FF6B6B",
+      path: "about", // Added path
     },
-    { name: "Poetry", image: cafeImage, fallbackColor: "#4ECDC4" },
-    { name: "Prose", fallbackColor: "#45B7D1" },
-    { name: "Reviews & Interviews", color: "#FFBE85" },
-    { name: "Translations", image: LostProfiles, color: "#A78BFA" },
+    {
+      name: "Poetry",
+      image: cafeImage,
+      fallbackColor: "#4ECDC4",
+      path: "poetry", // Added path
+    },
+    {
+      name: "Prose",
+      fallbackColor: "#45B7D1",
+      path: "prose", // Added path
+    },
+    {
+      name: "Reviews & Interviews",
+      color: "#FFBE85",
+      path: "reviews", // Added path
+    },
+    {
+      name: "Translations",
+      image: LostProfiles,
+      color: "#A78BFA",
+      path: "translations", // Added path
+    },
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -20,8 +40,9 @@ function Home() {
   return (
     <main className="home">
       {categories.map((category, index) => (
-        <div
+        <NavLink
           key={category.name}
+          to={category.path}
           className={`category ${hoveredIndex === index ? "hovered" : ""}`}
           style={{
             backgroundColor: category.color || category.fallbackColor,
@@ -35,7 +56,7 @@ function Home() {
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <h2>{category.name}</h2>
-        </div>
+        </NavLink>
       ))}
     </main>
   );
