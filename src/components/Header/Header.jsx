@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <div className="header__grid">
         <NavLink to="/" className="header__logo">
-          Alan Bernheimer
+          AB
         </NavLink>
         <nav className="header__nav">
           <a href="#about" className="header__nav-link">
