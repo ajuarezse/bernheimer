@@ -9,15 +9,21 @@ function Header() {
           AB
         </NavLink>
         <nav className="header__nav">
-          <a href="#about" className="header__nav-link">
-            Link
-          </a>
-          <a href="#projects" className="header__nav-link">
-            Link
-          </a>
-          <a href="#photos" className="header__nav-link">
-            Contact
-          </a>
+          <NavLink to="/about" className="header__nav-link">
+            About
+          </NavLink>
+          <NavLink to="/poetry" className="header__nav-link">
+            Poetry
+          </NavLink>
+          <NavLink to="/prose" className="header__nav-link">
+            Prose
+          </NavLink>
+          <NavLink to="/reviews" className="header__nav-link">
+            Reviews
+          </NavLink>
+          <NavLink to="/translations" className="header__nav-link">
+            Translations
+          </NavLink>
         </nav>
       </div>
     </header>
