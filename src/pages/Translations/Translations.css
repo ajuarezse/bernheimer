@@ -1,0 +1,147 @@
+/* Translations Page Styles */
+
+.translations-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.translations-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.translations-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.translation-item {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.translation-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.translation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.translation-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.translation-language {
+  background: #e8f4fd;
+  color: #2c5282;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.original-author {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.translation-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.original-text,
+.translated-text {
+  padding: 1rem;
+  border-radius: 4px;
+  line-height: 1.8;
+}
+
+.original-text {
+  background: #f0f0f0;
+  border-left: 4px solid #ccc;
+}
+
+.translated-text {
+  background: #f0f8ff;
+  border-left: 4px solid #4a90e2;
+}
+
+.text-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.translation-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.translation-date {
+  font-style: italic;
+}
+
+.translation-publication {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .translations-container {
+    padding: 1rem;
+  }
+
+  .translations-title {
+    font-size: 2rem;
+  }
+
+  .translation-item {
+    padding: 1.5rem;
+  }
+
+  .translation-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .translation-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .translation-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
