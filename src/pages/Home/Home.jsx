@@ -40,11 +40,18 @@ function Home() {
   return (
     <main className="home">
       {categories.map((category, index) => (
-        <div key={category.name} className="category-section">
+        <NavLink
+          key={category.name}
+          to={category.path}
+          className={`category-section ${
+            hoveredIndex === index ? "hovered" : ""
+          }`}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
           <h2 className="category-title">{category.name}</h2>
-          <NavLink
-            to={category.path}
-            className={`category ${hoveredIndex === index ? "hovered" : ""}`}
+          <div
+            className="category"
             style={{
               backgroundColor: category.color || category.fallbackColor,
               ...(category.image && {
@@ -53,10 +60,8 @@ function Home() {
                 backgroundPosition: "center",
               }),
             }}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          ></NavLink>
-        </div>
+          ></div>
+        </NavLink>
       ))}
     </main>
   );
