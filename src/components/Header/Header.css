@@ -98,8 +98,14 @@
   transition: width 0.3s ease;
 }
 
-.header__nav-link:hover::after {
+.header__nav-link:hover::after,
+.header__nav-link.active::after {
   width: 100%;
+}
+
+.header__nav-link.active {
+  color: #000;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
