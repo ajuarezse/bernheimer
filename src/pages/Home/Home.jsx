@@ -9,29 +9,29 @@ function Home() {
     {
       name: "About",
       fallbackColor: "#FF6B6B",
-      path: "about", // Added path
+      path: "about",
     },
     {
       name: "Poetry",
       image: cafeImage,
       fallbackColor: "#4ECDC4",
-      path: "poetry", // Added path
+      path: "poetry",
     },
     {
       name: "Prose",
       fallbackColor: "#45B7D1",
-      path: "prose", // Added path
+      path: "prose",
     },
     {
       name: "Reviews & Interviews",
       color: "#FFBE85",
-      path: "reviews", // Added path
+      path: "reviews",
     },
     {
       name: "Translations",
       image: LostProfiles,
       color: "#A78BFA",
-      path: "translations", // Added path
+      path: "translations",
     },
   ];
 
@@ -40,23 +40,23 @@ function Home() {
   return (
     <main className="home">
       {categories.map((category, index) => (
-        <NavLink
-          key={category.name}
-          to={category.path}
-          className={`category ${hoveredIndex === index ? "hovered" : ""}`}
-          style={{
-            backgroundColor: category.color || category.fallbackColor,
-            ...(category.image && {
-              backgroundImage: `url(${category.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }),
-          }}
-          onMouseEnter={() => setHoveredIndex(index)}
-          onMouseLeave={() => setHoveredIndex(null)}
-        >
-          <h2>{category.name}</h2>
-        </NavLink>
+        <div key={category.name} className="category-section">
+          <h2 className="category-title">{category.name}</h2>
+          <NavLink
+            to={category.path}
+            className={`category ${hoveredIndex === index ? "hovered" : ""}`}
+            style={{
+              backgroundColor: category.color || category.fallbackColor,
+              ...(category.image && {
+                backgroundImage: `url(${category.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }),
+            }}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          ></NavLink>
+        </div>
       ))}
     </main>
   );
