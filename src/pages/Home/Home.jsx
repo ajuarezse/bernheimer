@@ -56,7 +56,7 @@ function Home() {
               backgroundColor: category.color || category.fallbackColor,
               ...(category.image && {
                 backgroundImage: `url(${category.image})`,
-                backgroundSize: "contain",
+                backgroundSize: "auto 100%",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
               }),
