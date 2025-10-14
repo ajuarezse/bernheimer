@@ -53,7 +53,9 @@ function Home() {
           <div
             className="category"
             style={{
-              backgroundColor: category.color || category.fallbackColor,
+              backgroundColor: category.image
+                ? "white"
+                : category.color || category.fallbackColor,
               ...(category.image && {
                 backgroundImage: `url(${category.image})`,
                 backgroundSize: "auto 100%",
