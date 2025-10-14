@@ -5,7 +5,7 @@
   src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-.poetry-container {
+.poetry__container {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", sans-serif;
   max-width: 900px;
@@ -14,7 +14,7 @@
   line-height: 1.7;
 }
 
-.poetry-header {
+.poetry__header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
@@ -27,7 +27,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
-.poetry-title {
+.poetry__title {
   font-size: 3rem;
   font-weight: 300;
   margin: 0;
@@ -37,13 +37,13 @@
   align-self: start;
 }
 
-.poetry-intro {
+.poetry__intro {
   display: flex;
   align-items: start;
   padding-top: 0.2rem;
 }
 
-.poetry-lead {
+.poetry__lead {
   font-size: 1.2rem;
   font-weight: 400;
   color: #444;
@@ -52,11 +52,11 @@
   font-style: italic;
 }
 
-.poetry-section {
+.poetry__section {
   margin-bottom: 4rem;
 }
 
-.section-title {
+.poetry__section-title {
   font-size: 1.8rem;
   font-weight: 400;
   color: #333;
@@ -66,13 +66,13 @@
   text-align: center;
 }
 
-.book-image {
+.poetry__book-image {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.poetry-book-cover-placeholder {
+.poetry__book-cover-placeholder {
   width: 180px;
   height: 270px;
   background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
@@ -87,14 +87,14 @@
   border: 1px solid #eee;
 }
 
-.book-content,
-.publication-content {
+.poetry__book-content,
+.poetry__publication-content {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-.book-header {
+.poetry__book-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -103,14 +103,14 @@
   gap: 1rem;
 }
 
-.book-title {
+.poetry__book-title {
   font-size: 1.6rem;
   font-weight: 500;
   color: #2c2c2c;
   margin: 0;
 }
 
-.book-year {
+.poetry__book-year {
   font-size: 0.9rem;
   color: #777;
   font-weight: 400;
@@ -119,23 +119,23 @@
   border-radius: 4px;
 }
 
-.book-details {
+.poetry__book-details {
   margin-bottom: 1.5rem;
 }
 
-.book-details p {
+.poetry__book-details p {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
   color: #555;
 }
 
-.publisher-info,
-.pages-info,
-.isbn-info {
+.poetry__publisher-info,
+.poetry__pages-info,
+.poetry__isbn-info {
   margin: 0.25rem 0;
 }
 
-.book-description {
+.poetry__book-description {
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
@@ -143,14 +143,14 @@
   flex-grow: 1;
 }
 
-.book-links {
+.poetry__book-links {
   display: flex;
   gap: 1rem;
   margin-top: auto;
   flex-wrap: wrap;
 }
 
-.book-link {
+.poetry__book-link {
   color: #666;
   text-decoration: none;
   font-weight: 500;
@@ -161,20 +161,20 @@
   transition: all 0.2s ease;
 }
 
-.book-link:hover {
+.poetry__book-link:hover {
   color: #333;
   border-color: #333;
   background: #f9f9f9;
 }
 
-.poems-grid {
+.poetry__poems-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2.5rem;
   margin-bottom: 2rem;
 }
 
-.poem-card {
+.poetry__poem-card {
   background: #fefefe;
   border: 1px solid #e8e8e8;
   border-radius: 12px;
@@ -184,13 +184,13 @@
   position: relative;
 }
 
-.poem-card:hover {
+.poetry__poem-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   border-color: #ddd;
 }
 
-.poem-title {
+.poetry__poem-title {
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
@@ -198,7 +198,7 @@
   text-align: center;
 }
 
-.poem-content {
+.poetry__poem-content {
   font-size: 1rem;
   line-height: 1.9;
   color: #555;
@@ -209,25 +209,25 @@
   font-family: Georgia, "Times New Roman", serif;
 }
 
-.poem-meta {
+.poetry__poem-meta {
   text-align: right;
   border-top: 1px solid #f0f0f0;
   padding-top: 1rem;
 }
 
-.poem-year {
+.poetry__poem-year {
   font-size: 0.9rem;
   color: #888;
   font-weight: 400;
 }
 
-.poetry-publications-grid {
+.poetry__publications-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
 }
 
-.publication-card {
+.poetry__publication-card {
   background: #fefefe;
   border: 1px solid #e8e8e8;
   border-radius: 12px;
@@ -236,51 +236,51 @@
   transition: all 0.3s ease;
 }
 
-.publication-card:hover {
+.poetry__publication-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   border-color: #ddd;
 }
 
 /* Book publications (with covers) - full width like translations */
-.publication-book {
+.poetry__publication-card--book {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 2.5rem;
 }
 
 /* Journal publications (without covers) - also full width */
-.publication-journal {
+.poetry__publication-card--journal {
   display: grid;
   grid-template-columns: 1fr;
   padding: 2rem 3rem;
 }
 
-.publication-journal .publication-content {
+.poetry__publication-card--journal .poetry__publication-content {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.publication-journal .publication-details {
+.poetry__publication-card--journal .poetry__publication-details {
   margin-bottom: 1.5rem;
 }
 
-.publication-journal .publication-link {
+.poetry__publication-card--journal .poetry__publication-link {
   align-self: flex-start;
 }
 
 /* Publication headers (for both books and journals) */
-.publication-header,
-.book-header {
+.poetry__publication-header,
+.poetry__book-header {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
-.publication-header h3,
-.book-header h3 {
+.poetry__publication-header h3,
+.poetry__book-header h3 {
   margin: 0;
   font-size: 1.4rem;
   font-weight: 500;
@@ -288,15 +288,15 @@
   line-height: 1.3;
 }
 
-.publication-meta,
-.book-meta {
+.poetry__publication-meta,
+.poetry__book-meta {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
 }
 
-.publication-type {
+.poetry__publication-type {
   font-size: 0.75rem;
   color: #666;
   font-weight: 600;
@@ -308,8 +308,8 @@
   flex-shrink: 0;
 }
 
-.publication-year,
-.book-year {
+.poetry__publication-year,
+.poetry__book-year {
   font-size: 0.9rem;
   color: #777;
   font-weight: 400;
@@ -319,28 +319,28 @@
   flex-shrink: 0;
 }
 
-.publication-title {
+.poetry__publication-title {
   font-size: 1.2rem;
   font-weight: 500;
   color: #333;
   margin: 0;
 }
 
-.publication-details {
+.poetry__publication-details {
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
-.publication-issue {
+.poetry__publication-issue {
   display: block;
   font-size: 0.9rem;
   color: #777;
   margin-top: 0.25rem;
 }
 
-.publication-link {
+.poetry__publication-link {
   display: inline-block;
   color: #666;
   text-decoration: none;
@@ -352,18 +352,18 @@
   transition: all 0.2s ease;
 }
 
-.publication-link:hover {
+.poetry__publication-link:hover {
   color: #333;
   border-color: #333;
   background: #f9f9f9;
 }
 
 @media (max-width: 768px) {
-  .poetry-container {
+  .poetry__container {
     padding: 2rem 1rem;
   }
 
-  .poetry-header {
+  .poetry__header {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
@@ -371,117 +371,115 @@
     padding: 2rem 1rem 2rem 1rem;
   }
 
-  .poetry-title {
+  .poetry__title {
     font-size: 2.2rem;
   }
 
-  .poetry-lead {
+  .poetry__lead {
     font-size: 1.1rem;
   }
 
-  .publication-book {
+  .poetry__publication-card--book {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 2rem;
     text-align: center;
   }
 
-  .publication-journal {
+  .poetry__publication-card--journal {
     padding: 1.5rem;
   }
 
-  .book-image {
+  .poetry__book-image {
     justify-content: center;
   }
 
-  .poetry-book-cover-placeholder {
+  .poetry__book-cover-placeholder {
     width: 140px;
     height: 210px;
   }
 
-  .book-header,
-  .publication-header {
+  .poetry__book-header,
+  .poetry__publication-header {
     text-align: center;
   }
 
-  .book-meta,
-  .publication-meta {
+  .poetry__book-meta,
+  .poetry__publication-meta {
     justify-content: center;
   }
 
-  .book-links {
+  .poetry__book-links {
     justify-content: center;
   }
 
-  .poems-grid {
+  .poetry__poems-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .poem-card {
+  .poetry__poem-card {
     padding: 1.5rem;
   }
 
-  .poetry-publications-grid {
+  .poetry__publications-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .section-title {
+  .poetry__section-title {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .poetry-container {
+  .poetry__container {
     padding: 1.5rem 1rem;
   }
 
-  .poetry-title {
+  .poetry__title {
     font-size: 2rem;
   }
 
-  .publication-card {
+  .poetry__publication-card {
     padding: 1.5rem;
   }
 
-  .poetry-book-cover-placeholder {
+  .poetry__book-cover-placeholder {
     width: 120px;
     height: 180px;
     font-size: 0.8rem;
   }
 
-  .book-links {
+  .poetry__book-links {
     flex-direction: column;
     align-items: center;
   }
 
-  .book-link {
+  .poetry__book-link {
     width: 100%;
     text-align: center;
   }
 
-  .poem-card {
+  .poetry__poem-card {
     padding: 1.25rem;
   }
 
-  .poem-content {
+  .poetry__poem-content {
     font-size: 0.95rem;
   }
 }
 
-.poem-date {
+.poetry__poem-date {
   font-size: 0.9rem;
   color: #888;
   margin-top: 1rem;
   text-align: right;
 }
 
-.poetry-intro {
+.poetry__intro {
   text-align: center;
   margin-bottom: 3rem;
   color: #666;
   font-size: 1.1rem;
 }
-
-/* Duplicate mobile styles removed */
