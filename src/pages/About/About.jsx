@@ -2,18 +2,18 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about-container">
-      <h1 className="about-title">Adam Berneruner</h1>
+    <div className="about__container">
+      <h1 className="about__title">Adam Berneruner</h1>
 
-      <div className="about-hero">
-        <div className="about-image-container">
-          <div className="about-image-placeholder">
+      <div className="about__hero">
+        <div className="about__image-container">
+          <div className="about__image-placeholder">
             <span>Author Photo</span>
           </div>
         </div>
 
-        <div className="about-intro">
-          <p className="about-lead">
+        <div className="about__intro">
+          <p className="about__lead">
             A distinguished voice in contemporary literature, exploring the
             intersections of memory, language, and human experience through
             poetry, prose, and translation.
@@ -21,8 +21,8 @@ function About() {
         </div>
       </div>
 
-      <div className="about-content">
-        <section className="about-section">
+      <div className="about__content">
+        <section className="about__section">
           <h2>Biography</h2>
           <p>
             Charles Bernheimer is an acclaimed author whose work spans multiple
@@ -40,7 +40,7 @@ function About() {
           </p>
         </section>
 
-        <section className="about-section">
+        <section className="about__section">
           <h2>Literary Focus</h2>
           <p>
             Bernheimer's poetry is characterized by its precise yet lyrical
@@ -57,7 +57,7 @@ function About() {
           </p>
         </section>
 
-        <section className="about-section">
+        <section className="about__section">
           <h2>Recognition</h2>
           <p>
             Bernheimer's contributions to literature have been recognized
