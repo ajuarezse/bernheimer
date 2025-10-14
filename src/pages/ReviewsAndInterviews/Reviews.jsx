@@ -3,13 +3,14 @@ import "./Reviews.css";
 function Reviews() {
   return (
     <div className="reviews-container">
-      <h1 className="reviews-title">Reviews & Interviews</h1>
-
-      <div className="reviews-intro">
-        <p className="reviews-lead">
-          Critical reception, conversations, and media coverage— a collection of
-          voices engaging with the work and the craft behind it.
-        </p>
+      <div className="reviews-header">
+        <h1 className="reviews-title">Reviews & Interviews</h1>
+        <div className="reviews-intro">
+          <p className="reviews-lead">
+            Critical reception, conversations, and media coverage— a collection
+            of voices engaging with the work and the craft behind it.
+          </p>
+        </div>
       </div>
 
       <section className="reviews-section">

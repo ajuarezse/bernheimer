@@ -14,29 +14,36 @@
   line-height: 1.7;
 }
 
+.prose-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
 .prose-title {
   font-size: 3rem;
   font-weight: 300;
-  margin-bottom: 3rem;
-  text-align: center;
+  margin: 0;
   color: #2c2c2c;
   letter-spacing: -0.02em;
 }
 
 .prose-intro {
-  text-align: center;
-  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 .prose-lead {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #444;
   line-height: 1.6;
   margin: 0;
   font-style: italic;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .prose-section {
@@ -175,9 +182,14 @@
     padding: 2rem 1rem;
   }
 
+  .prose-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
   .prose-title {
     font-size: 2.2rem;
-    margin-bottom: 2rem;
   }
 
   .prose-lead {

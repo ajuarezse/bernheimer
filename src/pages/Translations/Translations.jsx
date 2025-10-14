@@ -3,14 +3,15 @@ import "./Translations.css";
 function Translations() {
   return (
     <div className="translations-container">
-      <h1 className="translations-title">Translations</h1>
-
-      <div className="translations-intro">
-        <p className="translations-lead">
-          Bridging languages and cultures—bringing essential voices from French
-          literature to English-speaking readers through careful, considered
-          translation.
-        </p>
+      <div className="translations-header">
+        <h1 className="translations-title">Translations</h1>
+        <div className="translations-intro">
+          <p className="translations-lead">
+            Bridging languages and cultures—bringing essential voices from
+            French literature to English-speaking readers through careful,
+            considered translation.
+          </p>
+        </div>
       </div>
 
       <section className="translations-section">

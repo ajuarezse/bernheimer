@@ -3,13 +3,14 @@ import "./Prose.css";
 function Prose() {
   return (
     <div className="prose-container">
-      <h1 className="prose-title">Prose</h1>
-
-      <div className="prose-intro">
-        <p className="prose-lead">
-          Essays, stories, and reflections on the art of living— where narrative
-          meets memory and experience becomes literature.
-        </p>
+      <div className="prose-header">
+        <h1 className="prose-title">Prose</h1>
+        <div className="prose-intro">
+          <p className="prose-lead">
+            Essays, stories, and reflections on the art of living— where
+            narrative meets memory and experience becomes literature.
+          </p>
+        </div>
       </div>
 
       <section className="prose-section">

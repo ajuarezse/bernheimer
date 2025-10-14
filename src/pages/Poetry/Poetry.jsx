@@ -3,13 +3,14 @@ import "./Poetry.css";
 function Poetry() {
   return (
     <div className="poetry-container">
-      <h1 className="poetry-title">Poetry</h1>
-
-      <div className="poetry-intro">
-        <p className="poetry-lead">
-          An exploration of language, memory, and the spaces between words—
-          where meaning emerges from silence and truth lives in the pause.
-        </p>
+      <div className="poetry-header">
+        <h1 className="poetry-title">Poetry</h1>
+        <div className="poetry-intro">
+          <p className="poetry-lead">
+            An exploration of language, memory, and the spaces between words—
+            where meaning emerges from silence and truth lives in the pause.
+          </p>
+        </div>
       </div>
 
       <section className="poetry-section">
