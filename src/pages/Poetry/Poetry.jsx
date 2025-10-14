@@ -16,7 +16,7 @@ function Poetry() {
       <section className="poetry-section">
         <h2 className="section-title">Published Poetry</h2>
 
-        <div className="publications-grid">
+        <div className="poetry-publications-grid">
           <article className="publication-card publication-book">
             <div className="book-image">
               <div className="poetry-book-cover-placeholder">

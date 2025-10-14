@@ -221,8 +221,9 @@
   font-weight: 400;
 }
 
-.publications-grid {
+.poetry-publications-grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 3rem;
 }
 
@@ -421,7 +422,8 @@
     padding: 1.5rem;
   }
 
-  .publications-grid {
+  .poetry-publications-grid {
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
