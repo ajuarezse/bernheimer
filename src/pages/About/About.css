@@ -6,7 +6,8 @@
 }
 
 .about-container {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 2rem;
