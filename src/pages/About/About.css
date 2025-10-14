@@ -1,48 +1,138 @@
 /* About Page Styles */
 
+@font-face {
+  font-family: Montserrat;
+  src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 .about-container {
-  max-width: 800px;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
-  line-height: 1.6;
+  padding: 3rem 2rem;
+  line-height: 1.7;
 }
 
 .about-title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
   text-align: center;
-  color: #333;
+  color: #2c2c2c;
+  letter-spacing: -0.02em;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  align-items: start;
+}
+
+.about-image-container {
+  position: sticky;
+  top: 2rem;
+}
+
+.about-image-placeholder {
+  width: 200px;
+  height: 250px;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+}
+
+.about-intro {
+  padding-top: 1rem;
+}
+
+.about-lead {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
 }
 
 .about-content {
+  max-width: 700px;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.about-section p {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
-.about-content p {
-  margin-bottom: 1.5rem;
-}
-
-.about-image {
-  max-width: 300px;
-  border-radius: 8px;
-  margin: 2rem auto;
-  display: block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.about-section p:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
   .about-container {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 
   .about-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
   }
 
-  .about-content {
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .about-image-container {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .about-image-placeholder {
+    margin: 0 auto;
+  }
+
+  .about-lead {
+    font-size: 1.1rem;
+  }
+
+  .about-section p {
     font-size: 1rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    gap: 1.5rem;
+  }
+
+  .about-image-placeholder {
+    width: 160px;
+    height: 200px;
   }
 }
