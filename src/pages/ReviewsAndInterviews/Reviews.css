@@ -18,10 +18,29 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
-  align-items: center;
-  margin-bottom: 4rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #eee;
+  align-items: start;
+  margin: -3rem -2rem 4rem -2rem;
+  padding: 3rem 2rem 2.5rem 2rem;
+  background: linear-gradient(135deg, #fafafa, #f8f8f8);
+  border-bottom: 3px solid #f0f0f0;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.reviews-title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+  color: #2c2c2c;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  align-self: start;
+}
+
+.reviews-intro {
+  display: flex;
+  align-items: start;
+  padding-top: 0.2rem;
 }
 
 .reviews-title {
@@ -328,6 +347,8 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
+    margin: -2rem -1rem 3rem -1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   .reviews-title {
