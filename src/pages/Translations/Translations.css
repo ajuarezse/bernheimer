@@ -1,38 +1,105 @@
 /* Translations Page Styles */
 
+@font-face {
+  font-family: Montserrat;
+  src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 .translations-container {
-  max-width: 900px;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", sans-serif;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 2rem;
+  line-height: 1.7;
 }
 
 .translations-title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
   text-align: center;
-  color: #333;
+  color: #2c2c2c;
+  letter-spacing: -0.02em;
 }
 
 .translations-intro {
   text-align: center;
-  margin-bottom: 3rem;
-  color: #666;
-  font-size: 1.1rem;
+  margin-bottom: 4rem;
 }
 
-.translation-item {
-  background: #f9f9f9;
+.translations-lead {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.translations-section {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  text-align: center;
+}
+
+.translations-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.translation-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2.5rem;
+  background: #fefefe;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.translation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-color: #ddd;
+}
+
+.translation-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.book-cover-placeholder {
+  width: 160px;
+  height: 240px;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
   border-radius: 8px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
 }
 
-.translation-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+.translation-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .translation-header {
@@ -40,45 +107,229 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .translation-title {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.translation-year {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 400;
+  background: #f5f5f5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+.translation-details {
+  margin-bottom: 1.5rem;
+}
+
+.translation-details p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.original-info,
+.publisher-info,
+.pages-info {
+  margin: 0.25rem 0;
+}
+
+.translation-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.translation-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.translation-link {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.translation-link:hover {
+  color: #333;
+  border-color: #333;
+  background: #f9f9f9;
+}
+
+/* Selected Translations Section */
+.selected-translations {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.selected-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.selected-item:last-child {
+  border-bottom: none;
+}
+
+.selected-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.selected-title {
+  font-size: 1.1rem;
+  font-weight: 500;
   color: #333;
   margin: 0;
 }
 
-.translation-language {
-  background: #e8f4fd;
-  color: #2c5282;
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.original-author {
-  font-size: 1rem;
+.selected-source {
+  font-size: 0.95rem;
   color: #666;
-  margin-bottom: 1rem;
   font-style: italic;
 }
 
-.translation-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
+.selected-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.original-text,
-.translated-text {
-  padding: 1rem;
-  border-radius: 4px;
+.publication {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 500;
+}
+
+.selected-year {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Philosophy Section */
+.philosophy-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.philosophy-text {
+  font-size: 1.1rem;
   line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .translations-container {
+    padding: 2rem 1rem;
+  }
+
+  .translations-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .translations-lead {
+    font-size: 1.1rem;
+  }
+
+  .translation-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .translation-image {
+    justify-content: center;
+  }
+
+  .book-cover-placeholder {
+    width: 140px;
+    height: 210px;
+  }
+
+  .translation-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .translation-links {
+    justify-content: center;
+  }
+
+  .selected-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .selected-details {
+    justify-content: flex-start;
+  }
+
+  .philosophy-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .translations-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .translations-title {
+    font-size: 2rem;
+  }
+
+  .translation-card {
+    padding: 1.5rem;
+  }
+
+  .book-cover-placeholder {
+    width: 120px;
+    height: 180px;
+    font-size: 0.8rem;
+  }
+
+  .translation-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .translation-link {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .original-text {
