@@ -17,7 +17,7 @@ function Header() {
             isHomePage ? "header__logo--centered" : "header__logo--with-nav"
           }`}
         >
-          Adam Berneruner
+          Alan Bernheimer
         </NavLink>
         <nav
           className={`header__nav ${
