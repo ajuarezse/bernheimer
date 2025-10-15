@@ -43,15 +43,15 @@ function Home() {
         <NavLink
           key={category.name}
           to={category.path}
-          className={`category-section ${
-            hoveredIndex === index ? "hovered" : ""
+          className={`home__category-section ${
+            hoveredIndex === index ? "home__category-section--hovered" : ""
           }`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <h2 className="category-title">{category.name}</h2>
+          <h2 className="home__category-title">{category.name}</h2>
           <div
-            className="category"
+            className="home__category"
             style={{
               backgroundColor: category.image
                 ? "white"

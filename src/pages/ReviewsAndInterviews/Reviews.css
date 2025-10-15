@@ -5,7 +5,7 @@
   src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-.reviews-container {
+.reviews {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", sans-serif;
   max-width: 1000px;
@@ -14,7 +14,7 @@
   line-height: 1.7;
 }
 
-.reviews-header {
+.reviews__header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
@@ -27,7 +27,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
-.reviews-title {
+.reviews__title {
   font-size: 3rem;
   font-weight: 300;
   margin: 0;
@@ -37,26 +37,13 @@
   align-self: start;
 }
 
-.reviews-intro {
+.reviews__intro {
   display: flex;
   align-items: start;
   padding-top: 0.2rem;
 }
 
-.reviews-title {
-  font-size: 3rem;
-  font-weight: 300;
-  margin: 0;
-  color: #2c2c2c;
-  letter-spacing: -0.02em;
-}
-
-.reviews-intro {
-  display: flex;
-  align-items: center;
-}
-
-.reviews-lead {
+.reviews__lead {
   font-size: 1.2rem;
   font-weight: 400;
   color: #444;
@@ -65,11 +52,11 @@
   font-style: italic;
 }
 
-.reviews-section {
+.reviews__section {
   margin-bottom: 4rem;
 }
 
-.section-title {
+.reviews__section-title {
   font-size: 1.8rem;
   font-weight: 400;
   color: #333;
@@ -79,23 +66,23 @@
   text-align: center;
 }
 
-.reviews-list {
+.reviews__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.review-item {
+.reviews__item {
   border-bottom: 1px solid #e8e8e8;
   padding: 2rem 0;
   transition: all 0.3s ease;
 }
 
-.review-item:last-child {
+.reviews__item:last-child {
   border-bottom: none;
 }
 
-.review-item:hover {
+.reviews__item:hover {
   background: #fafafa;
   margin: 0 -1rem;
   padding: 2rem 1rem;
@@ -103,15 +90,15 @@
   border-bottom: 1px solid transparent;
 }
 
-.review-item:hover:last-child {
+.reviews__item:hover:last-child {
   border-bottom: 1px solid transparent;
 }
 
-.review-content {
+.reviews__content {
   max-width: 100%;
 }
 
-.review-header {
+.reviews__item-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -120,20 +107,20 @@
   gap: 0.5rem;
 }
 
-.review-source {
+.reviews__source {
   font-size: 1.2rem;
   font-weight: 500;
   color: #333;
   margin: 0;
 }
 
-.review-date {
+.reviews__date {
   font-size: 0.9rem;
   color: #777;
   font-weight: 400;
 }
 
-.review-excerpt {
+.reviews__excerpt {
   font-size: 1.05rem;
   line-height: 1.7;
   color: #555;
@@ -141,7 +128,7 @@
   font-style: italic;
 }
 
-.review-details {
+.reviews__details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,13 +137,13 @@
   border-top: 1px solid #f0f0f0;
 }
 
-.review-work {
+.reviews__work {
   font-size: 0.9rem;
   color: #666;
   font-weight: 500;
 }
 
-.review-link {
+.reviews__link {
   color: #666;
   text-decoration: none;
   font-weight: 500;
@@ -165,36 +152,36 @@
   font-size: 0.9rem;
 }
 
-.review-link:hover {
+.reviews__link:hover {
   color: #333;
   border-bottom-color: #333;
 }
 
 /* Interviews Section */
-.interviews-list {
+.reviews__interviews-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.interview-item {
+.reviews__interview-item {
   border-bottom: 1px solid #e8e8e8;
   padding: 2rem 0;
 }
 
-.interview-item:last-child {
+.reviews__interview-item:last-child {
   border-bottom: none;
 }
 
-.interview-content {
+.reviews__interview-content {
   max-width: 100%;
 }
 
-.interview-header {
+.reviews__interview-header {
   margin-bottom: 1.5rem;
 }
 
-.interview-title {
+.reviews__interview-title {
   font-size: 1.3rem;
   font-weight: 500;
   color: #333;
@@ -202,7 +189,7 @@
   line-height: 1.4;
 }
 
-.interview-source {
+.reviews__interview-source {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -210,25 +197,25 @@
   gap: 0.5rem;
 }
 
-.publication {
+.reviews__publication {
   font-size: 1rem;
   color: #666;
   font-weight: 500;
 }
 
-.interview-date {
+.reviews__interview-date {
   font-size: 0.9rem;
   color: #777;
 }
 
-.interview-description {
+.reviews__interview-description {
   font-size: 1.05rem;
   line-height: 1.6;
   color: #555;
   margin-bottom: 1.5rem;
 }
 
-.interview-details {
+.reviews__interview-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -237,50 +224,50 @@
   border-top: 1px solid #e8e8e8;
 }
 
-.interview-type {
+.reviews__interview-type {
   font-size: 0.9rem;
   color: #666;
   font-weight: 500;
 }
 
-.interview-link {
+.reviews__interview-link {
   color: #555 !important;
   text-decoration: none !important;
   font-weight: 500;
   font-size: 0.9rem;
 }
 
-.interview-link:hover {
+.reviews__interview-link:hover {
   color: #333 !important;
   text-decoration: underline !important;
 }
 
-.interview-link:visited {
+.reviews__interview-link:visited {
   color: #555 !important;
 }
 
-.interview-link:active {
+.reviews__interview-link:active {
   color: #333 !important;
 }
 
 /* Press Coverage Section */
-.press-list {
+.reviews__press-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.press-item {
+.reviews__press-item {
   border-bottom: 1px solid #e8e8e8;
   padding: 1.5rem 0;
   transition: all 0.3s ease;
 }
 
-.press-item:last-child {
+.reviews__press-item:last-child {
   border-bottom: none;
 }
 
-.press-item:hover {
+.reviews__press-item:hover {
   background: #fafafa;
   margin: 0 -1rem;
   padding: 1.5rem 1rem;
@@ -288,15 +275,15 @@
   border-bottom: 1px solid transparent;
 }
 
-.press-item:hover:last-child {
+.reviews__press-item:hover:last-child {
   border-bottom: 1px solid transparent;
 }
 
-.press-content {
+.reviews__press-content {
   max-width: 100%;
 }
 
-.press-headline {
+.reviews__press-headline {
   font-size: 1.1rem;
   font-weight: 500;
   color: #333;
@@ -304,26 +291,26 @@
   line-height: 1.4;
 }
 
-.press-details {
+.reviews__press-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
 }
 
-.press-source {
+.reviews__press-source {
   display: flex;
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.press-date {
+.reviews__press-date {
   font-size: 0.85rem;
   color: #777;
 }
 
-.press-link {
+.reviews__press-link {
   display: inline-block;
   color: #666;
   text-decoration: none;
@@ -333,17 +320,17 @@
   font-size: 0.9rem;
 }
 
-.press-link:hover {
+.reviews__press-link:hover {
   color: #333;
   border-bottom-color: #333;
 }
 
 @media (max-width: 768px) {
-  .reviews-container {
+  .reviews {
     padding: 2rem 1rem;
   }
 
-  .reviews-header {
+  .reviews__header {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
@@ -351,48 +338,48 @@
     padding: 2rem 1rem 2rem 1rem;
   }
 
-  .reviews-title {
+  .reviews__title {
     font-size: 2.2rem;
   }
 
-  .reviews-lead {
+  .reviews__lead {
     font-size: 1.1rem;
   }
 
-  .section-title {
+  .reviews__section-title {
     font-size: 1.5rem;
   }
 
-  .review-item,
-  .interview-item {
+  .reviews__item,
+  .reviews__interview-item {
     padding: 1.5rem 0;
   }
 
-  .press-item {
+  .reviews__press-item {
     padding: 1.25rem 0;
   }
 
-  .review-item:hover,
-  .press-item:hover {
+  .reviews__item:hover,
+  .reviews__press-item:hover {
     margin: 0 -0.5rem;
     padding: 1.5rem 0.5rem;
   }
 
-  .press-item:hover {
+  .reviews__press-item:hover {
     padding: 1.25rem 0.5rem;
   }
 
-  .review-header,
-  .interview-source,
-  .press-source {
+  .reviews__item-header,
+  .reviews__interview-source,
+  .reviews__press-source {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
   }
 
-  .review-details,
-  .interview-details,
-  .press-details {
+  .reviews__details,
+  .reviews__interview-details,
+  .reviews__press-details {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
@@ -400,86 +387,23 @@
 }
 
 @media (max-width: 480px) {
-  .reviews-container {
+  .reviews {
     padding: 1.5rem 1rem;
   }
 
-  .reviews-title {
+  .reviews__title {
     font-size: 2rem;
   }
 
-  .review-item,
-  .interview-item,
-  .press-item {
+  .reviews__item,
+  .reviews__interview-item,
+  .reviews__press-item {
     padding: 1.25rem 0;
   }
 
-  .review-item:hover,
-  .press-item:hover {
+  .reviews__item:hover,
+  .reviews__press-item:hover {
     margin: 0 -0.25rem;
     padding: 1.25rem 0.25rem;
-  }
-}
-
-.review-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.review-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: #333;
-}
-
-.review-publication {
-  font-size: 1rem;
-  color: #666;
-  font-style: italic;
-  margin-bottom: 0.5rem;
-}
-
-.review-date {
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 1rem;
-}
-
-.review-excerpt {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.review-link {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid #333;
-  transition: color 0.2s ease;
-}
-
-.review-link:hover {
-  color: #666;
-}
-
-@media (max-width: 768px) {
-  .reviews-container {
-    padding: 1rem;
-  }
-
-  .reviews-title {
-    font-size: 2rem;
-  }
-
-  .reviews-sections {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .review-item {
-    padding: 1rem;
   }
 }

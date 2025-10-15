@@ -11,7 +11,7 @@
   gap: 0;
 }
 
-.category-section {
+.home__category-section {
   flex: 1.25;
   display: flex;
   flex-direction: column;
@@ -20,11 +20,11 @@
   color: inherit;
 }
 
-.category-section:hover {
+.home__category-section:hover {
   flex: 1.8;
 }
 
-.category-title {
+.home__category-title {
   margin: 0 0 0.5rem 0;
   padding: 0.5rem 0;
   color: #333;
@@ -34,7 +34,7 @@
   transition: all 0.3s ease;
 }
 
-.category {
+.home__category {
   flex: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-width: 0;
@@ -48,7 +48,7 @@
   min-height: 200px;
 }
 
-.category:hover {
+.home__category:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
