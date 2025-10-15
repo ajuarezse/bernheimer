@@ -138,11 +138,17 @@ function Translations() {
         <div className="translations__selected">
           <div className="translations__selected-item">
             <div className="translations__selected-header">
-              <h4 className="translations__selected-title">"Three Fragments on Solitude"</h4>
-              <span className="translations__selected-source">by Isabelle Moreau</span>
+              <h4 className="translations__selected-title">
+                "Three Fragments on Solitude"
+              </h4>
+              <span className="translations__selected-source">
+                by Isabelle Moreau
+              </span>
             </div>
             <div className="translations__selected-details">
-              <span className="translations__publication">The Paris Review, No. 248</span>
+              <span className="translations__publication">
+                The Paris Review, No. 248
+              </span>
               <span className="translations__selected-year">2023</span>
             </div>
           </div>
@@ -150,18 +156,26 @@ function Translations() {
           <div className="translations__selected-item">
             <div className="translations__selected-header">
               <h4 className="translations__selected-title">"Urban Pastoral"</h4>
-              <span className="translations__selected-source">by Antoine Leclerc</span>
+              <span className="translations__selected-source">
+                by Antoine Leclerc
+              </span>
             </div>
             <div className="translations__selected-details">
-              <span className="translations__publication">Poetry International, Vol. 29</span>
+              <span className="translations__publication">
+                Poetry International, Vol. 29
+              </span>
               <span className="translations__selected-year">2023</span>
             </div>
           </div>
 
           <div className="translations__selected-item">
             <div className="translations__selected-header">
-              <h4 className="translations__selected-title">"The Mapmaker's Daughter"</h4>
-              <span className="translations__selected-source">by Sylvie Bertrand</span>
+              <h4 className="translations__selected-title">
+                "The Mapmaker's Daughter"
+              </h4>
+              <span className="translations__selected-source">
+                by Sylvie Bertrand
+              </span>
             </div>
             <div className="translations__selected-details">
               <span className="translations__publication">Literary Hub</span>
@@ -174,10 +188,14 @@ function Translations() {
               <h4 className="translations__selected-title">
                 "Five Poems from 'Interior Weather'"
               </h4>
-              <span className="translations__selected-source">by Philippe Rousseau</span>
+              <span className="translations__selected-source">
+                by Philippe Rousseau
+              </span>
             </div>
             <div className="translations__selected-details">
-              <span className="translations__publication">The Literary Review, Issue 52</span>
+              <span className="translations__publication">
+                The Literary Review, Issue 52
+              </span>
               <span className="translations__selected-year">2022</span>
             </div>
           </div>
