@@ -5,7 +5,7 @@
   src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
-.translations-container {
+.translations {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", sans-serif;
   max-width: 1000px;
@@ -14,7 +14,7 @@
   line-height: 1.7;
 }
 
-.translations-header {
+.translations__header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
@@ -27,7 +27,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
-.translations-title {
+.translations__title {
   font-size: 3rem;
   font-weight: 300;
   margin: 0;
@@ -37,26 +37,13 @@
   align-self: start;
 }
 
-.translations-intro {
+.translations__intro {
   display: flex;
   align-items: start;
   padding-top: 0.2rem;
 }
 
-.translations-title {
-  font-size: 3rem;
-  font-weight: 300;
-  margin: 0;
-  color: #2c2c2c;
-  letter-spacing: -0.02em;
-}
-
-.translations-intro {
-  display: flex;
-  align-items: center;
-}
-
-.translations-lead {
+.translations__lead {
   font-size: 1.2rem;
   font-weight: 400;
   color: #444;
@@ -65,11 +52,11 @@
   font-style: italic;
 }
 
-.translations-section {
+.translations__section {
   margin-bottom: 5rem;
 }
 
-.section-title {
+.translations__section-title {
   font-size: 1.8rem;
   font-weight: 400;
   color: #333;
@@ -79,12 +66,12 @@
   text-align: center;
 }
 
-.translations-grid {
+.translations__grid {
   display: grid;
   gap: 3rem;
 }
 
-.translation-card {
+.translations__card {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 2.5rem;
@@ -96,19 +83,19 @@
   transition: all 0.3s ease;
 }
 
-.translation-card:hover {
+.translations__card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   border-color: #ddd;
 }
 
-.translation-image {
+.translations__image {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.book-cover-placeholder {
+.translations__book-cover-placeholder {
   width: 160px;
   height: 240px;
   background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
@@ -123,12 +110,12 @@
   border: 1px solid #eee;
 }
 
-.translation-content {
+.translations__content {
   display: flex;
   flex-direction: column;
 }
 
-.translation-header {
+.translations__card-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -137,14 +124,14 @@
   gap: 1rem;
 }
 
-.translation-title {
+.translations__card-title {
   font-size: 1.6rem;
   font-weight: 500;
   color: #2c2c2c;
   margin: 0;
 }
 
-.translation-year {
+.translations__year {
   font-size: 0.9rem;
   color: #777;
   font-weight: 400;
@@ -153,36 +140,36 @@
   border-radius: 4px;
 }
 
-.translation-details {
+.translations__details {
   margin-bottom: 1.5rem;
 }
 
-.translation-details p {
+.translations__details p {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
   color: #555;
 }
 
-.original-info,
-.publisher-info,
-.pages-info {
+.translations__original-info,
+.translations__publisher-info,
+.translations__pages-info {
   margin: 0.25rem 0;
 }
 
-.translation-description {
+.translations__description {
   font-size: 1.05rem;
   line-height: 1.7;
   color: #555;
   margin-bottom: 1.5rem;
 }
 
-.translation-links {
+.translations__links {
   display: flex;
   gap: 1rem;
   margin-top: auto;
 }
 
-.translation-link {
+.translations__link {
   color: #666;
   text-decoration: none;
   font-weight: 500;
@@ -193,28 +180,28 @@
   transition: all 0.2s ease;
 }
 
-.translation-link:hover {
+.translations__link:hover {
   color: #333;
   border-color: #333;
   background: #f9f9f9;
 }
 
 /* Selected Translations Section */
-.selected-translations {
+.translations__selected {
   display: grid;
   gap: 1.5rem;
 }
 
-.selected-item {
+.translations__selected-item {
   padding: 1.5rem 0;
   border-bottom: 1px solid #e8e8e8;
 }
 
-.selected-item:last-child {
+.translations__selected-item:last-child {
   border-bottom: none;
 }
 
-.selected-header {
+.translations__selected-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -223,20 +210,20 @@
   gap: 0.5rem;
 }
 
-.selected-title {
+.translations__selected-title {
   font-size: 1.1rem;
   font-weight: 500;
   color: #333;
   margin: 0;
 }
 
-.selected-source {
+.translations__selected-source {
   font-size: 0.95rem;
   color: #666;
   font-style: italic;
 }
 
-.selected-details {
+.translations__selected-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -244,24 +231,24 @@
   gap: 0.5rem;
 }
 
-.publication {
+.translations__publication {
   font-size: 0.9rem;
   color: #777;
   font-weight: 500;
 }
 
-.selected-year {
+.translations__selected-year {
   font-size: 0.85rem;
   color: #888;
 }
 
 /* Philosophy Section */
-.philosophy-content {
+.translations__philosophy-content {
   max-width: 700px;
   margin: 0 auto;
 }
 
-.philosophy-text {
+.translations__philosophy-text {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #555;
@@ -270,11 +257,11 @@
 }
 
 @media (max-width: 768px) {
-  .translations-container {
+  .translations {
     padding: 2rem 1rem;
   }
 
-  .translations-header {
+  .translations__header {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
@@ -282,150 +269,87 @@
     padding: 2rem 1rem 2rem 1rem;
   }
 
-  .translations-title {
+  .translations__title {
     font-size: 2.2rem;
   }
 
-  .translations-lead {
+  .translations__lead {
     font-size: 1.1rem;
   }
 
-  .translation-card {
+  .translations__card {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 2rem;
     text-align: center;
   }
 
-  .translation-image {
+  .translations__image {
     justify-content: center;
   }
 
-  .book-cover-placeholder {
+  .translations__book-cover-placeholder {
     width: 140px;
     height: 210px;
   }
 
-  .translation-header {
+  .translations__card-header {
     justify-content: center;
     text-align: center;
   }
 
-  .translation-links {
+  .translations__links {
     justify-content: center;
   }
 
-  .selected-header {
+  .translations__selected-header {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
   }
 
-  .selected-details {
+  .translations__selected-details {
     justify-content: flex-start;
   }
 
-  .philosophy-text {
+  .translations__philosophy-text {
     font-size: 1rem;
     text-align: left;
   }
 
-  .section-title {
+  .translations__section-title {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .translations-container {
+  .translations {
     padding: 1.5rem 1rem;
   }
 
-  .translations-title {
+  .translations__title {
     font-size: 2rem;
   }
 
-  .translation-card {
+  .translations__card {
     padding: 1.5rem;
   }
 
-  .book-cover-placeholder {
+  .translations__book-cover-placeholder {
     width: 120px;
     height: 180px;
     font-size: 0.8rem;
   }
 
-  .translation-links {
+  .translations__links {
     flex-direction: column;
     align-items: center;
   }
 
-  .translation-link {
+  .translations__link {
     width: 100%;
     text-align: center;
   }
 }
 
-.original-text {
-  background: #f0f0f0;
-  border-left: 4px solid #ccc;
-}
 
-.translated-text {
-  background: #f0f8ff;
-  border-left: 4px solid #4a90e2;
-}
-
-.text-label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  color: #666;
-}
-
-.translation-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
-  color: #888;
-}
-
-.translation-date {
-  font-style: italic;
-}
-
-.translation-publication {
-  color: #666;
-}
-
-@media (max-width: 768px) {
-  .translations-container {
-    padding: 1rem;
-  }
-
-  .translations-title {
-    font-size: 2rem;
-  }
-
-  .translation-item {
-    padding: 1.5rem;
-  }
-
-  .translation-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .translation-content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .translation-meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-}
