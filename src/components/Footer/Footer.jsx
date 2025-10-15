@@ -14,9 +14,9 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-grid">
-          <div className="footer-section">
+      <div className="footer__content">
+        <div className="footer__grid">
+          <div className="footer__section">
             <h3>About</h3>
             <p>
               A collection of literary works, translations, and creative
@@ -25,9 +25,9 @@ function Footer() {
             </p>
           </div>
 
-          <div className="footer-section">
+          <div className="footer__section">
             <h3>Quick Links</h3>
-            <ul className="footer-links">
+            <ul className="footer__links">
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -49,13 +49,13 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className="footer__section">
             <h3>Connect</h3>
             <p>Follow for updates on new publications and literary events.</p>
-            <div className="social-links">
+            <div className="footer__social-links">
               <a
                 href="https://instagram.com/username"
-                className="social-link"
+                className="footer__social-link"
                 aria-label="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -71,7 +71,7 @@ function Footer() {
               </a>
               <a
                 href="https://facebook.com/username"
-                className="social-link"
+                className="footer__social-link"
                 aria-label="Facebook"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -87,16 +87,16 @@ function Footer() {
               </a>
               <a
                 href="https://wikipedia.org/wiki/username"
-                className="social-link"
+                className="footer__social-link"
                 aria-label="Wikipedia"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="social-text">wiki</span>
+                <span className="footer__social-text">wiki</span>
               </a>
               <a
                 href="mailto:contact@example.com"
-                className="social-link"
+                className="footer__social-link"
                 aria-label="Email"
               >
                 <svg
@@ -112,36 +112,36 @@ function Footer() {
             </div>
           </div>
 
-          <div className="footer-section">
+          <div className="footer__section">
             <h3>Newsletter</h3>
             <p>Stay updated with new publications and literary insights.</p>
             <form
-              className="newsletter-signup"
+              className="footer__newsletter-signup"
               onSubmit={handleNewsletterSubmit}
             >
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email"
-                className="newsletter-input"
+                className="footer__newsletter-input"
                 required
               />
-              <button type="submit" className="newsletter-btn">
+              <button type="submit" className="footer__newsletter-btn">
                 Subscribe
               </button>
             </form>
           </div>
         </div>
 
-        <div className="footer-bottom">
+        <div className="footer__bottom">
           <p>
             &copy; {currentYear} AB. All rights reserved. |
-            <Link to="/privacy" className="footer-legal-link">
+            <Link to="/privacy" className="footer__legal-link">
               {" "}
               Privacy Policy
             </Link>{" "}
             |
-            <Link to="/terms" className="footer-legal-link">
+            <Link to="/terms" className="footer__legal-link">
               {" "}
               Terms of Use
             </Link>
