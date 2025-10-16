@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Home.css";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
 import LostProfiles from "../../assets/LostProfiles.webp";
+import translationBookCover from "../../assets/translationBookCover.webp";
 
 function Home() {
   const categories = [
@@ -29,7 +30,7 @@ function Home() {
     },
     {
       name: "Translations",
-      image: LostProfiles,
+      image: translationBookCover,
       color: "#A78BFA",
       path: "translations",
     },
@@ -63,7 +64,18 @@ function Home() {
                 backgroundRepeat: "no-repeat",
               }),
             }}
-          ></div>
+          >
+            {category.name === "Translations" && (
+              <div className="home__book-overlay">
+                <div className="home__book-info">
+                  <h3 className="home__book-title">The Silent Garden</h3>
+                  <p className="home__book-author">by Marie Dubois</p>
+                  <p className="home__book-details">Translated from French</p>
+                  <p className="home__book-year">2023</p>
+                </div>
+              </div>
+            )}
+          </div>
         </NavLink>
       ))}
     </main>
