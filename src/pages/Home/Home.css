@@ -50,18 +50,25 @@
 }
 
 /* Grayscale effect for About category only */
-.home__category-section[href="/about"] .home__category {
+.home__category-section--about .home__category {
   filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
 /* Color transition on hover for About category only */
-.home__category-section[href="/about"]:hover .home__category {
+.home__category-section--about:hover .home__category {
   filter: grayscale(0%);
 }
 
 .home__category:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Prevent transform on About category to avoid glitchy movement */
+.home__category-section--about .home__category:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 /* Book Overlay Styles */

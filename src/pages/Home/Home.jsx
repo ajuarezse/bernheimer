@@ -48,6 +48,8 @@ function Home() {
           to={category.path}
           className={`home__category-section ${
             hoveredIndex === index ? "home__category-section--hovered" : ""
+          } ${
+            category.name === "About" ? "home__category-section--about" : ""
           }`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
