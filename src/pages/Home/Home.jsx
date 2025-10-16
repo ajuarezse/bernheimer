@@ -69,7 +69,7 @@ function Home() {
               }),
             }}
           >
-            {category.name === "Translations" && (
+            {category.name === "Translation" && (
               <div className="home__book-overlay">
                 <div className="home__book-info">
                   <h3 className="home__book-title">The Silent Garden</h3>
