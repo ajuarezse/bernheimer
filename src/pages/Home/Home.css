@@ -36,7 +36,7 @@
 
 .home__category {
   flex: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.5s ease;
   min-width: 0;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -47,6 +47,16 @@
   cursor: pointer;
   min-height: 200px;
   position: relative;
+}
+
+/* Grayscale effect for About category only */
+.home__category-section[href="/about"] .home__category {
+  filter: grayscale(100%);
+}
+
+/* Color transition on hover for About category only */
+.home__category-section[href="/about"]:hover .home__category {
+  filter: grayscale(0%);
 }
 
 .home__category:hover {

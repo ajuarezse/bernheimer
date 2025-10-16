@@ -4,11 +4,13 @@ import "./Home.css";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
 import LostProfiles from "../../assets/LostProfiles.webp";
 import translationBookCover from "../../assets/translationBookCover.webp";
+import heroImage from "../../assets/heroImage.webp";
 
 function Home() {
   const categories = [
     {
       name: "About",
+      image: heroImage,
       fallbackColor: "#FF6B6B",
       path: "about",
     },
@@ -29,7 +31,7 @@ function Home() {
       path: "reviews",
     },
     {
-      name: "Translations",
+      name: "Translation",
       image: translationBookCover,
       color: "#A78BFA",
       path: "translations",

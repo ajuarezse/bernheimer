@@ -4,7 +4,7 @@ function Translations() {
   return (
     <div className="translations">
       <div className="translations__header">
-        <h1 className="translations__title">Translations</h1>
+        <h1 className="translations__title">Translation</h1>
         <div className="translations__intro">
           <p className="translations__lead">
             Bridging languages and cultures—bringing essential voices from
@@ -15,7 +15,7 @@ function Translations() {
       </div>
 
       <section className="translations__section">
-        <h2 className="translations__section-title">Published Translations</h2>
+        <h2 className="translations__section-title">Published Translation</h2>
 
         <div className="translations__grid">
           <article className="translations__card">
@@ -133,7 +133,7 @@ function Translations() {
       </section>
 
       <section className="translations__section">
-        <h2 className="translations__section-title">Selected Translations</h2>
+        <h2 className="translations__section-title">Selected Translation</h2>
 
         <div className="translations__selected">
           <div className="translations__selected-item">

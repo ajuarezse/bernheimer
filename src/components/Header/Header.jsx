@@ -37,7 +37,7 @@ function Header() {
             Reviews
           </NavLink>
           <NavLink to="/translations" className="header__nav-link">
-            Translations
+            Translation
           </NavLink>
         </nav>
       </div>
