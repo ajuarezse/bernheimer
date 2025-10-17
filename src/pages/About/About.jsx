@@ -8,7 +8,7 @@ function About() {
       <div className="about__hero">
         <div className="about__image-container">
           <div className="about__image-placeholder">
-            <span>Author Photo</span>
+            <span>Photo</span>
           </div>
         </div>
 
