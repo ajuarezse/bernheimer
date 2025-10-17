@@ -3,8 +3,6 @@ import "./About.css";
 function About() {
   return (
     <div className="about__container">
-      <h1 className="about__title">Alan Bernheimer</h1>
-
       <div className="about__hero">
         <div className="about__image-container">
           <div className="about__image-placeholder">
@@ -23,7 +21,7 @@ function About() {
 
       <div className="about__content">
         <section className="about__section">
-          <h2>Bio</h2>
+          <h2 className="about__section-title">Bio</h2>
           <p>
             Alan Bernheimer is an acclaimed author whose work spans multiple
             genres and languages. His writing explores the delicate boundaries
