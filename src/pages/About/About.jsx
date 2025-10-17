@@ -12,8 +12,8 @@ function About() {
 
         <div className="about__intro">
           <p className="about__lead">
-            Author bio and introduction text will appear here, highlighting 
-            key themes and literary focus areas.
+            Author bio and introduction text will appear here, highlighting key
+            themes and literary focus areas.
           </p>
         </div>
       </div>
@@ -23,9 +23,9 @@ function About() {
           <h2 className="about__section-title">Bio</h2>
           <p>
             Biographical information will be placed here, including background,
-            literary influences, and career highlights. This section will provide
-            readers with context about the author's journey and development as
-            a writer.
+            literary influences, and career highlights. This section will
+            provide readers with context about the author's journey and
+            development as a writer.
           </p>
           <p>
             Additional biographical details, including education, early works,
@@ -137,8 +137,8 @@ function About() {
           <h2>Contact</h2>
           <div className="about__contact">
             <p>
-              Contact information for professional inquiries will be 
-              provided here.
+              Contact information for professional inquiries will be provided
+              here.
             </p>
             <p className="about__contact-email">
               <a

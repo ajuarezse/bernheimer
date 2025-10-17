@@ -3,61 +3,15 @@
 .footer {
   background: #333;
   color: #fff;
-  padding: 2rem 0 1rem;
+  padding: 1.5rem 0;
   margin-top: 4rem;
 }
 
 .footer__content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
   text-align: center;
-}
-
-.footer__quick-links {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto 1.5rem auto;
-}
-
-.footer__title {
-  font-size: 1.3rem;
-  font-weight: 300;
-  margin: 0;
-  color: #fff;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
-
-.footer__links-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.5rem 1.5rem;
-}
-
-.footer__link {
-  font-size: 0.9rem;
-  color: #ccc;
-  text-decoration: none;
-  padding: 0.25rem 0;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
-  font-weight: 400;
-}
-
-.footer__link:hover {
-  color: #fff;
-  border-bottom-color: #555;
-}
-
-.footer__bottom {
-  border-top: 1px solid #555;
-  padding-top: 1rem;
-  margin-top: 1rem;
 }
 
 .footer__bottom p {
@@ -69,53 +23,17 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .footer {
-    padding: 1.5rem 0 1rem;
+    padding: 1.25rem 0;
   }
 
   .footer__content {
     padding: 0 1rem;
   }
-
-  .footer__quick-links {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .footer__title {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .footer__links-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 0.25rem 1rem;
-  }
-
-  .footer__link {
-    font-size: 0.85rem;
-  }
 }
 
 @media (max-width: 480px) {
   .footer {
-    padding: 1.25rem 0 0.75rem;
-  }
-
-  .footer__links-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.25rem 0.75rem;
-  }
-
-  .footer__link {
-    font-size: 0.8rem;
-    text-align: center;
-  }
-
-  .footer__bottom {
-    padding-top: 0.75rem;
-    margin-top: 0.75rem;
+    padding: 1rem 0;
   }
 
   .footer__bottom p {
