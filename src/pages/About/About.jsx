@@ -23,9 +23,9 @@ function About() {
 
       <div className="about__content">
         <section className="about__section">
-          <h2>Biography</h2>
+          <h2>Bio</h2>
           <p>
-            Charles Bernheimer is an acclaimed author whose work spans multiple
+            Alan Bernheimer is an acclaimed author whose work spans multiple
             genres and languages. His writing explores the delicate boundaries
             between personal narrative and universal truth, weaving together
             themes of displacement, identity, and the transformative power of
@@ -38,33 +38,124 @@ function About() {
             poetry and prose or his celebrated translations of contemporary
             European literature.
           </p>
-        </section>
-
-        <section className="about__section">
-          <h2>Literary Focus</h2>
           <p>
-            Bernheimer's poetry is characterized by its precise yet lyrical
-            language, often drawing from personal experience to illuminate
-            broader human conditions. His prose work demonstrates a keen eye for
-            psychological depth and narrative innovation, while his translations
-            have brought important voices in world literature to
-            English-speaking audiences.
-          </p>
-          <p>
-            His writing has been featured in numerous literary journals and
-            publications, earning recognition for its thoughtful engagement with
-            complex themes and its commitment to artistic excellence.
+            His contributions to literature have been recognized through various
+            awards and fellowships. His work continues to resonate with readers
+            and critics alike, establishing him as a significant voice in
+            contemporary literary culture.
           </p>
         </section>
 
         <section className="about__section">
-          <h2>Recognition</h2>
-          <p>
-            Bernheimer's contributions to literature have been recognized
-            through various awards and fellowships. His work continues to
-            resonate with readers and critics alike, establishing him as a
-            significant voice in contemporary literary culture.
-          </p>
+          <h2>Selected Readings</h2>
+          <ul className="about__readings-list">
+            <li>"The Spoons in the Grass are There" (1992)</li>
+            <li>"Café Isotope" (1999)</li>
+            <li>"Lost Profiles" (2005)</li>
+            <li>"The Club of Broken Hearts" (2008)</li>
+            <li>"Particle Arms" (2014)</li>
+            <li>"Near/Miss" (2018)</li>
+            <li>"State of the Art" (2021)</li>
+            <li>Selected poems from "The American Poetry Review"</li>
+            <li>Essays on contemporary poetics</li>
+          </ul>
+        </section>
+
+        <section className="about__section">
+          <h2>Photography</h2>
+          <div className="about__photography">
+            <div className="about__photo-collection">
+              <h3>Poets Reading Flickr Album</h3>
+              <p>
+                A curated collection of photographs documenting poetry readings
+                and literary events. Features INDEX names and searchable
+                content.
+              </p>
+              <a href="#" className="about__photo-link">
+                Browse Collection →
+              </a>
+            </div>
+            <div className="about__photo-collection">
+              <h3>Reflectographs</h3>
+              <p>
+                Experimental photographic works exploring the intersection of
+                image and text, capturing moments of literary reflection and
+                creative process.
+              </p>
+              <a href="#" className="about__photo-link">
+                View Gallery →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="about__section">
+          <h2>Links & Resources</h2>
+          <div className="about__links">
+            <div className="about__link-group">
+              <h3>Academic & Literary Profiles</h3>
+              <ul className="about__link-list">
+                <li>
+                  <a
+                    href="#"
+                    className="about__external-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Wikipedia Page →
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="about__external-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Electronic Poetry Center →
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="about__external-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Penn Sound Archive →
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="about__external-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Poets Theater →
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="about__section about__section--contact">
+          <h2>Contact</h2>
+          <div className="about__contact">
+            <p>
+              For inquiries regarding readings, publications, or literary
+              collaborations:
+            </p>
+            <p className="about__contact-email">
+              <a
+                href="mailto:contact@alanbernheimer.com"
+                className="about__external-link"
+              >
+                contact@alanbernheimer.com →
+              </a>
+            </p>
+          </div>
         </section>
       </div>
     </div>
