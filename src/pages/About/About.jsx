@@ -12,9 +12,8 @@ function About() {
 
         <div className="about__intro">
           <p className="about__lead">
-            A distinguished voice in contemporary literature, exploring the
-            intersections of memory, language, and human experience through
-            poetry, prose, and translation.
+            Author bio and introduction text will appear here, highlighting 
+            key themes and literary focus areas.
           </p>
         </div>
       </div>
@@ -23,39 +22,35 @@ function About() {
         <section className="about__section">
           <h2 className="about__section-title">Bio</h2>
           <p>
-            Alan Bernheimer is an acclaimed author whose work spans multiple
-            genres and languages. His writing explores the delicate boundaries
-            between personal narrative and universal truth, weaving together
-            themes of displacement, identity, and the transformative power of
-            literature.
+            Biographical information will be placed here, including background,
+            literary influences, and career highlights. This section will provide
+            readers with context about the author's journey and development as
+            a writer.
           </p>
           <p>
-            Born into a multilingual household, Bernheimer developed an early
-            fascination with the nuances of language and translation. This
-            linguistic sensitivity permeates his work, whether in his original
-            poetry and prose or his celebrated translations of contemporary
-            European literature.
+            Additional biographical details, including education, early works,
+            and formative experiences that shaped the author's literary voice
+            and thematic concerns will be featured in this area.
           </p>
           <p>
-            His contributions to literature have been recognized through various
-            awards and fellowships. His work continues to resonate with readers
-            and critics alike, establishing him as a significant voice in
-            contemporary literary culture.
+            Recognition, awards, and notable achievements in the literary field
+            will be highlighted here, along with the author's ongoing
+            contributions to contemporary literature and criticism.
           </p>
         </section>
 
         <section className="about__section">
           <h2>Selected Readings</h2>
           <ul className="about__readings-list">
-            <li>"The Spoons in the Grass are There" (1992)</li>
-            <li>"Café Isotope" (1999)</li>
-            <li>"Lost Profiles" (2005)</li>
-            <li>"The Club of Broken Hearts" (2008)</li>
-            <li>"Particle Arms" (2014)</li>
-            <li>"Near/Miss" (2018)</li>
-            <li>"State of the Art" (2021)</li>
-            <li>Selected poems from "The American Poetry Review"</li>
-            <li>Essays on contemporary poetics</li>
+            <li>Book Title One (Year)</li>
+            <li>Book Title Two (Year)</li>
+            <li>Book Title Three (Year)</li>
+            <li>Major Collection Title (Year)</li>
+            <li>Recent Publication Title (Year)</li>
+            <li>Notable Work Title (Year)</li>
+            <li>Latest Release Title (Year)</li>
+            <li>Selected poems from literary journals</li>
+            <li>Essays and critical writings</li>
           </ul>
         </section>
 
@@ -142,15 +137,15 @@ function About() {
           <h2>Contact</h2>
           <div className="about__contact">
             <p>
-              For inquiries regarding readings, publications, or literary
-              collaborations:
+              Contact information for professional inquiries will be 
+              provided here.
             </p>
             <p className="about__contact-email">
               <a
-                href="mailto:contact@alanbernheimer.com"
+                href="mailto:email@example.com"
                 className="about__external-link"
               >
-                contact@alanbernheimer.com →
+                email@example.com →
               </a>
             </p>
           </div>
