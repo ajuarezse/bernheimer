@@ -136,18 +136,15 @@ function About() {
         <section className="about__section about__section--contact">
           <h2>Contact</h2>
           <div className="about__contact">
-            <p>
-              Contact information for professional inquiries will be provided
-              here.
-            </p>
-            <p className="about__contact-email">
+            <div className="about__contact-intro"></div>
+            <div className="about__contact-details">
               <a
                 href="mailto:email@example.com"
-                className="about__external-link"
+                className="about__contact-email"
               >
-                email@example.com →
+                email@example.com
               </a>
-            </p>
+            </div>
           </div>
         </section>
       </div>
