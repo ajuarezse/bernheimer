@@ -1,4 +1,6 @@
 import "./Poetry.css";
+import cafeImage from "../../assets/cafe_isotope_250.webp";
+import translationBookCover from "../../assets/translationBookCover.webp";
 
 function Poetry() {
   return (
@@ -19,14 +21,16 @@ function Poetry() {
         <div className="poetry__publications-grid">
           <article className="poetry__publication-card poetry__publication-card--book">
             <div className="poetry__book-image">
-              <div className="poetry__book-cover-placeholder">
-                <span>Book Cover</span>
-              </div>
+              <img
+                src={cafeImage}
+                alt="Evening Correspondences book cover"
+                className="poetry__book-cover"
+              />
             </div>
 
             <div className="poetry__book-content">
               <div className="poetry__book-header">
-                <h3 className="poetry__book-title">Evening Correspondences</h3>
+                <h3 className="poetry__book-title">Cafe Isotope</h3>
                 <div className="poetry__book-meta">
                   <span className="poetry__book-year">2023</span>
                 </div>
@@ -52,7 +56,7 @@ function Poetry() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Purchase
+                  Button
                 </a>
                 <a
                   href="#"
@@ -60,7 +64,7 @@ function Poetry() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Reviews
+                  Button
                 </a>
               </div>
             </div>
@@ -68,9 +72,11 @@ function Poetry() {
 
           <article className="poetry__publication-card poetry__publication-card--book">
             <div className="poetry__book-image">
-              <div className="poetry__book-cover-placeholder">
-                <span>Book Cover</span>
-              </div>
+              <img
+                src={translationBookCover}
+                alt="Migrations book cover"
+                className="poetry__book-cover"
+              />
             </div>
 
             <div className="poetry__book-content">
@@ -100,7 +106,7 @@ function Poetry() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Purchase
+                  Button
                 </a>
                 <a
                   href="#"
@@ -108,7 +114,7 @@ function Poetry() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Reviews
+                  Button
                 </a>
               </div>
             </div>
