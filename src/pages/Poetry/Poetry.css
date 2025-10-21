@@ -73,8 +73,8 @@
 }
 
 .poetry__book-cover-placeholder {
-  width: 180px;
-  height: 270px;
+  width: 240px;
+  height: 360px;
   background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
   border-radius: 8px;
   display: flex;
@@ -83,7 +83,7 @@
   color: #999;
   font-size: 0.9rem;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   border: 1px solid #eee;
 }
 
@@ -232,13 +232,10 @@
   border: 1px solid #e8e8e8;
   border-radius: 12px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
 .poetry__publication-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   border-color: #ddd;
 }
 
@@ -395,8 +392,8 @@
   }
 
   .poetry__book-cover-placeholder {
-    width: 140px;
-    height: 210px;
+    width: 180px;
+    height: 270px;
   }
 
   .poetry__book-header,

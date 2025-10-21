@@ -29,19 +29,12 @@ function Poetry() {
                 <h3 className="poetry__book-title">Evening Correspondences</h3>
                 <div className="poetry__book-meta">
                   <span className="poetry__book-year">2023</span>
-                  <span className="poetry__publication-type">Book</span>
                 </div>
               </div>
 
               <div className="poetry__book-details">
                 <p className="poetry__publisher-info">
-                  <strong>Publisher:</strong> Copper Canyon Press
-                </p>
-                <p className="poetry__pages-info">
-                  <strong>Pages:</strong> 96
-                </p>
-                <p className="poetry__isbn-info">
-                  <strong>ISBN:</strong> 978-1-55659-612-3
+                  Copper Canyon Press, 2023
                 </p>
               </div>
 
@@ -85,20 +78,11 @@ function Poetry() {
                 <h3 className="poetry__book-title">Migrations</h3>
                 <div className="poetry__book-meta">
                   <span className="poetry__book-year">2021</span>
-                  <span className="poetry__publication-type">Book</span>
                 </div>
               </div>
 
               <div className="poetry__book-details">
-                <p className="poetry__publisher-info">
-                  <strong>Publisher:</strong> Graywolf Press
-                </p>
-                <p className="poetry__pages-info">
-                  <strong>Pages:</strong> 72
-                </p>
-                <p className="poetry__isbn-info">
-                  <strong>ISBN:</strong> 978-1-64445-087-2
-                </p>
+                <p className="poetry__publisher-info">Graywolf Press, 2021</p>
               </div>
 
               <p className="poetry__book-description">
@@ -237,58 +221,6 @@ function Poetry() {
               </a>
             </div>
           </article>
-        </div>
-      </section>
-
-      <section className="poetry__section">
-        <h2 className="poetry__section-title">Selected Poems</h2>
-
-        <div className="poetry__poems-grid">
-          <div className="poetry__poem-card">
-            <h3 className="poetry__poem-title">Evening Light</h3>
-            <div className="poetry__poem-content">
-              The last hour holds itself like water in cupped hands—
-              translucent, fleeting, too precious to drink. Through windows,
-              shadows lengthen their daily arguments with light, while somewhere
-              a child learns the weight of growing quiet. This is how we measure
-              time: not in minutes but in moments when the ordinary world
-              reveals its hidden grammar.
-            </div>
-            <div className="poetry__poem-meta">
-              <span className="poetry__poem-year">2023</span>
-            </div>
-          </div>
-
-          <div className="poetry__poem-card">
-            <h3 className="poetry__poem-title">Translation</h3>
-            <div className="poetry__poem-content">
-              Between languages lives a country I have never visited but somehow
-              know— where words shed their familiar clothes and stand naked in
-              foreign air, where meaning travels like light through water, bent
-              but not broken, arriving changed. Here, in this borderland, I am
-              both translator and translated, finding myself in the spaces
-              between what was said and what was heard.
-            </div>
-            <div className="poetry__poem-meta">
-              <span className="poetry__poem-year">2022</span>
-            </div>
-          </div>
-
-          <div className="poetry__poem-card">
-            <h3 className="poetry__poem-title">Library, Late Afternoon</h3>
-            <div className="poetry__poem-content">
-              Dust motes dance in slanted light, each particle a tiny world
-              spinning through the cathedral of accumulated silence. Between the
-              stacks, centuries converse in whispered arguments over love and
-              war and time. I pull a book from its shelf, feel the weight of
-              other hands that turned these pages, searching for the same
-              inexplicable comfort that comes from knowing we are not the first
-              to wonder at the mystery of being briefly, beautifully alive.
-            </div>
-            <div className="poetry__poem-meta">
-              <span className="poetry__poem-year">2023</span>
-            </div>
-          </div>
         </div>
       </section>
     </div>
