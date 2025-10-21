@@ -15,7 +15,7 @@ function Home() {
       fallbackColor: "#FF6B6B",
       path: "about",
       overlay: {
-        pageLabel: "Learn More About the Author →",
+        pageLabel: "About →",
         workTitle: "Literary Journey",
         workAuthor: "Personal Biography",
         workDetails: "Writing & Background",
@@ -28,7 +28,7 @@ function Home() {
       fallbackColor: "#4ECDC4",
       path: "poetry",
       overlay: {
-        pageLabel: "Explore Poetry Collections →",
+        pageLabel: "Poetry →",
         workTitle: "Café Isotope",
         workAuthor: "Recent Collection",
         workDetails: "Poetry Chapbook",
@@ -40,7 +40,7 @@ function Home() {
       fallbackColor: "#45B7D1",
       path: "prose",
       overlay: {
-        pageLabel: "Read Prose Works →",
+        pageLabel: "Prose →",
         workTitle: "Featured Story",
         workAuthor: "Short Fiction",
         workDetails: "Published Work",
@@ -52,7 +52,7 @@ function Home() {
       color: "#FFBE85",
       path: "reviews",
       overlay: {
-        pageLabel: "View Reviews & Interviews →",
+        pageLabel: "Reviews →",
         workTitle: "Recent Review",
         workAuthor: "Literary Criticism",
         workDetails: "Published Article",
@@ -65,7 +65,7 @@ function Home() {
       color: "#A78BFA",
       path: "translations",
       overlay: {
-        pageLabel: "View Translation Work →",
+        pageLabel: "Translation →",
         workTitle: "Work Name",
         workAuthor: "by Author Name",
         workDetails: "Short Details Here",
