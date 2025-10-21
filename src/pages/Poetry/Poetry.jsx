@@ -1,19 +1,16 @@
 import "./Poetry.css";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
 import translationBookCover from "../../assets/translationBookCover.webp";
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Poetry() {
   return (
     <div className="poetry__container">
-      <div className="poetry__header">
-        <h1 className="poetry__title">Poetry</h1>
-        <div className="poetry__intro">
-          <p className="poetry__lead">
-            An exploration of language, memory, and the spaces between words—
-            where meaning emerges from silence and truth lives in the pause.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="Poetry"
+        description="An exploration of language, memory, and the spaces between words—where meaning emerges from silence and truth lives in the pause."
+        className="poetry__header"
+      />
 
       <section className="poetry__section">
         <h2 className="poetry__section-title">Published Poetry</h2>

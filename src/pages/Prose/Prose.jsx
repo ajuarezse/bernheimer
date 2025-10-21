@@ -1,17 +1,14 @@
 import "./Prose.css";
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Prose() {
   return (
     <div className="prose-container">
-      <div className="prose-header">
-        <h1 className="prose-title">Prose</h1>
-        <div className="prose-intro">
-          <p className="prose-lead">
-            Essays, stories, and reflections on the art of living— where
-            narrative meets memory and experience becomes literature.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="Prose"
+        description="Essays, stories, and reflections on the art of living—where narrative meets memory and experience becomes literature."
+        className="prose-header"
+      />
 
       <section className="prose-section">
         <h2 className="section-title">Essays & Memoir</h2>

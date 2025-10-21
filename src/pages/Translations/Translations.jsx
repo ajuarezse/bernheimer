@@ -1,18 +1,14 @@
 import "./Translations.css";
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Translations() {
   return (
     <div className="translations">
-      <div className="translations__header">
-        <h1 className="translations__title">Translation</h1>
-        <div className="translations__intro">
-          <p className="translations__lead">
-            Bridging languages and cultures—bringing essential voices from
-            French literature to English-speaking readers through careful,
-            considered translation.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="Translation"
+        description="Bridging languages and cultures—bringing essential voices from French literature to English-speaking readers through careful, considered translation."
+        className="translations__header"
+      />
 
       <section className="translations__section">
         <h2 className="translations__section-title">Published Translation</h2>

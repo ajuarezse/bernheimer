@@ -1,17 +1,14 @@
 import "./Reviews.css";
+import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Reviews() {
   return (
     <div className="reviews">
-      <div className="reviews__header">
-        <h1 className="reviews__title">Reviews & Interviews</h1>
-        <div className="reviews__intro">
-          <p className="reviews__lead">
-            Critical reception, conversations, and media coverage— a collection
-            of voices engaging with the work and the craft behind it.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        title="Reviews & Interviews"
+        description="Critical reception, conversations, and media coverage—a collection of voices engaging with the work and the craft behind it."
+        className="reviews__header"
+      />
 
       <section className="reviews__section">
         <h2 className="reviews__section-title">Recent Reviews</h2>
