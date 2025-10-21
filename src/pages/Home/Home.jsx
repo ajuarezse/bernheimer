@@ -71,6 +71,9 @@ function Home() {
           >
             {category.name === "Translation" && (
               <div className="home__book-overlay">
+                <div className="home__page-link">
+                  <p className="home__page-label">View Translation Work →</p>
+                </div>
                 <div className="home__book-info">
                   <h3 className="home__book-title">The Silent Garden</h3>
                   <p className="home__book-author">by Marie Dubois</p>

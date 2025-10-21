@@ -82,29 +82,51 @@
   backdrop-filter: blur(12px) saturate(1.5);
   -webkit-backdrop-filter: blur(12px) saturate(1.5);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
 }
 
 .home__category-section:hover .home__book-overlay {
   opacity: 1;
 }
 
+.home__page-link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home__page-label {
+  background: rgba(255, 255, 255, 0.35);
+  color: #1a1a1a;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.02em;
+}
+
 .home__book-info {
   text-align: center;
   color: #1a1a1a;
-  padding: 1.5rem;
-  max-width: 85%;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 8px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
 }
 
 .home__book-title {
