@@ -231,7 +231,7 @@ function Poetry() {
 
               <div className="poetry__book-links">
                 <a
-                  href="#"
+                  href="https://www.biblio.com/search.php?stage=1&author=alan+bernheimer&title=cafe+isotope&isbn=&keyisbn=&publisher=&illustrator=&mindate=&maxdate=&minprice=&maxprice=&country=&format=&cond=&days_back=&order=priceasc&pageper=20&dist=50&zip=&quantity="
                   className="poetry__book-link"
                   target="_blank"
                   rel="noopener noreferrer"
