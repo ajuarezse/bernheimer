@@ -1,6 +1,10 @@
 import "./Poetry.css";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
-import translationBookCover from "../../assets/translationBookCover.webp";
+import fromNatureImage from "../../assets/From Nature.webp";
+import spoonlightImage from "../../assets/The Spoonlight Institute.webp";
+import cloudEightImage from "../../assets/Cloud Eight.webp";
+import billionesqueImage from "../../assets/Billionesque.webp";
+import stateLoungeImage from "../../assets/State Lounge.webp";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
 function Poetry() {
@@ -13,10 +17,11 @@ function Poetry() {
           {/* From Nature - 2019 */}
           <article className="poetry__publication-card poetry__publication-card--book">
             <div className="poetry__book-image">
-              {/* Image placeholder - needs From Nature book cover */}
-              <div className="poetry__book-cover-placeholder">
-                From Nature Cover
-              </div>
+              <img
+                src={fromNatureImage}
+                alt="From Nature book cover"
+                className="poetry__book-cover"
+              />
             </div>
 
             <div className="poetry__book-content">
@@ -55,10 +60,11 @@ function Poetry() {
           {/* The Spoonlight Institute - 2009 */}
           <article className="poetry__publication-card poetry__publication-card--book">
             <div className="poetry__book-image">
-              {/* Image placeholder - needs The Spoonlight Institute book cover */}
-              <div className="poetry__book-cover-placeholder">
-                The Spoonlight Institute Cover
-              </div>
+              <img
+                src={spoonlightImage}
+                alt="The Spoonlight Institute book cover"
+                className="poetry__book-cover"
+              />
             </div>
 
             <div className="poetry__book-content">
@@ -98,10 +104,11 @@ function Poetry() {
           {/* Cloud Eight - 1999 */}
           <article className="poetry__publication-card poetry__publication-card--book">
             <div className="poetry__book-image">
-              {/* Image placeholder - needs Cloud Eight book cover */}
-              <div className="poetry__book-cover-placeholder">
-                Cloud Eight Cover
-              </div>
+              <img
+                src={cloudEightImage}
+                alt="Cloud Eight book cover"
+                className="poetry__book-cover"
+              />
             </div>
 
             <div className="poetry__book-content">
@@ -126,10 +133,11 @@ function Poetry() {
           {/* Billionesque - 1999 */}
           <article className="poetry__publication-card poetry__publication-card--book">
             <div className="poetry__book-image">
-              {/* Image placeholder - needs Billionesque book cover */}
-              <div className="poetry__book-cover-placeholder">
-                Billionesque Cover
-              </div>
+              <img
+                src={billionesqueImage}
+                alt="Billionesque book cover"
+                className="poetry__book-cover"
+              />
             </div>
 
             <div className="poetry__book-content">
@@ -165,10 +173,11 @@ function Poetry() {
           {/* State Lounge - 1981 */}
           <article className="poetry__publication-card poetry__publication-card--book">
             <div className="poetry__book-image">
-              {/* Image placeholder - needs State Lounge book cover */}
-              <div className="poetry__book-cover-placeholder">
-                State Lounge Cover
-              </div>
+              <img
+                src={stateLoungeImage}
+                alt="State Lounge book cover"
+                className="poetry__book-cover"
+              />
             </div>
 
             <div className="poetry__book-content">
