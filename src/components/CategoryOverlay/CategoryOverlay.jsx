@@ -7,7 +7,18 @@ function CategoryOverlay({
   workAuthor,
   workDetails,
   workYear,
+  variant = "default",
 }) {
+  if (variant === "minimal-bottom") {
+    return (
+      <div className="category-overlay category-overlay--minimal-bottom">
+        <div className="category-overlay__minimal-content">
+          <p className="category-overlay__minimal-label">{pageLabel}</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="category-overlay">
       <div className="category-overlay__page-link">

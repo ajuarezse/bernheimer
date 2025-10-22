@@ -105,13 +105,16 @@ function Home() {
               }),
             }}
           >
-            {category.overlay && (
+            {category.overlay && category.name !== "About" && (
               <CategoryOverlay
                 pageLabel={category.overlay.pageLabel}
                 workTitle={category.overlay.workTitle}
                 workAuthor={category.overlay.workAuthor}
                 workDetails={category.overlay.workDetails}
                 workYear={category.overlay.workYear}
+                variant={
+                  category.name === "About" ? "minimal-bottom" : "default"
+                }
               />
             )}
           </div>

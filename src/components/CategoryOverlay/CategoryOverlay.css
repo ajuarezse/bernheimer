@@ -6,18 +6,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px) saturate(1.5);
-  -webkit-backdrop-filter: blur(12px) saturate(1.5);
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
   border-radius: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2rem 1.5rem;
 }
 
@@ -28,7 +25,7 @@
 }
 
 .category-overlay__page-label {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.85);
   color: #1a1a1a;
   padding: 1rem 1.75rem;
   border-radius: 8px;
@@ -36,27 +33,33 @@
   font-weight: 700;
   margin: 0;
   text-align: center;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.02em;
   text-transform: uppercase;
   white-space: nowrap;
   min-width: fit-content;
   display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .category-overlay__work-info {
   text-align: center;
   color: #1a1a1a;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.75);
   border-radius: 6px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .category-overlay__work-label {
@@ -99,4 +102,73 @@
   font-weight: 500;
   margin: 0;
   color: #444;
+}
+
+/* Hover states - triggered when overlay is visible */
+.category-overlay:hover .category-overlay__page-label,
+.home__category-section:hover .category-overlay__page-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.category-overlay:hover .category-overlay__work-info,
+.home__category-section:hover .category-overlay__work-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Minimal Bottom Overlay Variant */
+.category-overlay--minimal-bottom {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 0;
+  padding: 1.5rem;
+}
+
+.category-overlay__minimal-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-overlay__minimal-label {
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover state for minimal bottom overlay */
+.home__category-section:hover
+  .category-overlay--minimal-bottom
+  .category-overlay__minimal-label {
+  opacity: 1;
+  transform: translateY(0);
 }
