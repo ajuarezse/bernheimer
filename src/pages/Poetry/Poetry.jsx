@@ -27,9 +27,6 @@ function Poetry() {
             <div className="poetry__book-content">
               <div className="poetry__book-header">
                 <h3 className="poetry__book-title">From Nature</h3>
-                <div className="poetry__book-meta">
-                  <span className="poetry__book-year">2019</span>
-                </div>
               </div>
 
               <div className="poetry__book-details">
@@ -70,9 +67,6 @@ function Poetry() {
             <div className="poetry__book-content">
               <div className="poetry__book-header">
                 <h3 className="poetry__book-title">The Spoonlight Institute</h3>
-                <div className="poetry__book-meta">
-                  <span className="poetry__book-year">2009</span>
-                </div>
               </div>
 
               <div className="poetry__book-details">
@@ -115,9 +109,6 @@ function Poetry() {
               <div className="poetry__book-header">
                 <h3 className="poetry__book-title">Cloud Eight</h3>
                 <p className="poetry__book-collaboration">with Kit Robinson</p>
-                <div className="poetry__book-meta">
-                  <span className="poetry__book-year">1999</span>
-                </div>
               </div>
 
               <div className="poetry__book-details">
@@ -143,9 +134,6 @@ function Poetry() {
             <div className="poetry__book-content">
               <div className="poetry__book-header">
                 <h3 className="poetry__book-title">Billionesque</h3>
-                <div className="poetry__book-meta">
-                  <span className="poetry__book-year">1999</span>
-                </div>
               </div>
 
               <div className="poetry__book-details">
@@ -183,9 +171,6 @@ function Poetry() {
             <div className="poetry__book-content">
               <div className="poetry__book-header">
                 <h3 className="poetry__book-title">State Lounge</h3>
-                <div className="poetry__book-meta">
-                  <span className="poetry__book-year">1981</span>
-                </div>
               </div>
 
               <div className="poetry__book-details">
@@ -218,9 +203,6 @@ function Poetry() {
             <div className="poetry__book-content">
               <div className="poetry__book-header">
                 <h3 className="poetry__book-title">Café Isotope</h3>
-                <div className="poetry__book-meta">
-                  <span className="poetry__book-year">1980</span>
-                </div>
               </div>
 
               <div className="poetry__book-details">
