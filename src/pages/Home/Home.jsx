@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
-import LostProfiles from "../../assets/LostProfiles.webp";
 import translationBookCover from "../../assets/translationBookCover.webp";
 import heroImage from "../../assets/heroImage.webp";
 
