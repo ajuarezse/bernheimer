@@ -83,7 +83,7 @@
   color: #999;
   font-size: 0.9rem;
   text-align: center;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.3);
   border: 1px solid #eee;
 }
 
@@ -92,8 +92,7 @@
   height: 360px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  border: 1px solid #eee;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .poetry__book-content,
