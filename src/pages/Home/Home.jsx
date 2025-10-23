@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
-import CategoryOverlay from "../../components/CategoryOverlay/CategoryOverlay";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
 import LostProfiles from "../../assets/LostProfiles.webp";
 import translationBookCover from "../../assets/translationBookCover.webp";
@@ -14,63 +13,28 @@ function Home() {
       image: heroImage,
       fallbackColor: "#FF6B6B",
       path: "about",
-      overlay: {
-        pageLabel: "About →",
-        workTitle: "Literary Journey",
-        workAuthor: "Personal Biography",
-        workDetails: "Writing & Background",
-        workYear: "Current",
-      },
     },
     {
       name: "Poetry",
       image: cafeImage,
       fallbackColor: "#4ECDC4",
       path: "poetry",
-      overlay: {
-        pageLabel: "Poetry →",
-        workTitle: "Café Isotope",
-        workAuthor: "Recent Collection",
-        workDetails: "Poetry Chapbook",
-        workYear: "2023",
-      },
     },
     {
       name: "Prose",
       fallbackColor: "#45B7D1",
       path: "prose",
-      overlay: {
-        pageLabel: "Prose →",
-        workTitle: "Featured Story",
-        workAuthor: "Short Fiction",
-        workDetails: "Published Work",
-        workYear: "2023",
-      },
     },
     {
       name: "Reviews & Interviews",
       color: "#FFBE85",
       path: "reviews",
-      overlay: {
-        pageLabel: "Reviews →",
-        workTitle: "Recent Review",
-        workAuthor: "Literary Criticism",
-        workDetails: "Published Article",
-        workYear: "2023",
-      },
     },
     {
       name: "Translation",
       image: translationBookCover,
       color: "#A78BFA",
       path: "translations",
-      overlay: {
-        pageLabel: "Translation →",
-        workTitle: "Work Name",
-        workAuthor: "by Author Name",
-        workDetails: "Short Details Here",
-        workYear: "2023",
-      },
     },
   ];
 
@@ -104,20 +68,7 @@ function Home() {
                 backgroundRepeat: "no-repeat",
               }),
             }}
-          >
-            {category.overlay && category.name !== "About" && (
-              <CategoryOverlay
-                pageLabel={category.overlay.pageLabel}
-                workTitle={category.overlay.workTitle}
-                workAuthor={category.overlay.workAuthor}
-                workDetails={category.overlay.workDetails}
-                workYear={category.overlay.workYear}
-                variant={
-                  category.name === "About" ? "minimal-bottom" : "default"
-                }
-              />
-            )}
-          </div>
+          ></div>
         </NavLink>
       ))}
     </main>
