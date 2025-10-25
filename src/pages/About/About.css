@@ -105,6 +105,15 @@
   flex-shrink: 0;
 }
 
+.about__image {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
 .about__bio-text {
   text-align: left;
   max-width: 600px;

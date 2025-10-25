@@ -1,4 +1,5 @@
 import "./About.css";
+import heroImage from "../../assets/heroImage.webp";
 
 function About() {
   return (
@@ -6,9 +7,11 @@ function About() {
       <div className="about__bio-section">
         <div className="about__bio-content">
           <div className="about__image-container">
-            <div className="about__image-placeholder">
-              <span>Photo</span>
-            </div>
+            <img
+              src={heroImage}
+              alt="Alan Bernheimer"
+              className="about__image"
+            />
           </div>
 
           <div className="about__bio-text">
