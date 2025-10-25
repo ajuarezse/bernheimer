@@ -133,20 +133,42 @@ function About() {
         <section className="about__section">
           <h2>Photography</h2>
           <div className="about__photography">
-            <div className="about__photo-collection">
-              <p>
-                <a href="#" className="about__photo-link">
-                  Portraits of Poets Reading
-                </a>{" "}
-                [INDEX names, Search]
-              </p>
-              <p>Instagram link?</p>
-              <p>
-                <a href="#" className="about__photo-link">
-                  Reflectographs
+            <div className="about__photo-gallery">
+              <div className="about__photo-card">
+                <div className="about__photo-icon">📸</div>
+                <h3>Portraits of Poets Reading</h3>
+                <p>
+                  An intimate collection capturing poets in their element during
+                  readings and literary events.
+                </p>
+                <a href="#" className="about__photo-cta">
+                  View Collection
                 </a>
-                ?
-              </p>
+              </div>
+
+              <div className="about__photo-card">
+                <div className="about__photo-icon">✨</div>
+                <h3>Reflectographs</h3>
+                <p>
+                  Experimental photographic works exploring light, reflection,
+                  and visual poetry.
+                </p>
+                <a href="#" className="about__photo-cta">
+                  Explore Series
+                </a>
+              </div>
+
+              <div className="about__photo-card">
+                <div className="about__photo-icon">📱</div>
+                <h3>Instagram Gallery</h3>
+                <p>
+                  Daily moments, behind-the-scenes glimpses, and photographic
+                  experiments.
+                </p>
+                <a href="#" className="about__photo-cta">
+                  Follow on Instagram
+                </a>
+              </div>
             </div>
           </div>
         </section>
