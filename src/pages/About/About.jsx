@@ -13,20 +13,23 @@ function About() {
 
           <div className="about__bio-text">
             <p>
-              Biographical information will be placed here, including
-              background, literary influences, and career highlights. This
-              section will provide readers with context about the author's
-              journey and development as a writer.
+              Alan Bernheimer is a poet, writer, and translator, living in
+              Berkeley. He was born in 1948 in New York City, where he grew up,
+              spending summers at a rustic science colony on the north shore of
+              Long Island with his microbiologist parents. He graduated from
+              Yale in 1970 with a degree in English literature and spent several
+              years in NYC and on Cape Cod before settling in the San Francisco
+              Bay Area.
             </p>
             <p>
-              Additional biographical details, including education, early works,
-              and formative experiences that shaped the author's literary voice
-              and thematic concerns will be featured in this area.
-            </p>
-            <p>
-              Recognition, awards, and notable achievements in the literary
-              field will be highlighted here, along with the author's ongoing
-              contributions to contemporary literature and criticism.
+              Bernheimer wrote for and performed in San Francisco Poets Theater
+              and produced and hosted In the American Tree, a weekly radio
+              program of new writing by poets. He is the author of five volumes
+              of poetry as well as several translations from French. He was
+              contributing editor at Nowhere magazine, where his "Retroscope"
+              series featured literary travel writing from the past. He received
+              a creative writing fellowship from the National Endowment for the
+              Arts.
             </p>
           </div>
         </div>
