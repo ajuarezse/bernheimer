@@ -1,7 +1,35 @@
 import "./About.css";
 import heroImage from "../../assets/heroImage.webp";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in-visible");
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    const sections = document.querySelectorAll(
+      ".about__section, .about__bio-section"
+    );
+    sections.forEach((section) => {
+      section.classList.add("fade-in");
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
   return (
     <div className="about__container">
       <div className="about__bio-section">
@@ -41,6 +69,7 @@ function About() {
       <div className="about__content">
         <section className="about__section about__section--contact">
           <div className="about__contact-simple">
+            <h2>Contact</h2>
             <p>For inquiries, please use the form below:</p>
             <form className="about__form-compact">
               <div className="about__form-row">
