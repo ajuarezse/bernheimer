@@ -460,6 +460,8 @@
 /* Compact Contact Form Styles */
 .about__contact-simple {
   max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .about__contact-simple p {
