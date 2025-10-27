@@ -102,31 +102,29 @@ function About() {
           </div>
         </section>
 
-        <section className="about__section">
+        <section className="about__section about__section--centered">
           <h2>Selected Readings</h2>
-          <p className="about__section-note">
-            [list, separate document, to come]
-          </p>
+          <p className="about__section-note">[coming soon]</p>
         </section>
 
-        <section className="about__section">
+        <section className="about__section about__section--centered">
           <h2>Links</h2>
           <div className="about__links">
             <div className="about__link-group">
               <ul className="about__link-list">
                 <li>
                   <a
-                    href="https://pennsound.org/"
+                    href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
                     className="about__external-link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Penn Sound
+                    PennSound
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://en.wikipedia.org/"
+                    href="https://en.wikipedia.org/wiki/Alan_Bernheimer"
                     className="about__external-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -136,7 +134,7 @@ function About() {
                 </li>
                 <li>
                   <a
-                    href="https://epc.buffalo.edu/"
+                    href="https://writing.upenn.edu/epc/authors/bernheimer/"
                     className="about__external-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -146,7 +144,7 @@ function About() {
                 </li>
                 <li>
                   <a
-                    href="https://www.sfpoetstheater.org/"
+                    href="https://www.thegrandpiano.org/poetstheater.html"
                     className="about__external-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -159,45 +157,89 @@ function About() {
           </div>
         </section>
 
-        <section className="about__section">
+        <section className="about__section about__section--centered">
           <h2>Photography</h2>
           <div className="about__photography">
-            <div className="about__photo-gallery">
-              <div className="about__photo-card">
-                <div className="about__photo-icon">📸</div>
-                <h3>Portraits of Poets Reading</h3>
-                <p>
-                  An intimate collection capturing poets in their element during
-                  readings and literary events.
-                </p>
-                <a href="#" className="about__photo-cta">
-                  View Collection
-                </a>
-              </div>
+            <div className="about__photo-grid">
+              <article className="about__photo-card">
+                <div className="about__photo-image">
+                  <div className="about__photo-placeholder">
+                    <span>Portraits Preview</span>
+                  </div>
+                </div>
+                <div className="about__photo-content">
+                  <h3 className="about__photo-title">
+                    Portraits of Poets Reading
+                  </h3>
+                  <p className="about__photo-description">
+                    The quick brown fox jumps over the lazy dog. The quick brown
+                    fox jumps over the lazy dog. The quick brown fox jumps over
+                    the lazy dog.
+                  </p>
+                  <div className="about__photo-links">
+                    <a
+                      href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
+                      className="about__photo-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Collection
+                    </a>
+                  </div>
+                </div>
+              </article>
 
-              <div className="about__photo-card">
-                <div className="about__photo-icon">✨</div>
-                <h3>Reflectographs</h3>
-                <p>
-                  Experimental photographic works exploring light, reflection,
-                  and visual poetry.
-                </p>
-                <a href="#" className="about__photo-cta">
-                  Explore Series
-                </a>
-              </div>
+              <article className="about__photo-card">
+                <div className="about__photo-image">
+                  <div className="about__photo-placeholder">
+                    <span>Reflectographs Preview</span>
+                  </div>
+                </div>
+                <div className="about__photo-content">
+                  <h3 className="about__photo-title">Reflectographs</h3>
+                  <p className="about__photo-description">
+                    The quick brown fox jumps over the lazy dog. The quick brown
+                    fox jumps over the lazy dog. The quick brown fox jumps over
+                    the lazy dog.
+                  </p>
+                  <div className="about__photo-links">
+                    <a
+                      href="https://reflectographs.com/reflectographs/"
+                      className="about__photo-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Explore Series
+                    </a>
+                  </div>
+                </div>
+              </article>
 
-              <div className="about__photo-card">
-                <div className="about__photo-icon">📱</div>
-                <h3>Instagram Gallery</h3>
-                <p>
-                  Daily moments, behind-the-scenes glimpses, and photographic
-                  experiments.
-                </p>
-                <a href="#" className="about__photo-cta">
-                  Follow on Instagram
-                </a>
-              </div>
+              <article className="about__photo-card">
+                <div className="about__photo-image">
+                  <div className="about__photo-placeholder">
+                    <span>Instagram Preview</span>
+                  </div>
+                </div>
+                <div className="about__photo-content">
+                  <h3 className="about__photo-title">Instagram Gallery</h3>
+                  <p className="about__photo-description">
+                    The quick brown fox jumps over the lazy dog. The quick brown
+                    fox jumps over the lazy dog. The quick brown fox jumps over
+                    the lazy dog.
+                  </p>
+                  <div className="about__photo-links">
+                    <a
+                      href="#"
+                      className="about__photo-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Follow on Instagram
+                    </a>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </section>

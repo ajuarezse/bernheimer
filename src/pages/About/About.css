@@ -149,6 +149,15 @@
   text-align: left;
 }
 
+.about__section--centered {
+  text-align: center;
+}
+
+.about__section--centered h2 {
+  text-align: center;
+  border-bottom: none;
+}
+
 .about__section p {
   font-size: 1.1rem;
   color: #555;
@@ -186,66 +195,106 @@
 /* Photography Section Styles */
 .about__photography {
   margin-top: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.about__photo-gallery {
+.about__photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 3rem;
 }
 
 .about__photo-card {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  padding: 2rem;
+  background: #fefefe;
+  border: 1px solid #e8e8e8;
   border-radius: 12px;
-  border: 1px solid #e9ecef;
-  text-align: center;
+  padding: 2.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
 }
 
 .about__photo-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: #dee2e6;
+  border-color: #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.about__photo-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  opacity: 0.8;
+.about__photo-image {
+  display: flex;
+  align-items: flex-start;
 }
 
-.about__photo-card h3 {
-  font-size: 1.3rem;
+.about__photo-placeholder {
+  width: 240px;
+  height: 360px;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.about__photo-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__photo-title {
+  font-size: 1.4rem;
   font-weight: 600;
   color: #2c2c2c;
   margin-bottom: 1rem;
   line-height: 1.3;
 }
 
-.about__photo-card p {
-  color: #666;
+.about__photo-description {
+  color: #555;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
-.about__photo-cta {
-  display: inline-block;
-  background: #2c2c2c;
-  color: white;
+.about__photo-links {
+  margin-top: auto;
+}
+
+.about__photo-link {
+  color: #666;
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
   font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   font-size: 0.9rem;
   transition: all 0.2s ease;
+  display: inline-block;
 }
 
-.about__photo-cta:hover {
-  background: #404040;
-  transform: translateY(-1px);
+.about__photo-link:hover {
+  color: #333;
+  border-color: #333;
+  background: #f9f9f9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about__photo-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .about__photo-image {
+    justify-content: center;
+  }
 }
 
 /* Links Section Styles */
@@ -468,6 +517,7 @@
   font-style: italic;
   color: #666;
   margin: 0;
+  text-align: center;
 }
 
 /* Compact Contact Form Styles */
