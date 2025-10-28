@@ -6,9 +6,11 @@ import cloudEightImage from "../../assets/Cloud Eight.webp";
 import billionesqueImage from "../../assets/Billionesque.webp";
 import stateLoungeImage from "../../assets/State Lounge.webp";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 
 function Poetry() {
   return (
+    <ScrollFadeIn selector=".poetry__publication-card">
     <div className="poetry__container">
       <PageHeader title="Books" description="" className="poetry__header" />
 
@@ -226,6 +228,7 @@ function Poetry() {
         </div>
       </section>
     </div>
+    </ScrollFadeIn>
   );
 }
 
