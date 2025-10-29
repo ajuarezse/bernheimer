@@ -2,6 +2,7 @@ import "./About.css";
 import heroImage from "../../assets/heroImage.webp";
 import poetsComposite from "../../assets/poets composite.webp";
 import reflectograph from "../../assets/reflectograph.webp";
+import poetsTheatre from "../../assets/poetsTheatre.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 
 function About() {
@@ -50,51 +51,53 @@ function About() {
 
           <section className="about__section about__section--centered">
             <h2>Links</h2>
-            <div className="about__links">
-              <div className="about__link-group">
-                <ul className="about__link-list">
-                  <li>
+            <div className="about__links-card-container">
+              <article className="about__photo-card about__links-card--sidebyside">
+                <div className="about__links-image">
+                  <img
+                    src={poetsTheatre}
+                    alt="San Francisco Poets Theater"
+                    className="about__links-photo"
+                  />
+                </div>
+                <div className="about__links-content">
+                  <h3 className="about__photo-title">Alan Bernheimer Pages</h3>
+                  <div className="about__links-buttons">
                     <a
                       href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
-                      className="about__external-link"
+                      className="about__photo-link"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       PennSound
                     </a>
-                  </li>
-                  <li>
                     <a
                       href="https://en.wikipedia.org/wiki/Alan_Bernheimer"
-                      className="about__external-link"
+                      className="about__photo-link"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Wikipedia
                     </a>
-                  </li>
-                  <li>
                     <a
                       href="https://writing.upenn.edu/epc/authors/bernheimer/"
-                      className="about__external-link"
+                      className="about__photo-link"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Electronic Poetry Center
+                      EPC
                     </a>
-                  </li>
-                  <li>
                     <a
-                      href="https://www.thegrandpiano.org/poetstheater.html"
-                      className="about__external-link"
+                      href="https://www.flickr.com/photos/alanbernheimer/albums/72157601170815998/"
+                      className="about__photo-link"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      San Francisco Poets Theater
+                      SF Poets Theater
                     </a>
-                  </li>
-                </ul>
-              </div>
+                  </div>
+                </div>
+              </article>
             </div>
           </section>
 
@@ -136,9 +139,9 @@ function About() {
                       light reflected onto photosensitive paper
                     </p>
                     <div className="about__photo-image-landscape">
-                      <img 
-                        src={reflectograph} 
-                        alt="Reflectograph artwork" 
+                      <img
+                        src={reflectograph}
+                        alt="Reflectograph artwork"
                         className="about__photo-landscape"
                       />
                     </div>
