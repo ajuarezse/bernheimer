@@ -1,6 +1,7 @@
 import "./About.css";
 import heroImage from "../../assets/heroImage.webp";
 import poetsComposite from "../../assets/poets composite.webp";
+import reflectograph from "../../assets/reflectograph.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 
 function About() {
@@ -127,19 +128,20 @@ function About() {
                   </div>
                 </article>
 
-                <article className="about__photo-card">
-                  <div className="about__photo-image">
-                    <div className="about__photo-placeholder">
-                      <span>Reflectographs Preview</span>
-                    </div>
-                  </div>
+                <article className="about__photo-card about__photo-card--landscape">
                   <div className="about__photo-content">
                     <h3 className="about__photo-title">Reflectographs</h3>
                     <p className="about__photo-description">
-                      The quick brown fox jumps over the lazy dog. The quick
-                      brown fox jumps over the lazy dog. The quick brown fox
-                      jumps over the lazy dog.
+                      My father's cameraless photographs made by a point of
+                      light reflected onto photosensitive paper
                     </p>
+                    <div className="about__photo-image-landscape">
+                      <img 
+                        src={reflectograph} 
+                        alt="Reflectograph artwork" 
+                        className="about__photo-landscape"
+                      />
+                    </div>
                     <div className="about__photo-links">
                       <a
                         href="https://reflectographs.com/reflectographs/"
