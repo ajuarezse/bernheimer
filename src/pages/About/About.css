@@ -272,6 +272,30 @@
   background: #f9f9f9;
 }
 
+/* Landscape photo card layout */
+.about__photo-card--landscape {
+  grid-template-columns: 1fr !important;
+  text-align: center;
+}
+
+.about__photo-card--landscape .about__photo-description {
+  text-align: center;
+}
+
+.about__photo-image-landscape {
+  margin: 1.5rem 0;
+}
+
+.about__photo-landscape {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid #eee;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .about__photo-card {
@@ -282,6 +306,10 @@
 
   .about__photo-image {
     justify-content: center;
+  }
+
+  .about__photo-landscape {
+    max-width: 100%;
   }
 }
 

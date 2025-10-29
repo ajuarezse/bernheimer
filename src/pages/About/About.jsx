@@ -1,5 +1,6 @@
 import "./About.css";
 import heroImage from "../../assets/heroImage.webp";
+import poetsComposite from "../../assets/poets composite.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 
 function About() {
@@ -100,17 +101,19 @@ function About() {
             <h2>Photography</h2>
             <div className="about__photography">
               <div className="about__photo-grid">
-                <article className="about__photo-card">
-                  <div className="about__photo-image">
-                    <div className="about__photo-placeholder">
-                      <span>Portraits Preview</span>
-                    </div>
-                  </div>
+                <article className="about__photo-card about__photo-card--landscape">
                   <div className="about__photo-content">
                     <h3 className="about__photo-title">Poets Reading</h3>
                     <p className="about__photo-description">
                       1,000 portraits of poets reading, from 2008 to the present
                     </p>
+                    <div className="about__photo-image-landscape">
+                      <img
+                        src={poetsComposite}
+                        alt="Composite of poets reading"
+                        className="about__photo-landscape"
+                      />
+                    </div>
                     <div className="about__photo-links">
                       <a
                         href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
