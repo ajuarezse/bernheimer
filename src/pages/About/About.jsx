@@ -41,41 +41,6 @@ function About() {
         </div>
 
         <div className="about__content">
-          <section className="about__section about__section--contact">
-            <div className="about__contact-simple">
-              <h2>Contact</h2>
-              <p>For inquiries, please use the form below:</p>
-              <form className="about__form-compact">
-                <div className="about__form-row">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                    className="about__form-input-compact"
-                    required
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    className="about__form-input-compact"
-                    required
-                  />
-                </div>
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  rows="3"
-                  className="about__form-textarea-compact"
-                  required
-                ></textarea>
-                <button type="submit" className="about__form-submit-compact">
-                  Send
-                </button>
-              </form>
-            </div>
-          </section>
-
           <section className="about__section about__section--centered">
             <h2>Selected Readings</h2>
             <p className="about__section-note">[coming soon]</p>
@@ -142,13 +107,9 @@ function About() {
                     </div>
                   </div>
                   <div className="about__photo-content">
-                    <h3 className="about__photo-title">
-                      Portraits of Poets Reading
-                    </h3>
+                    <h3 className="about__photo-title">Poets Reading</h3>
                     <p className="about__photo-description">
-                      The quick brown fox jumps over the lazy dog. The quick
-                      brown fox jumps over the lazy dog. The quick brown fox
-                      jumps over the lazy dog.
+                      1,000 portraits of poets reading, from 2008 to the present
                     </p>
                     <div className="about__photo-links">
                       <a
@@ -215,6 +176,41 @@ function About() {
                   </div>
                 </article>
               </div>
+            </div>
+          </section>
+
+          <section className="about__section about__section--contact">
+            <div className="about__contact-simple">
+              <h2>Contact</h2>
+              <p>For inquiries, please use the form below:</p>
+              <form className="about__form-compact">
+                <div className="about__form-row">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    className="about__form-input-compact"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    className="about__form-input-compact"
+                    required
+                  />
+                </div>
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  rows="3"
+                  className="about__form-textarea-compact"
+                  required
+                ></textarea>
+                <button type="submit" className="about__form-submit-compact">
+                  Send
+                </button>
+              </form>
             </div>
           </section>
         </div>
