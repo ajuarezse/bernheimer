@@ -113,13 +113,21 @@ function About() {
                       1,000 portraits of poets reading, from 2008 to the present
                     </p>
                     <div className="about__photo-image-landscape">
-                      <FishEyeMagnifier
-                        src={poetsComposite}
-                        alt="Composite of poets reading"
-                        magnifierSize={160}
-                        zoom={2}
-                        className="about__photo-landscape"
-                      />
+                      <a
+                        href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ display: "inline-block", cursor: "pointer" }}
+                        className="about__photo-link-image"
+                      >
+                        <FishEyeMagnifier
+                          src={poetsComposite}
+                          alt="Composite of poets reading"
+                          magnifierSize={160}
+                          zoom={2}
+                          className="about__photo-landscape"
+                        />
+                      </a>
                     </div>
                     <div className="about__photo-links">
                       <a
