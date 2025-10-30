@@ -51,7 +51,7 @@ function About() {
           </section>
 
           <section className="about__section about__section--centered">
-            <h2>Links</h2>
+            <h2>Alan Bernheimer Pages</h2>
             <div className="about__links-card-container">
               <article className="about__photo-card about__links-card--sidebyside">
                 <div className="about__links-image">
@@ -62,7 +62,7 @@ function About() {
                   />
                 </div>
                 <div className="about__links-content">
-                  <h3 className="about__photo-title">Alan Bernheimer Pages</h3>
+                  {/* Removed duplicate title */}
                   <div className="about__links-buttons">
                     <a
                       href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
