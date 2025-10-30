@@ -34,7 +34,7 @@ function Header() {
             Prose
           </NavLink>
           <NavLink to="/reviews" className="header__nav-link">
-            Reviews
+            Reviews & Interviews
           </NavLink>
           <NavLink to="/translations" className="header__nav-link">
             Translation

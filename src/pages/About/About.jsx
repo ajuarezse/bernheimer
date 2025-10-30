@@ -4,6 +4,7 @@ import poetsComposite from "../../assets/poets composite.webp";
 import reflectograph from "../../assets/reflectograph.webp";
 import poetsTheatre from "../../assets/poetsTheatre.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
+import FishEyeMagnifier from "../../components/FishEyeMagnifier/FishEyeMagnifier";
 
 function About() {
   return (
@@ -88,7 +89,7 @@ function About() {
                       EPC
                     </a>
                     <a
-                      href="https://www.flickr.com/photos/alanbernheimer/albums/72157601170815998/"
+                      href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
                       className="about__photo-link"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -112,9 +113,11 @@ function About() {
                       1,000 portraits of poets reading, from 2008 to the present
                     </p>
                     <div className="about__photo-image-landscape">
-                      <img
+                      <FishEyeMagnifier
                         src={poetsComposite}
                         alt="Composite of poets reading"
+                        magnifierSize={160}
+                        zoom={2}
                         className="about__photo-landscape"
                       />
                     </div>

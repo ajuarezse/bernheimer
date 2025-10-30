@@ -1,0 +1,18 @@
+.fisheye-magnifier-lens {
+  transition: box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: none;
+}
+
+.fisheye-magnifier-image {
+  user-select: none;
+  -webkit-user-drag: none;
+  display: block;
+}
+
+.fisheye-magnifier-container {
+  position: relative;
+  display: inline-block;
+}
