@@ -197,30 +197,6 @@ function Translations() {
           </div>
         </div>
       </section>
-
-      <section className="translations__section">
-        <h2 className="translations__section-title">Translation Philosophy</h2>
-
-        <div className="translations__philosophy-content">
-          <p className="translations__philosophy-text">
-            Translation is not merely conversion between languages—it is an act
-            of creative interpretation that requires deep understanding of both
-            cultures, sensibilities, and literary traditions. My approach
-            prioritizes preserving the emotional resonance and artistic
-            integrity of the original work while ensuring accessibility for
-            contemporary readers.
-          </p>
-
-          <p className="translations__philosophy-text">
-            Working primarily with French literature, I focus on authors whose
-            voices offer unique perspectives on universal themes: memory,
-            identity, and the search for meaning in an increasingly complex
-            world. Each translation project becomes a dialogue between
-            languages, an exploration of how meaning travels across cultural
-            boundaries.
-          </p>
-        </div>
-      </section>
     </div>
   );
 }
