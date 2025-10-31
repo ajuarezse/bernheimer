@@ -1,6 +1,10 @@
 import "./Translations.css";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
+import theHamletOfTheBees from "../../assets/theHamletOfTheBees.webp";
+import lostProfile from "../../assets/lostProfiles.webp";
+import parisByNight from "../../assets/parisByNight.webp";
+
 function Translations() {
   return (
     <div className="translations">
@@ -11,15 +15,16 @@ function Translations() {
       />
 
       <section className="translations__section">
-
-
         <div className="translations__grid">
           {/* Paris by Night */}
           <article className="translations__card">
             <div className="translations__image">
-              <div className="translations__book-cover-placeholder">
-                <span>Cover photo</span>
-              </div>
+              <img
+                src={parisByNight}
+                alt="Paris by Night book cover"
+                className="translations__book-cover"
+                style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+              />
             </div>
             <div className="translations__content">
               <div className="translations__card-header">
@@ -50,9 +55,12 @@ function Translations() {
           {/* Lost Profiles */}
           <article className="translations__card">
             <div className="translations__image">
-              <div className="translations__book-cover-placeholder">
-                <span>Cover photo</span>
-              </div>
+              <img
+                src={lostProfile}
+                alt="Lost Profiles book cover"
+                className="translations__book-cover"
+                style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+              />
             </div>
             <div className="translations__content">
               <div className="translations__card-header">
@@ -104,9 +112,12 @@ function Translations() {
           {/* The Hamlet of the Bees */}
           <article className="translations__card">
             <div className="translations__image">
-              <div className="translations__book-cover-placeholder">
-                <span>Cover photo</span>
-              </div>
+              <img
+                src={theHamletOfTheBees}
+                alt="The Hamlet of the Bees book cover"
+                className="translations__book-cover"
+                style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+              />
             </div>
             <div className="translations__content">
               <div className="translations__card-header">
@@ -136,8 +147,6 @@ function Translations() {
           </article>
         </div>
       </section>
-
-
     </div>
   );
 }
