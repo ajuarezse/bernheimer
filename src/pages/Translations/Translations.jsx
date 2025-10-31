@@ -6,105 +6,122 @@ function Translations() {
     <div className="translations">
       <PageHeader
         title="Translation"
-        description="Bridging languages and cultures—bringing essential voices from French literature to English-speaking readers through careful, considered translation."
+        description=""
         className="translations__header"
       />
 
       <section className="translations__section">
-        <h2 className="translations__section-title">Published Translation</h2>
+
 
         <div className="translations__grid">
+          {/* Paris by Night */}
           <article className="translations__card">
             <div className="translations__image">
               <div className="translations__book-cover-placeholder">
-                <span>Book Cover</span>
+                <span>Cover photo</span>
               </div>
             </div>
-
             <div className="translations__content">
               <div className="translations__card-header">
-                <h3 className="translations__card-title">The Silent Garden</h3>
-                <span className="translations__year">2023</span>
+                <h3 className="translations__card-title">Paris by Night</h3>
+                <span className="translations__year">Slacks Books, 2023</span>
               </div>
-
-              <div className="translations__details">
-                <p className="translations__original-info">
-                  <strong>Original:</strong> <em>Le Jardin Silencieux</em> by
-                  Marie Dubois
-                </p>
-                <p className="translations__publisher-info">
-                  <strong>Publisher:</strong> Archipelago Books
-                </p>
-                <p className="translations__pages-info">
-                  <strong>Pages:</strong> 284
-                </p>
-              </div>
-
               <p className="translations__description">
-                A haunting meditation on memory and loss set in post-war France.
-                Dubois's delicate prose explores the aftermath of trauma through
-                the eyes of a young woman returning to her childhood home. This
-                translation preserves the lyrical quality of the original while
-                making it accessible to contemporary readers.
+                Louis Aragon’s 1923 Surrealist chamber piece. The work
+                masquerades as a guide to the underbelly of Paris nightlife, but
+                readers quickly find themselves in a surreal, phantasmagoric
+                dream that unspools during the course of a night, starting with
+                a walk along the Seine and finishing in a café at dawn, with
+                shapeshifting, hallucinatory detours into literature, works of
+                art, and religious history.
               </p>
+              <div className="translations__links">
+                <button
+                  className="translations__link"
+                  style={{ cursor: "pointer" }}
+                  disabled
+                >
+                  Order (email form coming soon)
+                </button>
+              </div>
+            </div>
+          </article>
 
+          {/* Lost Profiles */}
+          <article className="translations__card">
+            <div className="translations__image">
+              <div className="translations__book-cover-placeholder">
+                <span>Cover photo</span>
+              </div>
+            </div>
+            <div className="translations__content">
+              <div className="translations__card-header">
+                <h3 className="translations__card-title">Lost Profiles</h3>
+                <span className="translations__year">City Lights, 2016</span>
+              </div>
+              <p className="translations__description">
+                A retrospective of a crucial period in modernism, written by the
+                co-founder of the Surrealist Movement. Philippe Soupault
+                profiles a gallery of contemporaries and heroes that he knew,
+                including Proust, Joyce, Apollinaire, Cendrars, Reverdy, and
+                others.
+                <br />
+                <br />
+                <em>
+                  “The chapter about Proust alone is worth the price of
+                  admission, and then there is more, much more packed into the
+                  pages of this small, indelible book." –Paul Auster
+                </em>
+                <br />
+                <em>
+                  “Lost Profiles signals a necessary reminder of how much joy
+                  there is to be found in discovering terrific, epochal texts
+                  freshly translated.” ––Patrick Dunagan, the Northwest Review
+                  of Books
+                </em>
+              </p>
               <div className="translations__links">
                 <a
-                  href="#"
+                  href="https://citylights.com/city-lights-published/lost-profiles-memoirs-of-cubism-dada/"
                   className="translations__link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Purchase
+                  Learn more and purchase
                 </a>
                 <a
-                  href="#"
+                  href="https://hyperallergic.com/314726/philippe-soupaults-lost-profiles/"
                   className="translations__link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Reviews
+                  Hyperallergic (Review)
                 </a>
               </div>
             </div>
           </article>
 
+          {/* The Hamlet of the Bees */}
           <article className="translations__card">
             <div className="translations__image">
               <div className="translations__book-cover-placeholder">
-                <span>Book Cover</span>
+                <span>Cover photo</span>
               </div>
             </div>
-
             <div className="translations__content">
               <div className="translations__card-header">
                 <h3 className="translations__card-title">
-                  Letters to an Unknown Poet
+                  The Hamlet of the Bees
                 </h3>
-                <span className="translations__year">2022</span>
+                <span className="translations__year">
+                  Whale Cloth Press, 1981
+                </span>
               </div>
-
-              <div className="translations__details">
-                <p className="translations__original-info">
-                  <strong>Original:</strong> <em>Lettres à un Poète Inconnu</em>{" "}
-                  by Jean-Claude Rémy
-                </p>
-                <p className="translations__publisher-info">
-                  <strong>Publisher:</strong> New Directions Publishing
-                </p>
-                <p className="translations__pages-info">
-                  <strong>Pages:</strong> 156
-                </p>
-              </div>
-
               <p className="translations__description">
-                A collection of prose poems that blur the boundaries between
-                autobiography and fiction. Rémy's experimental work challenges
-                conventional narrative structures. This translation maintains
-                the rhythmic complexity of the French while capturing the
-                philosophical depth of the original.
+                Valery Larbaud’s nostalgic tribute to the tiny citizens that
+                inhabit a small colony at his family home, and their fellowship
+                to humankind.
               </p>
-
               <div className="translations__links">
                 <a
                   href="#"
@@ -112,15 +129,7 @@ function Translations() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Purchase
-                </a>
-                <a
-                  href="#"
-                  className="translations__link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Reviews
+                  View flappable page images (PDF)
                 </a>
               </div>
             </div>
@@ -128,75 +137,7 @@ function Translations() {
         </div>
       </section>
 
-      <section className="translations__section">
-        <h2 className="translations__section-title">Selected Translation</h2>
 
-        <div className="translations__selected">
-          <div className="translations__selected-item">
-            <div className="translations__selected-header">
-              <h4 className="translations__selected-title">
-                "Three Fragments on Solitude"
-              </h4>
-              <span className="translations__selected-source">
-                by Isabelle Moreau
-              </span>
-            </div>
-            <div className="translations__selected-details">
-              <span className="translations__publication">
-                The Paris Review, No. 248
-              </span>
-              <span className="translations__selected-year">2023</span>
-            </div>
-          </div>
-
-          <div className="translations__selected-item">
-            <div className="translations__selected-header">
-              <h4 className="translations__selected-title">"Urban Pastoral"</h4>
-              <span className="translations__selected-source">
-                by Antoine Leclerc
-              </span>
-            </div>
-            <div className="translations__selected-details">
-              <span className="translations__publication">
-                Poetry International, Vol. 29
-              </span>
-              <span className="translations__selected-year">2023</span>
-            </div>
-          </div>
-
-          <div className="translations__selected-item">
-            <div className="translations__selected-header">
-              <h4 className="translations__selected-title">
-                "The Mapmaker's Daughter"
-              </h4>
-              <span className="translations__selected-source">
-                by Sylvie Bertrand
-              </span>
-            </div>
-            <div className="translations__selected-details">
-              <span className="translations__publication">Literary Hub</span>
-              <span className="translations__selected-year">2022</span>
-            </div>
-          </div>
-
-          <div className="translations__selected-item">
-            <div className="translations__selected-header">
-              <h4 className="translations__selected-title">
-                "Five Poems from 'Interior Weather'"
-              </h4>
-              <span className="translations__selected-source">
-                by Philippe Rousseau
-              </span>
-            </div>
-            <div className="translations__selected-details">
-              <span className="translations__publication">
-                The Literary Review, Issue 52
-              </span>
-              <span className="translations__selected-year">2022</span>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
