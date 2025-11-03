@@ -1,0 +1,146 @@
+/* PublicationCard Component Styles */
+
+.publication-card {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  background: #fefefe;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.publication-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-color: #ddd;
+}
+
+.publication-card__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.publication-card__cover {
+  width: 240px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.publication-card__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.publication-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.publication-card__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.publication-card__details {
+  margin-bottom: 1.5rem;
+}
+
+.publication-card__publisher-info {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.publication-card__description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.publication-card__quote {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.publication-card__links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.publication-card__link {
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.publication-card__link:hover {
+  color: #333;
+  border-color: #333;
+  background: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .publication-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .publication-card__image {
+    justify-content: center;
+  }
+
+  .publication-card__cover {
+    width: 180px;
+    height: 270px;
+  }
+
+  .publication-card__links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .publication-card {
+    padding: 1.5rem;
+  }
+
+  .publication-card__cover {
+    width: 120px;
+    height: 180px;
+  }
+
+  .publication-card__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .publication-card__link {
+    width: 100%;
+    text-align: center;
+  }
+}

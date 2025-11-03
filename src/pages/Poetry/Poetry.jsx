@@ -7,6 +7,7 @@ import billionesqueImage from "../../assets/Billionesque.webp";
 import stateLoungeImage from "../../assets/State Lounge.webp";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
+import PublicationCard from "../../components/PublicationCard/PublicationCard";
 
 function Poetry() {
   return (
@@ -16,143 +17,76 @@ function Poetry() {
 
         <section className="poetry__section">
           <div className="poetry__publications-grid">
-            {/* From Nature - 2019 */}
-            <article className="poetry__publication-card poetry__publication-card--book">
-              <div className="poetry__book-image">
-                <img
-                  src={fromNatureImage}
-                  alt="From Nature book cover"
-                  className="poetry__book-cover"
-                />
-              </div>
-
-              <div className="poetry__book-content">
-                <div className="poetry__book-header">
-                  <h3 className="poetry__book-title">From Nature</h3>
-                </div>
-
-                <div className="poetry__book-details">
-                  <p className="poetry__publisher-info">
-                    Cuneiform Press, 2019
-                  </p>
-                </div>
-
-                <p className="poetry__book-description">
+            <PublicationCard
+              coverImage={fromNatureImage}
+              title="From Nature"
+              publisher="Cuneiform Press"
+              year="2019"
+              quote={
+                <>
                   "Grounded in vernacular and yet displacing it, Alan Bernheimer
                   makes poetry that is somehow aphoristic, surreal, and down to
                   earth."
                   <br />
                   <span className="poetry__book-attribution">—Alli Warren</span>
-                </p>
+                </>
+              }
+              links={[
+                {
+                  url: "https://www.cuneiformpress.com/collections/catalog/products/alan-bernheimer-from-nature",
+                  text: "Order",
+                },
+              ]}
+              className="poetry__publication-card poetry__publication-card--book"
+            />
 
-                <div className="poetry__book-links">
-                  <a
-                    href="https://www.cuneiformpress.com/collections/catalog/products/alan-bernheimer-from-nature"
-                    className="poetry__book-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Order
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            {/* The Spoonlight Institute - 2009 */}
-            <article className="poetry__publication-card poetry__publication-card--book">
-              <div className="poetry__book-image">
-                <img
-                  src={spoonlightImage}
-                  alt="The Spoonlight Institute book cover"
-                  className="poetry__book-cover"
-                />
-              </div>
-
-              <div className="poetry__book-content">
-                <div className="poetry__book-header">
-                  <h3 className="poetry__book-title">
-                    The Spoonlight Institute
-                  </h3>
-                </div>
-
-                <div className="poetry__book-details">
-                  <p className="poetry__publisher-info">
-                    Adventures in Poetry, 2009
-                  </p>
-                </div>
-
-                <p className="poetry__book-description">
+            <PublicationCard
+              coverImage={spoonlightImage}
+              title="The Spoonlight Institute"
+              publisher="Adventures in Poetry"
+              year="2009"
+              quote={
+                <>
                   "The Spoonlight Institute positively glows in the dark with
                   brilliant writing."
                   <br />
                   <span className="poetry__book-attribution">
                     —Ron Silliman
                   </span>
-                </p>
+                </>
+              }
+              links={[
+                {
+                  url: "https://www.zephyrpress.org/product-page/the-spoonlight-institute",
+                  text: "Order",
+                },
+              ]}
+              className="poetry__publication-card poetry__publication-card--book"
+            />
 
-                <div className="poetry__book-links">
-                  <a
-                    href="https://www.zephyrpress.org/product-page/the-spoonlight-institute"
-                    className="poetry__book-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Order
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            {/* Cloud Eight - 1999 */}
-            <article className="poetry__publication-card poetry__publication-card--book">
-              <div className="poetry__book-image">
-                <img
-                  src={cloudEightImage}
-                  alt="Cloud Eight book cover"
-                  className="poetry__book-cover"
-                />
-              </div>
-
-              <div className="poetry__book-content">
-                <div className="poetry__book-header">
-                  <h3 className="poetry__book-title">Cloud Eight</h3>
+            <PublicationCard
+              coverImage={cloudEightImage}
+              title="Cloud Eight"
+              publisher="Sound & Language"
+              year="1999"
+              description={
+                <>
                   <p className="poetry__book-collaboration">
                     with Kit Robinson
                   </p>
-                </div>
-
-                <div className="poetry__book-details">
-                  <p className="poetry__publisher-info">
-                    Sound & Language, 1999
-                  </p>
-                </div>
-
-                <p className="poetry__book-description">
                   (out of print, unavailable)
-                </p>
-              </div>
-            </article>
+                </>
+              }
+              className="poetry__publication-card poetry__publication-card--book"
+            />
 
-            {/* Billionesque - 1999 */}
-            <article className="poetry__publication-card poetry__publication-card--book">
-              <div className="poetry__book-image">
-                <img
-                  src={billionesqueImage}
-                  alt="Billionesque book cover"
-                  className="poetry__book-cover"
-                />
-              </div>
-
-              <div className="poetry__book-content">
-                <div className="poetry__book-header">
-                  <h3 className="poetry__book-title">Billionesque</h3>
-                </div>
-
-                <div className="poetry__book-details">
-                  <p className="poetry__publisher-info">The Figures, 1999</p>
-                </div>
-
-                <p className="poetry__book-description">
+            <PublicationCard
+              coverImage={billionesqueImage}
+              title="Billionesque"
+              publisher="The Figures"
+              year="1999"
+              quote={
+                <>
                   "But prolonged scrutiny of the world has discovered it to be
                   not only vertiginously strange but also in the act of
                   disappearing. As these works suggest, living at language's
@@ -162,81 +96,45 @@ function Poetry() {
                   <span className="poetry__book-attribution">
                     —Lyn Hejinian
                   </span>
-                </p>
+                </>
+              }
+              links={[
+                {
+                  url: "/contact",
+                  text: "Use contact form to order from author",
+                },
+              ]}
+              className="poetry__publication-card poetry__publication-card--book"
+            />
 
-                <div className="poetry__book-links">
-                  <a href="/contact" className="poetry__book-link">
-                    Use contact form to order from author
-                  </a>
-                </div>
-              </div>
-            </article>
+            <PublicationCard
+              coverImage={stateLoungeImage}
+              title="State Lounge"
+              publisher="Tuumba"
+              year="1981"
+              links={[
+                {
+                  url: "https://eclipsearchive.org/projects/TUUMBA/TUUMBA33/html/",
+                  text: "Read/download PDF",
+                },
+              ]}
+              className="poetry__publication-card poetry__publication-card--book"
+            />
 
-            {/* State Lounge - 1981 */}
-            <article className="poetry__publication-card poetry__publication-card--book">
-              <div className="poetry__book-image">
-                <img
-                  src={stateLoungeImage}
-                  alt="State Lounge book cover"
-                  className="poetry__book-cover"
-                />
-              </div>
-
-              <div className="poetry__book-content">
-                <div className="poetry__book-header">
-                  <h3 className="poetry__book-title">State Lounge</h3>
-                </div>
-
-                <div className="poetry__book-details">
-                  <p className="poetry__publisher-info">Tuumba, 1981</p>
-                </div>
-
-                <div className="poetry__book-links">
-                  <a
-                    href="https://eclipsearchive.org/projects/TUUMBA/TUUMBA33/html/"
-                    className="poetry__book-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read/download PDF
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            {/* Café Isotope - 1980 */}
-            <article className="poetry__publication-card poetry__publication-card--book">
-              <div className="poetry__book-image">
-                <img
-                  src={cafeImage}
-                  alt="Café Isotope book cover"
-                  className="poetry__book-cover"
-                />
-              </div>
-
-              <div className="poetry__book-content">
-                <div className="poetry__book-header">
-                  <h3 className="poetry__book-title">Café Isotope</h3>
-                </div>
-
-                <div className="poetry__book-details">
-                  <p className="poetry__publisher-info">The Figures, 1980</p>
-                </div>
-
-                <p className="poetry__book-description">Out of print</p>
-
-                <div className="poetry__book-links">
-                  <a
-                    href="https://www.biblio.com/search.php?stage=1&author=alan+bernheimer&title=cafe+isotope&isbn=&keyisbn=&publisher=&illustrator=&mindate=&maxdate=&minprice=&maxprice=&country=&format=&cond=&days_back=&order=priceasc&pageper=20&dist=50&zip=&quantity="
-                    className="poetry__book-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Buy used
-                  </a>
-                </div>
-              </div>
-            </article>
+            <PublicationCard
+              coverImage={cafeImage}
+              title="Café Isotope"
+              publisher="The Figures"
+              year="1980"
+              description="Out of print"
+              links={[
+                {
+                  url: "https://www.biblio.com/search.php?stage=1&author=alan+bernheimer&title=cafe+isotope&isbn=&keyisbn=&publisher=&illustrator=&mindate=&maxdate=&minprice=&maxprice=&country=&format=&cond=&days_back=&order=priceasc&pageper=20&dist=50&zip=&quantity=",
+                  text: "Buy used",
+                },
+              ]}
+              className="poetry__publication-card poetry__publication-card--book"
+            />
           </div>
         </section>
       </div>
