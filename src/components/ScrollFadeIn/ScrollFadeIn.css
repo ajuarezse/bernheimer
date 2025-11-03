@@ -1,7 +1,10 @@
 /* Scroll Fade-in Animation */
-.fade-in {
+.fade-in:not(.fade-in-visible) {
   opacity: 0;
   transform: translateY(30px);
+}
+
+.fade-in {
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
