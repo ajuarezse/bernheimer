@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 240px 1fr;
   gap: 2.5rem;
-  background: #fefefe;
   border: 1px solid #e8e8e8;
   border-radius: 12px;
   padding: 2.5rem;
