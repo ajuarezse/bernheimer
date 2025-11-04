@@ -52,53 +52,51 @@ function About() {
 
           <section className="about__section about__section--centered">
             <h2>Alan Bernheimer Pages</h2>
-            <div className="about__links-card-container">
-              <article className="about__photo-card about__links-card--sidebyside">
-                <div className="about__links-image">
+            <div className="about__pages-container">
+              <div className="about__pages-card">
+                <div className="about__pages-image">
                   <img
                     src={poetsTheatre}
                     alt="San Francisco Poets Theater"
-                    className="about__links-photo"
+                    title="SF Poets Theater"
+                    className="about__pages-photo"
                   />
                 </div>
-                <div className="about__links-content">
-                  {/* Removed duplicate title */}
-                  <div className="about__links-buttons">
-                    <a
-                      href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
-                      className="about__photo-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      PennSound
-                    </a>
-                    <a
-                      href="https://en.wikipedia.org/wiki/Alan_Bernheimer"
-                      className="about__photo-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Wikipedia
-                    </a>
-                    <a
-                      href="https://writing.upenn.edu/epc/authors/bernheimer/"
-                      className="about__photo-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      EPC
-                    </a>
-                    <a
-                      href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
-                      className="about__photo-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      SF Poets Theater
-                    </a>
-                  </div>
+                <div className="about__pages-links">
+                  <a
+                    href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
+                    className="about__pages-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    PennSound
+                  </a>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Alan_Bernheimer"
+                    className="about__pages-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Wikipedia
+                  </a>
+                  <a
+                    href="https://writing.upenn.edu/epc/authors/bernheimer/"
+                    className="about__pages-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    EPC
+                  </a>
+                  <a
+                    href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
+                    className="about__pages-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SF Poets Theater
+                  </a>
                 </div>
-              </article>
+              </div>
             </div>
           </section>
 
