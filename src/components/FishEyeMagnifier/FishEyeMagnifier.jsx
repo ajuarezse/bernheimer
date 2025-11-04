@@ -15,7 +15,10 @@ function FishEyeMagnifier({
   const handleMouseMove = (e) => {
     const img = imgRef.current;
     const magnifier = magnifierRef.current;
+    if (!img || !magnifier) return;
+
     const rect = img.getBoundingClientRect();
+
     // Mouse position relative to image
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -30,10 +33,11 @@ function FishEyeMagnifier({
     magnifier.style.backgroundSize = `${imgWidth * zoom}px ${
       imgHeight * zoom
     }px`;
-    // The background image is scaled by zoom, so offset must account for that
+
+    // Calculate background position (allow negative values for edges)
     const bgX = x * zoom - magnifierSize / 2;
     const bgY = y * zoom - magnifierSize / 2;
-    magnifier.style.backgroundPosition = `-${bgX}px -${bgY}px`;
+    magnifier.style.backgroundPosition = `${-bgX}px ${-bgY}px`;
   };
 
   const handleMouseEnter = () => {
@@ -79,6 +83,7 @@ function FishEyeMagnifier({
           borderRadius: "50%",
           boxShadow: "0 2px 8px rgba(0,0,0,0.25)",
           border: "2px solid #fff",
+          backgroundColor: "#fff",
           backgroundImage: `url(${src})`,
           backgroundRepeat: "no-repeat",
           zIndex: 2,

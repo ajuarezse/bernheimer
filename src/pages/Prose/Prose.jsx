@@ -80,12 +80,12 @@ function Prose() {
         </div>
       </section>
 
-      <section className="prose-section">
+      <section className="prose-section prose-section--reviews">
         <h2 className="section-title">Reviews</h2>
 
         <div className="prose-list">
-          <ul className="prose-items">
-            <li className="prose-item">
+          <ul className="prose-items prose-items--reviews">
+            <li className="prose-item prose-item--review">
               <span className="prose-title-text">Devotional Cinema</span>,
               Nathaniel Dorsky
               <span className="prose-publication">
@@ -93,7 +93,7 @@ function Prose() {
                 — Poetry Project Newsletter (April/May 2004)
               </span>
             </li>
-            <li className="prose-item">
+            <li className="prose-item prose-item--review">
               <span className="prose-title-text">Here Come the Warm Jets</span>,
               Alli Warren
               <span className="prose-publication">
@@ -101,14 +101,14 @@ function Prose() {
                 — Poetry Project Newsletter (October-November 2013)
               </span>
             </li>
-            <li className="prose-item">
+            <li className="prose-item prose-item--review">
               <span className="prose-title-text">Warren Sonbert</span>
               <span className="prose-publication">
                 {" "}
                 — Poetry Project Newsletter (October-November 1995)
               </span>
             </li>
-            <li className="prose-item">
+            <li className="prose-item prose-item--review">
               <span className="prose-title-text">Larry Fagin</span>
               <span className="prose-publication">
                 {" "}
