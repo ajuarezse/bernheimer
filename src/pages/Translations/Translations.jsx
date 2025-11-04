@@ -25,6 +25,7 @@ function Translations() {
               publisher="Slacks Books"
               year="2023"
               description="Louis Aragon's 1923 Surrealist chamber piece. The work masquerades as a guide to the underbelly of Paris nightlife, but readers quickly find themselves in a surreal, phantasmagoric dream that unspools during the course of a night, starting with a walk along the Seine and finishing in a café at dawn, with shapeshifting, hallucinatory detours into literature, works of art, and religious history."
+              // TODO: [Order button goes to a form that generates an email to publisher. Details TBD]
               className="translations__card"
             />
 
@@ -58,7 +59,7 @@ function Translations() {
                 },
                 {
                   url: "https://hyperallergic.com/314726/philippe-soupaults-lost-profiles/",
-                  text: "Hyperallergic (Review)",
+                  text: "Review",
                 },
               ]}
               className="translations__card"
@@ -70,12 +71,7 @@ function Translations() {
               publisher="Whale Cloth Press"
               year="1981"
               description="Valery Larbaud's nostalgic tribute to the tiny citizens that inhabit a small colony at his family home, and their fellowship to humankind."
-              links={[
-                {
-                  url: "#",
-                  text: "View flappable page images (PDF)",
-                },
-              ]}
+              // TODO: [link to flappable page image pdfs]
               className="translations__card"
             />
           </div>
