@@ -79,7 +79,7 @@
 }
 
 .reviews__item:last-child {
-  border-bottom: none;
+  border-bottom-color: transparent;
 }
 
 .reviews__item:hover {
@@ -87,11 +87,7 @@
   margin: 0 -1rem;
   padding: 2rem 1rem;
   border-radius: 8px;
-  border-bottom: 1px solid transparent;
-}
-
-.reviews__item:hover:last-child {
-  border-bottom: 1px solid transparent;
+  border-bottom-color: transparent;
 }
 
 .reviews__content {
