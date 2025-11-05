@@ -157,6 +157,14 @@
   border-bottom-color: #333;
 }
 
+.reviews__link--disabled {
+  color: #999;
+  border-bottom: none;
+  cursor: default;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
 /* Interviews Section */
 .reviews__interviews-list {
   list-style: none;
