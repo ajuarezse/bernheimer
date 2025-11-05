@@ -58,7 +58,7 @@ function Translations() {
                   text: "Learn more and purchase",
                 },
                 {
-                  url: "https://hyperallergic.com/314726/philippe-soupaults-lost-profiles/",
+                  url: "https://hyperallergic.com/362955/a-french-surrealists-eclectic-remembrances-of-his-cohort-finally-in-english/?fbclid=IwY2xjawJ7gztleHRuA2FlbQIxMQBicmlkETFxUDJtMlNteUtWMGs0NGpyAR7MJST6t4OjXsE97zymNGpEkc50FN7xT5Bd7szHIF_0giWfctqVy5LV3IL7vA_aem_qZhTq8iP5KIlV4x7potkKQ",
                   text: "Review",
                 },
               ]}
