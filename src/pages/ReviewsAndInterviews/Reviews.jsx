@@ -116,10 +116,12 @@ function Reviews() {
           <li className="reviews__item">
             <div className="reviews__content">
               <div className="reviews__item-header">
-                <h3 className="reviews__source">Poetry Project Newsletter</h3>
+                <h3 className="reviews__source">American Poetry Review</h3>
               </div>
               <div className="reviews__details">
-                <span className="reviews__work">Bill Mohr</span>
+                <span className="reviews__work">
+                  Lorraine Lupo and Paul Maziar, November-December, 2020
+                </span>
                 <span className="reviews__link reviews__link--disabled">
                   PDF coming soon
                 </span>
@@ -133,7 +135,7 @@ function Reviews() {
                 <h3 className="reviews__source">Poetry Project Newsletter</h3>
               </div>
               <div className="reviews__details">
-                <span className="reviews__work">Andrew Osborn</span>
+                <span className="reviews__work">Bill Mohr</span>
                 <span className="reviews__link reviews__link--disabled">
                   PDF coming soon
                 </span>
@@ -165,18 +167,13 @@ function Reviews() {
           <li className="reviews__item">
             <div className="reviews__content">
               <div className="reviews__item-header">
-                <h3 className="reviews__source">Il Bloggio de Plainfeather</h3>
+                <h3 className="reviews__source">B Brown</h3>
               </div>
               <div className="reviews__details">
-                <span className="reviews__work">Jim Mitchell</span>
-                <a
-                  href="https://plainfeather.blogspot.com/search?q=bernheimer"
-                  className="reviews__link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Read →
-                </a>
+                <span className="reviews__work">B Brown</span>
+                <span className="reviews__link reviews__link--disabled">
+                  PDF coming soon
+                </span>
               </div>
             </div>
           </li>
@@ -215,6 +212,55 @@ function Reviews() {
                 >
                   Read →
                 </a>
+              </div>
+            </div>
+          </li>
+
+          <li className="reviews__item">
+            <div className="reviews__content">
+              <div className="reviews__item-header">
+                <h3 className="reviews__source">American Poetry Review</h3>
+              </div>
+              <div className="reviews__details">
+                <span className="reviews__work">
+                  Gregg Bigglieri, March-April, 2010
+                </span>
+                <span className="reviews__link reviews__link--disabled">
+                  PDF coming soon
+                </span>
+              </div>
+            </div>
+          </li>
+
+          <li className="reviews__item">
+            <div className="reviews__content">
+              <div className="reviews__item-header">
+                <h3 className="reviews__source">Il Bloggio de Plainfeather</h3>
+              </div>
+              <div className="reviews__details">
+                <span className="reviews__work">Jim Mitchell</span>
+                <a
+                  href="https://plainfeather.blogspot.com/search?q=bernheimer"
+                  className="reviews__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read →
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li className="reviews__item">
+            <div className="reviews__content">
+              <div className="reviews__item-header">
+                <h3 className="reviews__source">Poetry Project Newsletter</h3>
+              </div>
+              <div className="reviews__details">
+                <span className="reviews__work">Andrew Osborn</span>
+                <span className="reviews__link reviews__link--disabled">
+                  PDF coming soon
+                </span>
               </div>
             </div>
           </li>
