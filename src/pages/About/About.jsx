@@ -51,17 +51,16 @@ function About() {
           </section>
 
           <section className="about__section about__section--centered">
-            <h2>Alan Bernheimer Pages</h2>
             <div className="about__pages-container">
+              <div className="about__pages-header">
+                <img
+                  src={poetsTheatre}
+                  alt="San Francisco Poets Theater"
+                  className="about__pages-header-image"
+                />
+                <h2 className="about__pages-title">Alan Bernheimer Pages</h2>
+              </div>
               <div className="about__pages-card">
-                <div className="about__pages-image">
-                  <img
-                    src={poetsTheatre}
-                    alt="San Francisco Poets Theater"
-                    title="SF Poets Theater"
-                    className="about__pages-photo"
-                  />
-                </div>
                 <div className="about__pages-links">
                   <a
                     href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
