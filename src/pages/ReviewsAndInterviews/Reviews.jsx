@@ -1,5 +1,6 @@
 import "./Reviews.css";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import interviewImage from "../../assets/Interview.webp";
 
 function Reviews() {
   return (
@@ -11,7 +12,16 @@ function Reviews() {
       />
 
       <section className="reviews__section">
-        <h2 className="reviews__section-title">Interviews</h2>
+        <div className="reviews__section-header">
+          <img
+            src={interviewImage}
+            alt="Alan Bernheimer interview"
+            className="reviews__section-image"
+          />
+          <h2 className="reviews__section-title reviews__section-title--with-image">
+            Interviews
+          </h2>
+        </div>
 
         <ul className="reviews__list">
           <li className="reviews__item">
