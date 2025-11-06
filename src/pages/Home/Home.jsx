@@ -4,6 +4,7 @@ import "./Home.css";
 import cafeImage from "../../assets/cafe_isotope_250.webp";
 import translationBookCover from "../../assets/theHamletOfTheBees.webp";
 import heroImage from "../../assets/heroImage.webp";
+import fromNatureImage from "../../assets/From Nature.webp";
 
 function Home() {
   const categories = [
@@ -26,6 +27,7 @@ function Home() {
     },
     {
       name: "Reviews & Interviews",
+      image: fromNatureImage,
       color: "#FFBE85",
       path: "reviews",
     },
