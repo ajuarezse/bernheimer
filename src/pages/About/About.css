@@ -148,6 +148,19 @@
   padding-bottom: 1rem;
 }
 
+.about__section--pages {
+  background: #000;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+.about__pages-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .about__section p {
   font-size: 1.1rem;
   color: #555;
@@ -313,41 +326,50 @@
 /* Links Card Styles */
 .about__pages-container {
   max-width: 900px;
-  margin: 2rem auto 0;
+  margin: 0 auto;
 }
 
 .about__pages-header {
   position: relative;
-  margin-bottom: 2.5rem;
-  border-radius: 12px;
+  border-radius: 0;
   overflow: hidden;
+  height: calc(100vh - 80px);
+  min-height: 500px;
 }
 
 .about__pages-header-image {
   width: 100%;
-  height: 320px;
+  height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 30%;
   display: block;
-  filter: brightness(0.6) contrast(1.1);
-  opacity: 0.85;
+  filter: brightness(0.5) contrast(1.1);
+  opacity: 0.9;
+}
+
+.about__pages-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  z-index: 1;
 }
 
 .about__pages-header .about__pages-title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
   color: #fff !important;
   font-size: 2.5rem;
   font-weight: 300;
   letter-spacing: 0.05em;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6), 0 4px 20px rgba(0, 0, 0, 0.4);
-  margin: 0;
+  margin: 0 0 3rem 0;
   padding: 0;
   border: none;
-  z-index: 1;
   text-align: center;
 }
 
@@ -375,25 +397,32 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  max-width: 500px;
+  width: 100%;
 }
 
 .about__pages-link {
-  color: #666;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 0.95rem;
+  padding: 0.85rem 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 1rem;
   transition: all 0.2s ease;
   display: block;
   text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .about__pages-link:hover {
-  color: #333;
-  border-color: #333;
-  background: #fafafa;
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -401,12 +430,21 @@
     padding: 2rem;
   }
 
-  .about__pages-header-image {
-    height: 280px;
+  .about__pages-header {
+    min-height: 350px;
   }
 
-  .about__pages-title {
+  .about__pages-header-image {
+    min-height: 350px;
+  }
+
+  .about__pages-overlay {
+    padding: 2rem;
+  }
+
+  .about__pages-header .about__pages-title {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -419,12 +457,21 @@
     padding: 1.5rem;
   }
 
-  .about__pages-header-image {
-    height: 220px;
+  .about__pages-header {
+    min-height: 450px;
   }
 
-  .about__pages-title {
+  .about__pages-header-image {
+    min-height: 450px;
+  }
+
+  .about__pages-overlay {
+    padding: 1.5rem;
+  }
+
+  .about__pages-header .about__pages-title {
     font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
 }
 

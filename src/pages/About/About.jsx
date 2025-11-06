@@ -50,50 +50,54 @@ function About() {
             <p className="about__section-note">[coming soon]</p>
           </section>
 
-          <section className="about__section about__section--centered">
-            <div className="about__pages-container">
-              <div className="about__pages-header">
-                <img
-                  src={poetsTheatre}
-                  alt="San Francisco Poets Theater"
-                  className="about__pages-header-image"
-                />
-                <h2 className="about__pages-title">Alan Bernheimer Pages</h2>
-              </div>
-              <div className="about__pages-card">
-                <div className="about__pages-links">
-                  <a
-                    href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
-                    className="about__pages-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    PennSound
-                  </a>
-                  <a
-                    href="https://en.wikipedia.org/wiki/Alan_Bernheimer"
-                    className="about__pages-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Wikipedia
-                  </a>
-                  <a
-                    href="https://writing.upenn.edu/epc/authors/bernheimer/"
-                    className="about__pages-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    EPC
-                  </a>
-                  <a
-                    href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
-                    className="about__pages-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    SF Poets Theater
-                  </a>
+          <section className="about__section about__section--centered about__section--pages">
+            <div className="about__pages-wrapper">
+              <div className="about__pages-container">
+                <div className="about__pages-header">
+                  <img
+                    src={poetsTheatre}
+                    alt="San Francisco Poets Theater"
+                    className="about__pages-header-image"
+                  />
+                  <div className="about__pages-overlay">
+                    <h2 className="about__pages-title">
+                      Alan Bernheimer Pages
+                    </h2>
+                    <div className="about__pages-links">
+                      <a
+                        href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
+                        className="about__pages-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        PennSound
+                      </a>
+                      <a
+                        href="https://en.wikipedia.org/wiki/Alan_Bernheimer"
+                        className="about__pages-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Wikipedia
+                      </a>
+                      <a
+                        href="https://writing.upenn.edu/epc/authors/bernheimer/"
+                        className="about__pages-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        EPC
+                      </a>
+                      <a
+                        href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
+                        className="about__pages-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        SF Poets Theater
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
