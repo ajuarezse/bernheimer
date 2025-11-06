@@ -202,7 +202,7 @@ function About() {
           <section className="about__section about__section--contact">
             <div className="about__contact-simple">
               <h2>Contact</h2>
-              <p>For inquiries, please use the form below:</p>
+              <p>For inquiries, please fill out this form:</p>
               <form className="about__form-compact">
                 <div className="about__form-row">
                   <input
