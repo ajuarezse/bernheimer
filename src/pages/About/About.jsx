@@ -228,7 +228,7 @@ function About() {
                   required
                 ></textarea>
                 <button type="submit" className="about__form-submit-compact">
-                  Send
+                  Send Message
                 </button>
               </form>
             </div>
