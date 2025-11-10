@@ -5,6 +5,7 @@ import cafeImage from "../../assets/cafe_isotope_250.webp";
 import translationBookCover from "../../assets/theHamletOfTheBees.webp";
 import heroImage from "../../assets/heroImage.webp";
 import fromNatureImage from "../../assets/From Nature.webp";
+import parisMapImage from "../../assets/parisMap.webp";
 
 function Home() {
   const categories = [
@@ -22,6 +23,7 @@ function Home() {
     },
     {
       name: "Prose",
+      image: parisMapImage,
       fallbackColor: "#45B7D1",
       path: "prose",
     },
