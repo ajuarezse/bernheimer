@@ -53,25 +53,50 @@ function Home() {
             hoveredIndex === index ? "home__category-section--hovered" : ""
           } ${
             category.name === "About" ? "home__category-section--about" : ""
+          } ${
+            category.name === "Prose" ? "home__category-section--prose" : ""
           }`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <h2 className="home__category-title">{category.name}</h2>
           <div
-            className="home__category"
+            className={`home__category ${
+              category.name === "Prose" ? "home__category--prose" : ""
+            }`}
             style={{
-              backgroundColor: category.image
-                ? "white"
-                : category.color || category.fallbackColor,
-              ...(category.image && {
-                backgroundImage: `url(${category.image})`,
-                backgroundSize: "auto 100%",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }),
+              backgroundColor:
+                category.image && category.name !== "Prose"
+                  ? "white"
+                  : category.name === "Prose" && category.image
+                  ? "transparent"
+                  : category.color || category.fallbackColor,
+              ...(category.image &&
+                category.name !== "Prose" && {
+                  backgroundImage: `url(${category.image})`,
+                  backgroundSize: "auto 100%",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }),
             }}
-          ></div>
+          >
+            {category.name === "Prose" && category.image && (
+              <>
+                <div
+                  className="home__category-bg-mask"
+                  style={{
+                    backgroundImage: `url(${category.image})`,
+                  }}
+                />
+                <div
+                  className="home__category-main-image"
+                  style={{
+                    backgroundImage: `url(${category.image})`,
+                  }}
+                />
+              </>
+            )}
+          </div>
         </NavLink>
       ))}
     </main>
