@@ -1,10 +1,12 @@
 /* Footer Component Styles */
 
 .footer {
-  background: #333;
-  color: #fff;
+  background: rgba(42, 35, 24, 0.95);
+  color: #f5f0e8;
   padding: 1.5rem 0;
   margin-top: 4rem;
+  border-top: 1px solid rgba(212, 197, 176, 0.2);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .footer__content {
@@ -16,7 +18,7 @@
 
 .footer__bottom p {
   font-size: 0.85rem;
-  color: #999;
+  color: #e8dfd0;
   margin: 0;
 }
 
