@@ -28,11 +28,20 @@
   margin: 0 0 0.5rem 0;
   padding: 0.5rem 0;
   color: #3d3529;
+  font-family: "Tourney", sans-serif;
   font-weight: 600;
   text-align: center;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  font-variation-settings: "wdth" 100;
+  transition: all 0.3s ease, font-variation-settings 0.4s ease;
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+  z-index: 2;
+  position: relative;
+  white-space: nowrap;
+}
+
+.home__category-section:hover .home__category-title {
+  font-variation-settings: "wdth" 125;
 }
 
 .home__category {
