@@ -1,5 +1,5 @@
 import "./Poetry.css";
-import cafeImage from "../../assets/cafe_isotope_250.webp";
+import cafeImage from "../../assets/cafeIsotope.webp";
 import fromNatureImage from "../../assets/From Nature.webp";
 import spoonlightImage from "../../assets/The Spoonlight Institute.webp";
 import cloudEightImage from "../../assets/Cloud Eight.webp";

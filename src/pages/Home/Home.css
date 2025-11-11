@@ -22,7 +22,7 @@
 }
 
 .home__category-section:hover {
-  flex: 1.55;
+  flex: 1.6;
 }
 
 .home__category-title {
@@ -61,7 +61,7 @@
   position: relative;
 }
 
-/* Blurred background mask for Prose category */
+/* Blurred background mask for Prose and Poetry categories */
 .home__category-bg-mask {
   position: absolute;
   top: 0;
@@ -71,12 +71,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(2px);
-  opacity: 1;
+  filter: blur(8px);
+  opacity: 0.9;
   z-index: 0;
 }
 
-/* Main sharp image for Prose category */
+/* Main sharp image for Prose and Poetry categories */
 .home__category-main-image {
   position: absolute;
   top: 0;
