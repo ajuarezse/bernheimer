@@ -86,7 +86,7 @@ function About() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        EPC
+                        Electronic Poetry Center
                       </a>
                       <a
                         href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"

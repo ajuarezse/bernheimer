@@ -53,7 +53,7 @@ function Prose() {
             <li className="prose-item">
               <span className="prose-title-text">Younger Than Yesterday</span>
               <button className="prose-button" disabled>
-                PDF
+                PDF coming soon
               </button>
             </li>
             <li className="prose-item">
@@ -73,7 +73,7 @@ function Prose() {
               </span>
               <span className="prose-subtitle"> introduction</span>
               <button className="prose-button" disabled>
-                PDF
+                PDF coming soon
               </button>
             </li>
           </ul>
