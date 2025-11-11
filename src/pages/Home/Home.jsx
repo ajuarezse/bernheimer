@@ -55,6 +55,8 @@ function Home() {
             category.name === "About" ? "home__category-section--about" : ""
           } ${
             category.name === "Prose" ? "home__category-section--prose" : ""
+          } ${
+            category.name === "Poetry" ? "home__category-section--poetry" : ""
           }`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -63,16 +65,20 @@ function Home() {
           <div
             className={`home__category ${
               category.name === "Prose" ? "home__category--prose" : ""
-            }`}
+            } ${category.name === "Poetry" ? "home__category--poetry" : ""}`}
             style={{
               backgroundColor:
-                category.image && category.name !== "Prose"
+                category.image &&
+                category.name !== "Prose" &&
+                category.name !== "Poetry"
                   ? "white"
-                  : category.name === "Prose" && category.image
+                  : (category.name === "Prose" || category.name === "Poetry") &&
+                    category.image
                   ? "transparent"
                   : category.color || category.fallbackColor,
               ...(category.image &&
-                category.name !== "Prose" && {
+                category.name !== "Prose" &&
+                category.name !== "Poetry" && {
                   backgroundImage: `url(${category.image})`,
                   backgroundSize: "auto 100%",
                   backgroundPosition: "center",
@@ -80,22 +86,23 @@ function Home() {
                 }),
             }}
           >
-            {category.name === "Prose" && category.image && (
-              <>
-                <div
-                  className="home__category-bg-mask"
-                  style={{
-                    backgroundImage: `url(${category.image})`,
-                  }}
-                />
-                <div
-                  className="home__category-main-image"
-                  style={{
-                    backgroundImage: `url(${category.image})`,
-                  }}
-                />
-              </>
-            )}
+            {(category.name === "Prose" || category.name === "Poetry") &&
+              category.image && (
+                <>
+                  <div
+                    className="home__category-bg-mask"
+                    style={{
+                      backgroundImage: `url(${category.image})`,
+                    }}
+                  />
+                  <div
+                    className="home__category-main-image"
+                    style={{
+                      backgroundImage: `url(${category.image})`,
+                    }}
+                  />
+                </>
+              )}
           </div>
         </NavLink>
       ))}
