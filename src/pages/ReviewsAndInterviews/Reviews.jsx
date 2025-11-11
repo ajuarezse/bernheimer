@@ -5,11 +5,11 @@ import interviewImage from "../../assets/Interview.webp";
 function Reviews() {
   return (
     <div className="reviews">
-      <PageHeader
+      {/* <PageHeader
         title="Reviews & Interviews"
         description=""
         className="reviews__header"
-      />
+      /> */}
 
       <section className="reviews__section">
         <div className="reviews__section-header">

@@ -11,11 +11,11 @@ function Translations() {
   return (
     <ScrollFadeIn selector=".translations__card">
       <div className="translations">
-        <PageHeader
+        {/* <PageHeader
           title="Translation"
           description=""
           className="translations__header"
-        />
+        /> */}
 
         <section className="translations__section">
           <div className="translations__grid">

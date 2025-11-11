@@ -4,7 +4,7 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 function Prose() {
   return (
     <div className="prose-container">
-      <PageHeader title="Prose" description="" className="prose-header" />
+      {/* <PageHeader title="Prose" description="" className="prose-header" /> */}
 
       <section className="prose-section">
         <div className="prose-list">
@@ -81,9 +81,9 @@ function Prose() {
       </section>
 
       <section className="prose-section prose-section--reviews">
-        <h2 className="section-title">Reviews</h2>
+        <div className="prose-group">
+          <h3 className="prose-venue">Reviews</h3>
 
-        <div className="prose-list">
           <ul className="prose-items prose-items--reviews">
             <li className="prose-item prose-item--review">
               <span className="prose-title-text">Devotional Cinema</span>,

@@ -13,7 +13,7 @@ function Poetry() {
   return (
     <ScrollFadeIn selector=".poetry__publication-card">
       <div className="poetry__container">
-        <PageHeader title="Books" description="" className="poetry__header" />
+        {/* <PageHeader title="Books" description="" className="poetry__header" /> */}
 
         <section className="poetry__section">
           <div className="poetry__publications-grid">
