@@ -57,6 +57,10 @@ function Home() {
             category.name === "Prose" ? "home__category-section--prose" : ""
           } ${
             category.name === "Poetry" ? "home__category-section--poetry" : ""
+          } ${
+            category.name === "Reviews & Interviews"
+              ? "home__category-section--reviews"
+              : ""
           }`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -65,20 +69,28 @@ function Home() {
           <div
             className={`home__category ${
               category.name === "Prose" ? "home__category--prose" : ""
-            } ${category.name === "Poetry" ? "home__category--poetry" : ""}`}
+            } ${category.name === "Poetry" ? "home__category--poetry" : ""} ${
+              category.name === "Reviews & Interviews"
+                ? "home__category--reviews"
+                : ""
+            }`}
             style={{
               backgroundColor:
                 category.image &&
                 category.name !== "Prose" &&
-                category.name !== "Poetry"
+                category.name !== "Poetry" &&
+                category.name !== "Reviews & Interviews"
                   ? "white"
-                  : (category.name === "Prose" || category.name === "Poetry") &&
+                  : (category.name === "Prose" ||
+                      category.name === "Poetry" ||
+                      category.name === "Reviews & Interviews") &&
                     category.image
                   ? "transparent"
                   : category.color || category.fallbackColor,
               ...(category.image &&
                 category.name !== "Prose" &&
-                category.name !== "Poetry" && {
+                category.name !== "Poetry" &&
+                category.name !== "Reviews & Interviews" && {
                   backgroundImage: `url(${category.image})`,
                   backgroundSize: "auto 100%",
                   backgroundPosition: "center",
@@ -86,7 +98,9 @@ function Home() {
                 }),
             }}
           >
-            {(category.name === "Prose" || category.name === "Poetry") &&
+            {(category.name === "Prose" ||
+              category.name === "Poetry" ||
+              category.name === "Reviews & Interviews") &&
               category.image && (
                 <>
                   <div

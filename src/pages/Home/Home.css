@@ -95,7 +95,8 @@
 
 /* Ensure main content is above the mask */
 .home__category--prose,
-.home__category--poetry {
+.home__category--poetry,
+.home__category--reviews {
   background-color: white;
 }
 
