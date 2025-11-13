@@ -1,8 +1,27 @@
+import { useState } from "react";
 import "./Reviews.css";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import ImageGallery from "../../components/ImageGallery/ImageGallery";
 import interviewImage from "../../assets/interview2.webp";
+import lupaMaziarPg1 from "../../assets/reviews/lupaMaziarPg1.webp";
+import lupaMaziarPg2 from "../../assets/reviews/lupaMaziarPg2.webp";
 
 function Reviews() {
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [currentGallery, setCurrentGallery] = useState({
+    images: [],
+    title: "",
+  });
+
+  const openGallery = (images, title) => {
+    setCurrentGallery({ images, title });
+    setGalleryOpen(true);
+  };
+
+  const closeGallery = () => {
+    setGalleryOpen(false);
+  };
+
   return (
     <div className="reviews">
       {/* <PageHeader
@@ -122,9 +141,17 @@ function Reviews() {
                   <span className="reviews__work">
                     Lorraine Lupo and Paul Maziar, November-December, 2020
                   </span>
-                  <span className="reviews__link reviews__link--disabled">
-                    PDF coming soon
-                  </span>
+                  <button
+                    className="reviews__link"
+                    onClick={() =>
+                      openGallery(
+                        [lupaMaziarPg1, lupaMaziarPg2],
+                        "American Poetry Review - Lorraine Lupo and Paul Maziar"
+                      )
+                    }
+                  >
+                    Read
+                  </button>
                 </div>
               </div>
             </li>
@@ -271,6 +298,13 @@ function Reviews() {
           </ul>
         </div>
       </section>
+
+      <ImageGallery
+        images={currentGallery.images}
+        isOpen={galleryOpen}
+        onClose={closeGallery}
+        title={currentGallery.title}
+      />
     </div>
   );
 }
