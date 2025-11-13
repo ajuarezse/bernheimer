@@ -4,7 +4,7 @@ import "./Home.css";
 import cafeImage from "../../assets/cafeIsotope.webp";
 import translationBookCover from "../../assets/theHamletOfTheBees.webp";
 import heroImage from "../../assets/heroImage.webp";
-import fromNatureImage from "../../assets/From Nature.webp";
+import qaImage from "../../assets/qa.webp";
 import parisMapImage from "../../assets/parisMap.webp";
 
 function Home() {
@@ -29,7 +29,7 @@ function Home() {
     },
     {
       name: "Reviews & Interviews",
-      image: fromNatureImage,
+      image: qaImage,
       color: "#FFBE85",
       path: "reviews",
     },
