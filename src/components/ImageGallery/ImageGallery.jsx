@@ -35,31 +35,32 @@ function ImageGallery({ images, isOpen, onClose, title }) {
         </div>
 
         <div className="gallery__image-container">
+          {images.length > 1 && (
+            <button
+              className="gallery__arrow gallery__arrow--left"
+              onClick={goToPrevious}
+              disabled={currentIndex === 0}
+            >
+              ‹
+            </button>
+          )}
+
           <img
             src={images[currentIndex]}
             alt={`${title} - Page ${currentIndex + 1}`}
             className="gallery__image"
           />
-        </div>
 
-        {images.length > 1 && (
-          <div className="gallery__controls">
+          {images.length > 1 && (
             <button
-              className="gallery__button gallery__button--prev"
-              onClick={goToPrevious}
-              disabled={currentIndex === 0}
-            >
-              ‹ Previous
-            </button>
-            <button
-              className="gallery__button gallery__button--next"
+              className="gallery__arrow gallery__arrow--right"
               onClick={goToNext}
               disabled={currentIndex === images.length - 1}
             >
-              Next ›
+              ›
             </button>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );
