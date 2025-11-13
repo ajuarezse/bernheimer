@@ -2,7 +2,7 @@ import "./About.css";
 import heroImage from "../../assets/heroImage.webp";
 import poetsComposite from "../../assets/poets composite.webp";
 import reflectograph from "../../assets/reflectograph.webp";
-import poetsTheatre from "../../assets/poetsTheatre.webp";
+import pa12Image from "../../assets/pa12.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import FishEyeMagnifier from "../../components/FishEyeMagnifier/FishEyeMagnifier";
 
@@ -55,7 +55,7 @@ function About() {
               <div className="about__pages-container">
                 <div className="about__pages-header">
                   <img
-                    src={poetsTheatre}
+                    src={pa12Image}
                     alt="San Francisco Poets Theater"
                     className="about__pages-header-image"
                   />
