@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import "./ImageGallery.css";
 
 function ImageGallery({ images, isOpen, onClose, title }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    if (isOpen) {
+      window.addEventListener("keydown", handleEscape);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleEscape);
+    };
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
-
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
 
   const handleBackdropClick = (e) => {
     if (e.target.classList.contains("gallery__backdrop")) {
@@ -29,37 +35,18 @@ function ImageGallery({ images, isOpen, onClose, title }) {
 
         <div className="gallery__header">
           <h3 className="gallery__title">{title}</h3>
-          <span className="gallery__counter">
-            {currentIndex + 1} / {images.length}
-          </span>
+          <span className="gallery__counter">{images.length} pages</span>
         </div>
 
-        <div className="gallery__image-container">
-          {images.length > 1 && (
-            <button
-              className="gallery__arrow gallery__arrow--left"
-              onClick={goToPrevious}
-              disabled={currentIndex === 0}
-            >
-              ‹
-            </button>
-          )}
-
-          <img
-            src={images[currentIndex]}
-            alt={`${title} - Page ${currentIndex + 1}`}
-            className="gallery__image"
-          />
-
-          {images.length > 1 && (
-            <button
-              className="gallery__arrow gallery__arrow--right"
-              onClick={goToNext}
-              disabled={currentIndex === images.length - 1}
-            >
-              ›
-            </button>
-          )}
+        <div className="gallery__images-scroll">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`${title} - Page ${index + 1}`}
+              className="gallery__image"
+            />
+          ))}
         </div>
       </div>
     </div>
