@@ -3,6 +3,7 @@ import heroImage from "../../assets/heroImage.webp";
 import poetsComposite from "../../assets/poets composite.webp";
 import reflectograph from "../../assets/reflectograph.webp";
 import pa12Image from "../../assets/pa12.webp";
+import alanReadingImage from "../../assets/alanReading.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import FishEyeMagnifier from "../../components/FishEyeMagnifier/FishEyeMagnifier";
 
@@ -47,6 +48,11 @@ function About() {
         <div className="about__content">
           <section className="about__section about__section--centered">
             <h2>Selected Readings</h2>
+            <img
+              src={alanReadingImage}
+              alt="Alan Bernheimer reading"
+              className="about__reading-image"
+            />
             <p className="about__section-note">[coming soon]</p>
           </section>
 
