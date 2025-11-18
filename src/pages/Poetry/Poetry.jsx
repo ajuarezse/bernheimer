@@ -5,7 +5,6 @@ import spoonlightImage from "../../assets/The Spoonlight Institute.webp";
 import cloudEightImage from "../../assets/Cloud Eight.webp";
 import billionesqueImage from "../../assets/Billionesque.webp";
 import stateLoungeImage from "../../assets/State Lounge.webp";
-import PageHeader from "../../components/PageHeader/PageHeader";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import PublicationCard from "../../components/PublicationCard/PublicationCard";
 

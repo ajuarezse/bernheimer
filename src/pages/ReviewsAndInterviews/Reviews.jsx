@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Reviews.css";
-import PageHeader from "../../components/PageHeader/PageHeader";
 import ImageGallery from "../../components/ImageGallery/ImageGallery";
 import Button from "../../components/Button/Button";
 import interviewImage from "../../assets/interview2.webp";

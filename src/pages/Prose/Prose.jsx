@@ -1,5 +1,4 @@
 import "./Prose.css";
-import PageHeader from "../../components/PageHeader/PageHeader";
 import Button from "../../components/Button/Button";
 
 function Prose() {
