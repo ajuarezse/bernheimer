@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import "./PublicationCard.css";
+import Button from "../Button/Button";
 
 function PublicationCard({
   coverImage,
@@ -44,15 +45,9 @@ function PublicationCard({
         {links.length > 0 && (
           <div className="publication-card__links">
             {links.map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                className="publication-card__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Button key={index} href={link.url} external>
                 {link.text}
-              </a>
+              </Button>
             ))}
           </div>
         )}

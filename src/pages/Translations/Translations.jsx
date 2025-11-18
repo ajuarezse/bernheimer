@@ -1,5 +1,4 @@
 import "./Translations.css";
-import PageHeader from "../../components/PageHeader/PageHeader";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import PublicationCard from "../../components/PublicationCard/PublicationCard";
 
