@@ -1,5 +1,6 @@
 import "./Prose.css";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import Button from "../../components/Button/Button";
 
 function Prose() {
   return (
@@ -13,38 +14,32 @@ function Prose() {
             <ul className="prose-items">
               <li className="prose-item">
                 <span className="prose-title-text">Retroscope</span>
-                <a
+                <Button
                   href="https://nowheremag.com/category/retroscope/"
-                  className="prose-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  external
                 >
                   Read
-                </a>
+                </Button>
               </li>
               <li className="prose-item">
                 <span className="prose-title-text">
                   A Little Tour of Provence
                 </span>
-                <a
+                <Button
                   href="https://nowheremag.com/?s=bernheimer+provence"
-                  className="prose-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  external
                 >
                   Read
-                </a>
+                </Button>
               </li>
               <li className="prose-item">
                 <span className="prose-title-text">Paris Journal</span>
-                <a
+                <Button
                   href="https://nowheremag.com/?s=bernheimer+paris"
-                  className="prose-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  external
                 >
                   Read
-                </a>
+                </Button>
               </li>
             </ul>
           </div>
@@ -52,29 +47,23 @@ function Prose() {
           <ul className="prose-items">
             <li className="prose-item">
               <span className="prose-title-text">Younger Than Yesterday</span>
-              <button className="prose-button" disabled>
-                PDF coming soon
-              </button>
+              <Button disabled>PDF coming soon</Button>
             </li>
             <li className="prose-item">
               <span className="prose-title-text">Subject Matter</span>
-              <a
+              <Button
                 href="https://eclipsearchive.org/projects/HILLS/Hills8/pictures/004.html"
-                className="prose-button"
-                target="_blank"
-                rel="noopener noreferrer"
+                external
               >
                 Read
-              </a>
+              </Button>
             </li>
             <li className="prose-item">
               <span className="prose-title-text">
                 Sailing Alone around the Word
               </span>
               <span className="prose-subtitle"> introduction</span>
-              <button className="prose-button" disabled>
-                PDF coming soon
-              </button>
+              <Button disabled>PDF coming soon</Button>
             </li>
           </ul>
         </div>
