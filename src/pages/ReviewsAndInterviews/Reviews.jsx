@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Reviews.css";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import ImageGallery from "../../components/ImageGallery/ImageGallery";
+import Button from "../../components/Button/Button";
 import interviewImage from "../../assets/interview2.webp";
 import lupaMaziarPg1 from "../../assets/reviews/lupaMaziarPg1.webp";
 import lupaMaziarPg2 from "../../assets/reviews/lupaMaziarPg2.webp";
@@ -51,14 +52,12 @@ function Reviews() {
                     "From Nature: An Interview with Alan Bernheimer," Caleb
                     Beckwith
                   </span>
-                  <a
+                  <Button
                     href="https://raintaxi.com/from-nature-an-interview-with-alan-bernheimer/"
-                    className="reviews__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    external
                   >
                     Read →
-                  </a>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -72,14 +71,12 @@ function Reviews() {
                   <span className="reviews__work">
                     "10 Questions for Alan Bernheimer," Stephanie Young
                   </span>
-                  <a
+                  <Button
                     href="https://www.poetryproject.org/media/pages/file-library/2648318248-1755676705/220-newsletter.pdf"
-                    className="reviews__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    external
                   >
                     Read PDF →
-                  </a>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -93,14 +90,12 @@ function Reviews() {
                   <span className="reviews__work">
                     Conversation with Ariel Resnikoff
                   </span>
-                  <a
+                  <Button
                     href="https://media.sas.upenn.edu/app/public/watch.php?file_id=208528"
-                    className="reviews__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    external
                   >
                     Watch →
-                  </a>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -112,14 +107,9 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Hannah McBride</span>
-                  <a
-                    href="https://nowheremag.com/2012/10/2920/"
-                    className="reviews__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Button href="https://nowheremag.com/2012/10/2920/" external>
                     Read →
-                  </a>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -141,8 +131,7 @@ function Reviews() {
                   <span className="reviews__work">
                     Lorraine Lupo and Paul Maziar, November-December, 2020
                   </span>
-                  <button
-                    className="reviews__link"
+                  <Button
                     onClick={() =>
                       openGallery(
                         [lupaMaziarPg1, lupaMaziarPg2],
@@ -151,7 +140,7 @@ function Reviews() {
                     }
                   >
                     Read
-                  </button>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -163,9 +152,7 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Bill Mohr</span>
-                  <span className="reviews__link reviews__link--disabled">
-                    PDF coming soon
-                  </span>
+                  <Button disabled>PDF coming soon</Button>
                 </div>
               </div>
             </li>
@@ -179,14 +166,12 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Tom Donovan</span>
-                  <a
+                  <Button
                     href="https://whof.blogspot.com/2009/12/alan-bernheimer-segue-series.html?fbclid=IwAR0JebmVtuKsfKBDTIcgxfdYnHYwTsTpjvJubo07r6MAc2AOZ9K6BVLP2EU"
-                    className="reviews__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    external
                   >
                     Read →
-                  </a>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -198,9 +183,7 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">B Brown</span>
-                  <span className="reviews__link reviews__link--disabled">
-                    PDF coming soon
-                  </span>
+                  <Button disabled>PDF coming soon</Button>
                 </div>
               </div>
             </li>
@@ -214,14 +197,12 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Paul Maziar</span>
-                  <a
+                  <Button
                     href="https://lareviewofbooks.org/article/a-beautiful-space-that-slips-away-philippe-soupault-and-the-french-avant-garde/?fbclid=IwY2xjawJ7gmZleHRuA2FlbQIxMQBicmlkETFxUDJtMlNteUtWMGs0NGpyAR54ruxovxIiY11cG_6wrlIyQZ43TayINQGhDuY_rIwr4hAbcvyTkW-ULNsdEg_aem_PosPKPpPMGYd2HoSzkkaLw"
-                    className="reviews__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    external
                   >
                     Read →
-                  </a>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -233,14 +214,12 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Joseph Nechvatal</span>
-                  <a
+                  <Button
                     href="https://hyperallergic.com/362955/a-french-surrealists-eclectic-remembrances-of-his-cohort-finally-in-english/?fbclid=IwY2xjawJ7gztleHRuA2FlbQIxMQBicmlkETFxUDJtMlNteUtWMGs0NGpyAR7MJST6t4OjXsE97zymNGpEkc50FN7xT5Bd7szHIF_0giWfctqVy5LV3IL7vA_aem_qZhTq8iP5KIlV4x7potkKQ"
-                    className="reviews__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    external
                   >
                     Read →
-                  </a>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -254,9 +233,7 @@ function Reviews() {
                   <span className="reviews__work">
                     Gregg Bigglieri, March-April, 2010
                   </span>
-                  <span className="reviews__link reviews__link--disabled">
-                    PDF coming soon
-                  </span>
+                  <Button disabled>PDF coming soon</Button>
                 </div>
               </div>
             </li>
@@ -270,14 +247,12 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Jim Mitchell</span>
-                  <a
+                  <Button
                     href="https://plainfeather.blogspot.com/search?q=bernheimer"
-                    className="reviews__link"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    external
                   >
                     Read →
-                  </a>
+                  </Button>
                 </div>
               </div>
             </li>
@@ -289,9 +264,7 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Andrew Osborn</span>
-                  <span className="reviews__link reviews__link--disabled">
-                    PDF coming soon
-                  </span>
+                  <Button disabled>PDF coming soon</Button>
                 </div>
               </div>
             </li>
