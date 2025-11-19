@@ -9,6 +9,8 @@ import andrewOsbornReview from "../../assets/reviews/andrewOsbornReview.webp";
 import billMohrReviewPg1 from "../../assets/reviews/billMohrReviewPPN-1.webp";
 import billMohrReviewPg2 from "../../assets/reviews/billMohrReviewPPN-2.webp";
 import billMohrReviewPg3 from "../../assets/reviews/billMohrReviewPPN-3.webp";
+import greggBiglieriPg1 from "../../assets/reviews/aprGregg-1.webp";
+import greggBiglieriPg2 from "../../assets/reviews/aprGregg-2.webp";
 
 function Reviews() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -249,7 +251,16 @@ function Reviews() {
                   <span className="reviews__work">
                     Gregg Bigglieri, March-April, 2010
                   </span>
-                  <Button disabled>PDF coming soon</Button>
+                  <Button
+                    onClick={() =>
+                      openGallery(
+                        [greggBiglieriPg1, greggBiglieriPg2],
+                        "American Poetry Review - Gregg Bigglieri"
+                      )
+                    }
+                  >
+                    Read
+                  </Button>
                 </div>
               </div>
             </li>
