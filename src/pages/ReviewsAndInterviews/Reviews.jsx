@@ -5,6 +5,7 @@ import Button from "../../components/Button/Button";
 import interviewImage from "../../assets/interview2.webp";
 import lupaMaziarPg1 from "../../assets/reviews/lupaMaziarPg1.webp";
 import lupaMaziarPg2 from "../../assets/reviews/lupaMaziarPg2.webp";
+import andrewOsbornReview from "../../assets/reviews/andrewOsbornReview.webp";
 
 function Reviews() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -263,7 +264,16 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Andrew Osborn</span>
-                  <Button disabled>PDF coming soon</Button>
+                  <Button
+                    onClick={() =>
+                      openGallery(
+                        [andrewOsbornReview],
+                        "Poetry Project Newsletter - Andrew Osborn"
+                      )
+                    }
+                  >
+                    Read
+                  </Button>
                 </div>
               </div>
             </li>
