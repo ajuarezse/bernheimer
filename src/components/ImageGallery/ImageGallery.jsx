@@ -1,20 +1,29 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import "./ImageGallery.css";
 
 function ImageGallery({ images, isOpen, onClose, title }) {
+  const scrollContainerRef = useRef(null);
+
   useEffect(() => {
-    const handleEscape = (e) => {
+    const handleKeyDown = (e) => {
       if (e.key === "Escape") {
         onClose();
       }
     };
 
     if (isOpen) {
-      window.addEventListener("keydown", handleEscape);
+      window.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
+
+      // Focus the scroll container when opened
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.focus();
+      }
     }
 
     return () => {
-      window.removeEventListener("keydown", handleEscape);
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
     };
   }, [isOpen, onClose]);
 
@@ -38,7 +47,11 @@ function ImageGallery({ images, isOpen, onClose, title }) {
           <span className="gallery__counter">{images.length} pages</span>
         </div>
 
-        <div className="gallery__images-scroll">
+        <div
+          className="gallery__images-scroll"
+          ref={scrollContainerRef}
+          tabIndex={0}
+        >
           {images.map((image, index) => (
             <img
               key={index}

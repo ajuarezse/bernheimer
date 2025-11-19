@@ -101,6 +101,10 @@
   -ms-overflow-style: none; /* IE and Edge */
 }
 
+.gallery__images-scroll:focus {
+  outline: none;
+}
+
 .gallery__images-scroll::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
