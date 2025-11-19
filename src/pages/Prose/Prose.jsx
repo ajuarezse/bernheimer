@@ -22,6 +22,9 @@ import ytyPg17 from "../../assets/prose/yty/youngerThanYesterday-17.webp";
 import ytyPg18 from "../../assets/prose/yty/youngerThanYesterday-18.webp";
 import ytyPg19 from "../../assets/prose/yty/youngerThanYesterday-19.webp";
 import ytyPg20 from "../../assets/prose/yty/youngerThanYesterday-20.webp";
+import slocumPg1 from "../../assets/prose/slocum/slocumIntro-1.webp";
+import slocumPg2 from "../../assets/prose/slocum/slocumIntro-2.webp";
+import slocumPg3 from "../../assets/prose/slocum/slocumIntro-3.webp";
 
 function Prose() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -129,7 +132,16 @@ function Prose() {
                 Sailing Alone around the Word
               </span>
               <span className="prose-subtitle"> introduction</span>
-              <Button disabled>PDF coming soon</Button>
+              <Button
+                onClick={() =>
+                  openGallery(
+                    [slocumPg1, slocumPg2, slocumPg3],
+                    "Sailing Alone around the Word - Introduction"
+                  )
+                }
+              >
+                Read
+              </Button>
             </li>
           </ul>
         </div>
