@@ -11,6 +11,9 @@ import billMohrReviewPg2 from "../../assets/reviews/billMohrReviewPPN-2.webp";
 import billMohrReviewPg3 from "../../assets/reviews/billMohrReviewPPN-3.webp";
 import greggBiglieriPg1 from "../../assets/reviews/aprGregg-1.webp";
 import greggBiglieriPg2 from "../../assets/reviews/aprGregg-2.webp";
+import ppNews10QuestionsPg1 from "../../assets/reviews/poetryProjectNewsletter/ppNews10QuestionsForAb-1.webp";
+import ppNews10QuestionsPg2 from "../../assets/reviews/poetryProjectNewsletter/ppNews10QuestionsForAb-2.webp";
+import ppNews10QuestionsPg3 from "../../assets/reviews/poetryProjectNewsletter/ppNews10QuestionsForAb-3.webp";
 
 function Reviews() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -77,10 +80,18 @@ function Reviews() {
                     "10 Questions for Alan Bernheimer," Stephanie Young
                   </span>
                   <Button
-                    href="https://www.poetryproject.org/media/pages/file-library/2648318248-1755676705/220-newsletter.pdf"
-                    external
+                    onClick={() =>
+                      openGallery(
+                        [
+                          ppNews10QuestionsPg1,
+                          ppNews10QuestionsPg2,
+                          ppNews10QuestionsPg3,
+                        ],
+                        "Poetry Project Newsletter - 10 Questions for Alan Bernheimer"
+                      )
+                    }
                   >
-                    Read PDF →
+                    Read
                   </Button>
                 </div>
               </div>
