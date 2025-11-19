@@ -6,6 +6,9 @@ import interviewImage from "../../assets/interview2.webp";
 import lupaMaziarPg1 from "../../assets/reviews/lupaMaziarPg1.webp";
 import lupaMaziarPg2 from "../../assets/reviews/lupaMaziarPg2.webp";
 import andrewOsbornReview from "../../assets/reviews/andrewOsbornReview.webp";
+import billMohrReviewPg1 from "../../assets/reviews/billMohrReviewPPN-1.webp";
+import billMohrReviewPg2 from "../../assets/reviews/billMohrReviewPPN-2.webp";
+import billMohrReviewPg3 from "../../assets/reviews/billMohrReviewPPN-3.webp";
 
 function Reviews() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -152,7 +155,20 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Bill Mohr</span>
-                  <Button disabled>PDF coming soon</Button>
+                  <Button
+                    onClick={() =>
+                      openGallery(
+                        [
+                          billMohrReviewPg1,
+                          billMohrReviewPg2,
+                          billMohrReviewPg3,
+                        ],
+                        "Poetry Project Newsletter - Bill Mohr"
+                      )
+                    }
+                  >
+                    Read
+                  </Button>
                 </div>
               </div>
             </li>
