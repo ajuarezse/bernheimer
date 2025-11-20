@@ -25,6 +25,7 @@ import ytyPg20 from "../../assets/prose/yty/youngerThanYesterday-20.webp";
 import slocumPg1 from "../../assets/prose/slocum/slocumIntro-1.webp";
 import slocumPg2 from "../../assets/prose/slocum/slocumIntro-2.webp";
 import slocumPg3 from "../../assets/prose/slocum/slocumIntro-3.webp";
+import dorskyPg1 from "../../assets/prose/dorsky-1.webp";
 
 function Prose() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -159,6 +160,16 @@ function Prose() {
                 {" "}
                 — Poetry Project Newsletter (April/May 2004)
               </span>
+              <Button
+                onClick={() =>
+                  openGallery(
+                    [dorskyPg1],
+                    "Devotional Cinema - Nathaniel Dorsky"
+                  )
+                }
+              >
+                Read
+              </Button>
             </li>
             <li className="prose-item prose-item--review">
               <span className="prose-title-text">Here Come the Warm Jets</span>,
