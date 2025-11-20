@@ -14,6 +14,10 @@ import greggBiglieriPg2 from "../../assets/reviews/aprGregg-2.webp";
 import ppNews10QuestionsPg1 from "../../assets/reviews/poetryProjectNewsletter/ppNews10QuestionsForAb-1.webp";
 import ppNews10QuestionsPg2 from "../../assets/reviews/poetryProjectNewsletter/ppNews10QuestionsForAb-2.webp";
 import ppNews10QuestionsPg3 from "../../assets/reviews/poetryProjectNewsletter/ppNews10QuestionsForAb-3.webp";
+import bBrownPg1 from "../../assets/reviews/brown/bBReviewFromNature-1.webp";
+import bBrownPg2 from "../../assets/reviews/brown/bBReviewFromNature-2.webp";
+import bBrownPg3 from "../../assets/reviews/brown/bBReviewFromNature-3.webp";
+import bBrownPg4 from "../../assets/reviews/brown/bBReviewFromNature-4.webp";
 
 function Reviews() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -208,11 +212,20 @@ function Reviews() {
             <li className="reviews__item">
               <div className="reviews__content">
                 <div className="reviews__item-header">
-                  <h3 className="reviews__source">B Brown</h3>
+                  <h3 className="reviews__source">Brandon Brown</h3>
                 </div>
                 <div className="reviews__details">
-                  <span className="reviews__work">B Brown</span>
-                  <Button disabled>PDF coming soon</Button>
+                  <span className="reviews__work">Brandon Brown</span>
+                  <Button
+                    onClick={() =>
+                      openGallery(
+                        [bBrownPg1, bBrownPg2, bBrownPg3, bBrownPg4],
+                        "B Brown Review - From Nature"
+                      )
+                    }
+                  >
+                    Read
+                  </Button>
                 </div>
               </div>
             </li>
