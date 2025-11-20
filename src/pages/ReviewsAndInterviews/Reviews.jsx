@@ -68,7 +68,7 @@ function Reviews() {
                     href="https://raintaxi.com/from-nature-an-interview-with-alan-bernheimer/"
                     external
                   >
-                    Read →
+                    Read
                   </Button>
                 </div>
               </div>
@@ -114,7 +114,7 @@ function Reviews() {
                     href="https://media.sas.upenn.edu/app/public/watch.php?file_id=208528"
                     external
                   >
-                    Watch →
+                    Watch
                   </Button>
                 </div>
               </div>
@@ -128,7 +128,7 @@ function Reviews() {
                 <div className="reviews__details">
                   <span className="reviews__work">Hannah McBride</span>
                   <Button href="https://nowheremag.com/2012/10/2920/" external>
-                    Read →
+                    Read
                   </Button>
                 </div>
               </div>
@@ -203,7 +203,7 @@ function Reviews() {
                     href="https://whof.blogspot.com/2009/12/alan-bernheimer-segue-series.html?fbclid=IwAR0JebmVtuKsfKBDTIcgxfdYnHYwTsTpjvJubo07r6MAc2AOZ9K6BVLP2EU"
                     external
                   >
-                    Read →
+                    Read
                   </Button>
                 </div>
               </div>
@@ -243,7 +243,7 @@ function Reviews() {
                     href="https://lareviewofbooks.org/article/a-beautiful-space-that-slips-away-philippe-soupault-and-the-french-avant-garde/?fbclid=IwY2xjawJ7gmZleHRuA2FlbQIxMQBicmlkETFxUDJtMlNteUtWMGs0NGpyAR54ruxovxIiY11cG_6wrlIyQZ43TayINQGhDuY_rIwr4hAbcvyTkW-ULNsdEg_aem_PosPKPpPMGYd2HoSzkkaLw"
                     external
                   >
-                    Read →
+                    Read
                   </Button>
                 </div>
               </div>
@@ -260,7 +260,7 @@ function Reviews() {
                     href="https://hyperallergic.com/362955/a-french-surrealists-eclectic-remembrances-of-his-cohort-finally-in-english/?fbclid=IwY2xjawJ7gztleHRuA2FlbQIxMQBicmlkETFxUDJtMlNteUtWMGs0NGpyAR7MJST6t4OjXsE97zymNGpEkc50FN7xT5Bd7szHIF_0giWfctqVy5LV3IL7vA_aem_qZhTq8iP5KIlV4x7potkKQ"
                     external
                   >
-                    Read →
+                    Read
                   </Button>
                 </div>
               </div>
@@ -302,7 +302,7 @@ function Reviews() {
                     href="https://plainfeather.blogspot.com/search?q=bernheimer"
                     external
                   >
-                    Read →
+                    Read
                   </Button>
                 </div>
               </div>
