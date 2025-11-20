@@ -26,6 +26,8 @@ import slocumPg1 from "../../assets/prose/slocum/slocumIntro-1.webp";
 import slocumPg2 from "../../assets/prose/slocum/slocumIntro-2.webp";
 import slocumPg3 from "../../assets/prose/slocum/slocumIntro-3.webp";
 import dorskyPg1 from "../../assets/prose/dorsky-1.webp";
+import alliWarrenPg1 from "../../assets/prose/alliWarrenReview-1.png";
+import alliWarrenPg2 from "../../assets/prose/alliWarrenReview-2.png";
 
 function Prose() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -178,6 +180,16 @@ function Prose() {
                 {" "}
                 — Poetry Project Newsletter (October-November 2013)
               </span>
+              <Button
+                onClick={() =>
+                  openGallery(
+                    [alliWarrenPg1, alliWarrenPg2],
+                    "Here Come the Warm Jets - Alli Warren"
+                  )
+                }
+              >
+                Read
+              </Button>
             </li>
             <li className="prose-item prose-item--review">
               <span className="prose-title-text">Warren Sonbert</span>
