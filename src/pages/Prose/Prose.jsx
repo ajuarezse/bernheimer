@@ -52,12 +52,6 @@ function Prose() {
     <div className="prose-container">
       {/* <PageHeader title="Prose" description="" className="prose-header" /> */}
 
-      <img
-        src={swazzleImage}
-        alt="Swazzle illustration"
-        className="prose-header-image"
-      />
-
       <section className="prose-section">
         <div className="prose-list">
           <div className="prose-group">
@@ -94,6 +88,12 @@ function Prose() {
               </li>
             </ul>
           </div>
+
+          <img
+            src={swazzleImage}
+            alt="Swazzle illustration"
+            className="prose-header-image"
+          />
 
           <ul className="prose-items">
             <li className="prose-item">
