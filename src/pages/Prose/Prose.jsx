@@ -30,6 +30,7 @@ import alliWarrenPg1 from "../../assets/prose/alliWarrenReview-1.png";
 import alliWarrenPg2 from "../../assets/prose/alliWarrenReview-2.png";
 import larryFaginPg1 from "../../assets/prose/larryFagin-1.webp";
 import warrenSonbertPg1 from "../../assets/prose/warrenSonbert-1.webp";
+import swazzleImage from "../../assets/swazzle.webp";
 
 function Prose() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -50,6 +51,12 @@ function Prose() {
   return (
     <div className="prose-container">
       {/* <PageHeader title="Prose" description="" className="prose-header" /> */}
+
+      <img
+        src={swazzleImage}
+        alt="Swazzle illustration"
+        className="prose-header-image"
+      />
 
       <section className="prose-section">
         <div className="prose-list">

@@ -12,6 +12,16 @@
   line-height: 1.7;
 }
 
+.prose-header-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .prose-header {
   display: grid;
   grid-template-columns: 1fr 2fr;
