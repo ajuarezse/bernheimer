@@ -29,6 +29,7 @@ import dorskyPg1 from "../../assets/prose/dorsky-1.webp";
 import alliWarrenPg1 from "../../assets/prose/alliWarrenReview-1.png";
 import alliWarrenPg2 from "../../assets/prose/alliWarrenReview-2.png";
 import larryFaginPg1 from "../../assets/prose/larryFagin-1.webp";
+import warrenSonbertPg1 from "../../assets/prose/warrenSonbert-1.webp";
 
 function Prose() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -198,6 +199,13 @@ function Prose() {
                 {" "}
                 — Poetry Project Newsletter (October-November 1995)
               </span>
+              <Button
+                onClick={() =>
+                  openGallery([warrenSonbertPg1], "Warren Sonbert")
+                }
+              >
+                Read
+              </Button>
             </li>
             <li className="prose-item prose-item--review">
               <span className="prose-title-text">Larry Fagin</span>
