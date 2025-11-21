@@ -28,6 +28,7 @@ import slocumPg3 from "../../assets/prose/slocum/slocumIntro-3.webp";
 import dorskyPg1 from "../../assets/prose/dorsky-1.webp";
 import alliWarrenPg1 from "../../assets/prose/alliWarrenReview-1.png";
 import alliWarrenPg2 from "../../assets/prose/alliWarrenReview-2.png";
+import larryFaginPg1 from "../../assets/prose/larryFagin-1.webp";
 
 function Prose() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -204,6 +205,11 @@ function Prose() {
                 {" "}
                 — Poetry Project Newsletter (October-November 2017)
               </span>
+              <Button
+                onClick={() => openGallery([larryFaginPg1], "Larry Fagin")}
+              >
+                Read
+              </Button>
             </li>
           </ul>
         </div>
