@@ -142,7 +142,10 @@ function About() {
     {
       location: "New York City",
       readings: [
-        "DIA Chelsea, with Jean Day (May 14, 2019)",
+        {
+          text: "DIA Chelsea, with Jean Day (May 14, 2019)",
+          link: "https://diaart.org/media/watch-listen/alan-bernheimer-and-jean-day-video-from-readings-in-contemporary-poetry",
+        },
         "Berl's Poetry Shop (January 22, 2017)",
         "Unnameable Books, Jackie Wang, Oki Sogumi, and Nat Raha (June 6, 2015)",
         "192 Books (January 19, 2017)",
@@ -164,7 +167,10 @@ function About() {
       location: "Cambridge, Mass.",
       readings: [
         "MIT Press Bookstore, with Donald Wellman (May 4, 2019)",
-        "Woodberry Poetry Room, Harvard University Library (November 6, 2009)",
+        {
+          text: "Woodberry Poetry Room, Harvard University Library (November 6, 2009)",
+          link: "https://mps.lib.harvard.edu/sds/audio/457621023",
+        },
       ],
     },
     {
