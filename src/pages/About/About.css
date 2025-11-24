@@ -777,6 +777,109 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Collapsible Readings Styles */
+.about__readings-container {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  text-align: left;
+}
+
+.about__readings-city {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(212, 197, 176, 0.3);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.about__readings-city:hover {
+  border-color: #d4c5b0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about__readings-city-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.about__readings-city-header:hover {
+  background: rgba(212, 197, 176, 0.1);
+}
+
+.about__readings-city-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #3d3529;
+  flex: 1;
+}
+
+.about__readings-city-count {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.about__readings-toggle {
+  color: #d4c5b0;
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.about__readings-toggle.expanded {
+  transform: rotate(180deg);
+}
+
+.about__readings-list {
+  list-style: none;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  margin: 0;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about__readings-item {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.about__readings-item:last-child {
+  margin-bottom: 0;
+}
+
+.about__readings-item::before {
+  content: "•";
+  color: #d4c5b0;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
 /* Compact Contact Form Styles */
 .about__contact-simple {
   max-width: 500px;
