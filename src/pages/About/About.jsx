@@ -62,12 +62,21 @@ function About() {
       readings: [
         "Harry Bernstein's living room. with Jacob Kahn (August 10, 2025)",
         "2727 California St., with Aaron Simon and Keith Donnell Jr (July 16, 2023); with Lorraine Lupo and Claudia La Rocco (March 26, 2023)",
-        "Tom Raworth Memorial Reading, University of California, Berkeley (April 6, 2018)",
+        {
+          text: "Tom Raworth Memorial Reading, University of California, Berkeley (April 6, 2018)",
+          link: "https://diva.sfsu.edu/collections/poetrycenter/bundles/235814",
+        },
         "Ted Greenwald Memorial Reading, Moe's Books (October 5, 2016)",
-        "Holloway Series, UC Berkeley, with Jane Gregory (November 12, 2009)",
+        {
+          text: "Holloway Series, UC Berkeley, with Jane Gregory (November 12, 2009)",
+          link: "https://www.youtube.com/watch?v=4Py0_6Auejc",
+        },
         "Moe's Books w Robert Harris",
         "Julia Morgan Center, with David Bromige (June 16, 1980)",
-        "KPFA 94.1 FM, 'In the American Tree: New Writing by Poets,' radio program hosted by Lyn Hejinian and Kit Robinson (November 10, 1978)",
+        {
+          text: "KPFA 94.1 FM, 'In the American Tree: New Writing by Poets,' radio program hosted by Lyn Hejinian and Kit Robinson (November 10, 1978)",
+          link: "https://writing.upenn.edu/pennsound/x/Bernheimer.php",
+        },
       ],
     },
     {
