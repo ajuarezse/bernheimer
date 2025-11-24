@@ -26,11 +26,23 @@ function About() {
           text: "Bird & Beckett Bookstore, with Kit Robinson and Neeli Cherkovski (August 4, 2022)",
           link: "https://www.youtube.com/watch?v=nQTP3lHCLO0",
         },
-        "The Lab, with Stephanie Young and Matvei Yankelevich (March 14, 2017)",
-        "Berkeley Arts Festival, Stephen Rodefer memorial (November 21, 2015)",
+        {
+          text: "The Lab, with Stephanie Young and Matvei Yankelevich (March 14, 2017)",
+          link: "https://archive.org/details/thelabsf_2017-03-14_False-Starts-Bernheimer.mp4",
+        },
+        {
+          text: "Berkeley Arts Festival, Stephen Rodefer memorial (November 21, 2015)",
+          link: "https://diva.sfsu.edu/collections/poetrycenter/bundles/227958",
+        },
         "The Green Arcade, with Sophia Dahlin (October 6, 2019)",
-        "The Green Arcade, Michael Gizzi's Collected Poems, a Celebration (October 2, 2015)",
-        "The Green Arcade, Frank O'Hara's Lunch Poems 50th Anniversary Reading (February 6, 2015)",
+        {
+          text: "The Green Arcade, Michael Gizzi's Collected Poems, a Celebration (October 2, 2015)",
+          link: "https://diva.sfsu.edu/collections/poetrycenter/bundles/227796",
+        },
+        {
+          text: "The Green Arcade, Frank O'Hara's Lunch Poems 50th Anniversary Reading (February 6, 2015)",
+          link: "https://diva.sfsu.edu/collections/poetrycenter/bundles/231110",
+        },
         "Books & Bookshelves, with Dawn-Michelle Baude (February 24, 2010)",
         "Small Press Traffic, with Carla Harryman (December 4, 2009)",
         "The Poetry Center, SF State University, with Merrill Gilfillan (2003)",
