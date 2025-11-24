@@ -22,7 +22,10 @@ function About() {
     {
       location: "San Francisco",
       readings: [
-        "Bird & Beckett Bookstore, with Kit Robinson and Neeli Cherkovski (August 4, 2022)",
+        {
+          text: "Bird & Beckett Bookstore, with Kit Robinson and Neeli Cherkovski (August 4, 2022)",
+          link: "https://www.youtube.com/watch?v=nQTP3lHCLO0",
+        },
         "The Lab, with Stephanie Young and Matvei Yankelevich (March 14, 2017)",
         "Berkeley Arts Festival, Stephen Rodefer memorial (November 21, 2015)",
         "The Green Arcade, with Sophia Dahlin (October 6, 2019)",
@@ -240,7 +243,18 @@ function About() {
                     <ul className="about__readings-list">
                       {cityData.readings.map((reading, index) => (
                         <li key={index} className="about__readings-item">
-                          {reading}
+                          {typeof reading === "string" ? (
+                            reading
+                          ) : (
+                            <a
+                              href={reading.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="about__readings-link"
+                            >
+                              {reading.text}
+                            </a>
+                          )}
                         </li>
                       ))}
                     </ul>

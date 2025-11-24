@@ -880,6 +880,19 @@
   font-weight: bold;
 }
 
+.about__readings-link {
+  color: #4a4237;
+  text-decoration: none;
+  border-bottom: 1.5px solid #d4c5b0;
+  transition: all 0.2s ease;
+}
+
+.about__readings-link:hover {
+  color: #2a2318;
+  border-bottom-color: #4a4237;
+  background: rgba(212, 197, 176, 0.1);
+}
+
 /* Compact Contact Form Styles */
 .about__contact-simple {
   max-width: 500px;
