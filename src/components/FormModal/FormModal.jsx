@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./FormModal.css";
 
 function FormModal({
@@ -12,6 +12,16 @@ function FormModal({
   const [formData, setFormData] = useState({});
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
+  const formOpenTime = useRef(null);
+
+  // Track when form opens for time-based validation
+  useEffect(() => {
+    if (isOpen) {
+      formOpenTime.current = Date.now();
+      setHoneypot(""); // Reset honeypot when form opens
+    }
+  }, [isOpen]);
 
   const handleChange = (fieldName, value) => {
     setFormData((prev) => ({
@@ -29,6 +39,21 @@ function FormModal({
 
   const validateForm = () => {
     const newErrors = {};
+
+    // Honeypot check - if filled, it's a bot
+    if (honeypot) {
+      console.warn("Spam detected: honeypot field filled");
+      return false;
+    }
+
+    // Time-based check - humans take at least 2 seconds to fill a form
+    const timeElapsed = Date.now() - (formOpenTime.current || 0);
+    if (timeElapsed < 2000) {
+      console.warn("Spam detected: form submitted too quickly");
+      setErrors({ general: "Please take your time filling out the form." });
+      return false;
+    }
+
     fields.forEach((field) => {
       if (field.required && !formData[field.name]?.trim()) {
         newErrors[field.name] = `${field.label} is required`;
@@ -65,6 +90,8 @@ function FormModal({
   const handleClose = () => {
     setFormData({});
     setErrors({});
+    setHoneypot("");
+    formOpenTime.current = null;
     onClose();
   };
 
@@ -84,6 +111,22 @@ function FormModal({
         <h2 className="form-modal-title">{title}</h2>
 
         <form onSubmit={handleSubmit} className="form-modal-form">
+          {/* Honeypot field - hidden from users, bots will fill it */}
+          <input
+            type="text"
+            name="website"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+            className="form-modal-honeypot"
+            tabIndex="-1"
+            autoComplete="off"
+            aria-hidden="true"
+          />
+
+          {errors.general && (
+            <div className="form-modal-general-error">{errors.general}</div>
+          )}
+
           {fields.map((field) => (
             <div key={field.name} className="form-modal-field">
               <label htmlFor={field.name} className="form-modal-label">

@@ -81,6 +81,26 @@
   gap: 1.25rem;
 }
 
+/* Honeypot field - hidden from humans, visible to bots */
+.form-modal-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-modal-general-error {
+  background: rgba(200, 90, 84, 0.1);
+  border: 1px solid #c85a54;
+  color: #c85a54;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .form-modal-field {
   display: flex;
   flex-direction: column;
