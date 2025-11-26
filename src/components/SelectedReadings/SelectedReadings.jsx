@@ -60,7 +60,10 @@ function SelectedReadings() {
           text: "Tom Raworth Memorial Reading, University of California, Berkeley (April 6, 2018)",
           link: "https://diva.sfsu.edu/collections/poetrycenter/bundles/235814",
         },
-        "Ted Greenwald Memorial Reading, Moe's Books (October 5, 2016)",
+        {
+          text: "Ted Greenwald Memorial Reading, Moe's Books (October 5, 2016)",
+          link: "https://www.youtube.com/watch?v=fPO0wKqfkRg",
+        },
         {
           text: "Holloway Series, UC Berkeley, with Jane Gregory (November 12, 2009)",
           link: "https://www.youtube.com/watch?v=4Py0_6Auejc",
