@@ -1,12 +1,54 @@
+import { useState } from "react";
 import "./Translations.css";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import PublicationCard from "../../components/PublicationCard/PublicationCard";
+import Button from "../../components/Button/Button";
+import FormModal from "../../components/FormModal/FormModal";
 
 import theHamletOfTheBees from "../../assets/theHamletOfTheBees.webp";
 import lostProfile from "../../assets/lostProfiles.webp";
 import parisByNight from "../../assets/parisByNight.webp";
 
 function Translations() {
+  const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
+
+  const handlePurchaseSubmit = async (formData) => {
+    console.log("Purchase inquiry:", formData);
+    // TODO: Connect to email service (EmailJS, Formspree, etc.)
+    // For now, just close the modal
+    setTimeout(() => {
+      setIsPurchaseModalOpen(false);
+      alert(
+        "Thank you! Your inquiry will be sent once the email service is connected."
+      );
+    }, 1000);
+  };
+
+  const purchaseFormFields = [
+    {
+      name: "name",
+      label: "Name",
+      type: "text",
+      required: true,
+      placeholder: "Your full name",
+    },
+    {
+      name: "email",
+      label: "Email Address",
+      type: "email",
+      required: true,
+      placeholder: "your.email@example.com",
+    },
+    {
+      name: "message",
+      label: "Message (Optional)",
+      type: "textarea",
+      required: false,
+      placeholder: "Any additional questions or comments...",
+      rows: 4,
+    },
+  ];
+
   return (
     <ScrollFadeIn selector=".translations__card">
       <div className="translations">
@@ -24,7 +66,11 @@ function Translations() {
               publisher="Slacks Books"
               year="2023"
               description="Louis Aragon's 1923 Surrealist chamber piece. The work masquerades as a guide to the underbelly of Paris nightlife, but readers quickly find themselves in a surreal, phantasmagoric dream that unspools during the course of a night, starting with a walk along the Seine and finishing in a café at dawn, with shapeshifting, hallucinatory detours into literature, works of art, and religious history."
-              // TODO: [Order button goes to a form that generates an email to publisher. Details TBD]
+              customButton={
+                <Button onClick={() => setIsPurchaseModalOpen(true)}>
+                  Purchase
+                </Button>
+              }
               className="translations__card"
             />
 
@@ -75,6 +121,15 @@ function Translations() {
             />
           </div>
         </section>
+
+        <FormModal
+          isOpen={isPurchaseModalOpen}
+          onClose={() => setIsPurchaseModalOpen(false)}
+          title="Purchase Paris by Night"
+          fields={purchaseFormFields}
+          onSubmit={handlePurchaseSubmit}
+          submitLabel="Send Inquiry"
+        />
       </div>
     </ScrollFadeIn>
   );

@@ -10,6 +10,7 @@ function PublicationCard({
   description,
   quote,
   links = [],
+  customButton,
   className = "",
 }) {
   return (
@@ -42,6 +43,10 @@ function PublicationCard({
 
         {quote && <p className="publication-card__quote">{quote}</p>}
 
+        {customButton && (
+          <div className="publication-card__links">{customButton}</div>
+        )}
+
         {links.length > 0 && (
           <div className="publication-card__links">
             {links.map((link, index) => (
@@ -69,6 +74,7 @@ PublicationCard.propTypes = {
       text: PropTypes.string.isRequired,
     })
   ),
+  customButton: PropTypes.node,
   className: PropTypes.string,
 };
 

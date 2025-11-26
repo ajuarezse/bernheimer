@@ -1,0 +1,210 @@
+/* Form Modal Styles */
+.form-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-modal-content {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2.5rem;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.form-modal-close:hover {
+  color: #333;
+}
+
+.form-modal-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #3d3529;
+  margin: 0 0 1.5rem 0;
+  padding-right: 2rem;
+}
+
+.form-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-modal-label {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3d3529;
+}
+
+.form-modal-required {
+  color: #c85a54;
+  margin-left: 0.25rem;
+}
+
+.form-modal-input,
+.form-modal-textarea {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #d4c5b0;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.form-modal-input:focus,
+.form-modal-textarea:focus {
+  border-color: #4a4237;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(212, 197, 176, 0.2);
+}
+
+.form-modal-input::placeholder,
+.form-modal-textarea::placeholder {
+  color: #999;
+}
+
+.form-modal-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-modal-input-error {
+  border-color: #c85a54;
+}
+
+.form-modal-input-error:focus {
+  box-shadow: 0 0 0 3px rgba(200, 90, 84, 0.1);
+}
+
+.form-modal-error {
+  font-size: 0.85rem;
+  color: #c85a54;
+  margin-top: -0.25rem;
+}
+
+.form-modal-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+
+.form-modal-button {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  border: 2px solid;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.form-modal-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-modal-button-cancel {
+  background: transparent;
+  border-color: #d4c5b0;
+  color: #4a4237;
+}
+
+.form-modal-button-cancel:hover:not(:disabled) {
+  background: rgba(212, 197, 176, 0.1);
+  border-color: #4a4237;
+}
+
+.form-modal-button-submit {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: #d4c5b0;
+  color: #4a4237;
+}
+
+.form-modal-button-submit:hover:not(:disabled) {
+  background: rgba(232, 223, 208, 0.5);
+  border-color: #4a4237;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-modal-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-modal-title {
+    font-size: 1.5rem;
+  }
+
+  .form-modal-actions {
+    flex-direction: column;
+  }
+
+  .form-modal-button {
+    width: 100%;
+  }
+}
