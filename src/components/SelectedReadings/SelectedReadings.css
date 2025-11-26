@@ -10,9 +10,11 @@
 }
 
 .about__readings-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 3rem auto 0;
   text-align: left;
+  column-count: 2;
+  column-gap: 1.5rem;
 }
 
 .about__readings-city {
@@ -22,6 +24,8 @@
   margin-bottom: 1rem;
   overflow: hidden;
   transition: all 0.3s ease;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .about__readings-city:hover {
@@ -122,4 +126,12 @@
   color: #2a2318;
   border-bottom-color: #4a4237;
   background: rgba(212, 197, 176, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .about__readings-container {
+    column-count: 1;
+    max-width: 800px;
+  }
 }

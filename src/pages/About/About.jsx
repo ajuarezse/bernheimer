@@ -87,7 +87,7 @@ function About() {
                         Electronic Poetry Center
                       </a>
                       <a
-                        href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
+                        href="https://www.thegrandpiano.org/poetstheater.html"
                         className="about__pages-link"
                         target="_blank"
                         rel="noopener noreferrer"
