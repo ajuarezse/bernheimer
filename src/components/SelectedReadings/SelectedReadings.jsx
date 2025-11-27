@@ -167,7 +167,10 @@ function SelectedReadings() {
       location: "Philadelphia",
       readings: [
         "Frank O'Hara's Last Lover, at Sam's Morning Glory Diner, with Ryan Dobran and Quyen Nghiem (May 13, 2019)",
-        "Kelly Writers House, University of Pennsylvania, with Ariel Resnikoff (January 17, 2017)",
+        {
+          text: "Kelly Writers House, University of Pennsylvania, with Ariel Resnikoff (January 17, 2017)",
+          link: "https://media.sas.upenn.edu/app/public/watch.php?file_id=208528",
+        },
       ],
     },
     {
