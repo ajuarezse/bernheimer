@@ -27,17 +27,7 @@ function About() {
           <div className="about__collage-column">
             <div className="about__collage-stack">
               <img
-                src={collage1}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
                 src={collage2}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage3}
                 alt="Alan Bernheimer"
                 className="about__collage-image"
               />
@@ -47,17 +37,22 @@ function About() {
                 className="about__collage-image"
               />
               <img
-                src={collage5}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
                 src={collage6}
                 alt="Alan Bernheimer"
                 className="about__collage-image"
               />
               <img
-                src={collage7}
+                src={collage3}
+                alt="Alan Bernheimer"
+                className="about__collage-image"
+              />
+              <img
+                src={collage10}
+                alt="Alan Bernheimer"
+                className="about__collage-image"
+              />
+              <img
+                src={collage1}
                 alt="Alan Bernheimer"
                 className="about__collage-image"
               />
@@ -72,7 +67,12 @@ function About() {
                 className="about__collage-image"
               />
               <img
-                src={collage10}
+                src={collage5}
+                alt="Alan Bernheimer"
+                className="about__collage-image"
+              />
+              <img
+                src={collage7}
                 alt="Alan Bernheimer"
                 className="about__collage-image"
               />
