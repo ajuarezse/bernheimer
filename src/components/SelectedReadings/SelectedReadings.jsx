@@ -41,11 +41,12 @@ function SelectedReadings() {
         "Small Press Traffic, with Carla Harryman (December 4, 2009)",
         "The Poetry Center, SF State University, with Merrill Gilfillan (2003)",
         "Small Press Traffic, with Tom Mandel (February 23. 1983)",
-        "Tassajara Bakery, with Robert Harris",
+        "Tassajara Bakery, with Robert Harris (198?)",
         "Intersection for the Arts (1981)",
         "80 Langton Street (June 16, 1980)",
-        "The Poetry Center, SF State University, with Chris Dewdney (February 25,1980?)",
-        "The Grand Piano, with Erica Hunt and Rodger Kamenetz (June 13, 1978); with Ted Pearson (June 7, 1977)",
+        "The Poetry Center, SF State University, with Chris Dewdney (February 25,1980)",
+        "The Grand Piano, with Erica Hunt and Rodger Kamenetz (June 13, 1978)",
+        "The Grand Piano, with Ted Pearson (June 7, 1977)",
         "Julliette's Teashop, with Jean Day (June 22, 197?)",
         "New College of California, with Steve Benson (October 10, 197?)",
         "Third Floor Bookstore, with Kit Robinson (1977)",
@@ -55,23 +56,24 @@ function SelectedReadings() {
       location: "Berkeley",
       readings: [
         "Harry Bernstein's living room. with Jacob Kahn (August 10, 2025)",
-        "2727 California St., with Aaron Simon and Keith Donnell Jr (July 16, 2023); with Lorraine Lupo and Claudia La Rocco (March 26, 2023)",
+        "2727 California St., with Aaron Simon and Keith Donnell Jr (July 16, 2023)",
+        "2727 California St., with Lorraine Lupo and Claudia La Rocco (March 26, 2023)",
         {
-          text: "Tom Raworth Memorial Reading, University of California, Berkeley (April 6, 2018)",
+          text: "Tom Raworth Memorial Reading, University of California, (April 6, 2018)",
           link: "https://diva.sfsu.edu/collections/poetrycenter/bundles/235814",
         },
         {
-          text: "Ted Greenwald Memorial Reading, Moe's Books (October 5, 2016)",
+          text: "Moe's Books, Ted Greenwald Memorial Reading (October 5, 2016)",
           link: "https://www.youtube.com/watch?v=fPO0wKqfkRg",
         },
         {
-          text: "Holloway Series, UC Berkeley, with Jane Gregory (November 12, 2009)",
+          text: "Holloway Series, University of California, with Jane Gregory (November 12, 2009)",
           link: "https://www.youtube.com/watch?v=4Py0_6Auejc",
         },
-        "Moe's Books w Robert Harris",
+        "Moe's Books, with Robert Harris (June 6, 2005)",
         "Julia Morgan Center, with David Bromige (June 16, 1980)",
         {
-          text: "KPFA 94.1 FM, 'In the American Tree: New Writing by Poets,' radio program hosted by Lyn Hejinian and Kit Robinson (November 10, 1978)",
+          text: 'KPFA 94.1 FM, "In the American Tree: New Writing by Poets," radio program hosted by Lyn Hejinian and Kit Robinson (November 10, 1978)',
           link: "https://writing.upenn.edu/pennsound/x/Bernheimer.php",
         },
       ],
@@ -80,15 +82,18 @@ function SelectedReadings() {
       location: "Oakland",
       readings: [
         "E.M. Wolfman Books, with Ariel Resnikoff, and Kit Robinson, (December 22, 2015)",
-        "Diesel Books (November 15, 2016); with Kit Robinson (October, 1994)",
+        "Oakland Art Gallery, with Jean Day and Cynthia Sailers (June 28,2008)",
+        "Diesel Books (November 15, 2016)",
+        "Diesel Books, with Kit Robinson (October 17, 1994)",
       ],
     },
     {
       location: "Los Angeles",
       readings: [
-        "Poetic Research Bureau, with Martha Ronk (March 8, 2020); with Aaron Kunin and Matt Timmons (February 7, 2010)",
+        "Poetic Research Bureau, with Martha Ronk (March 8, 2020)",
         "Artbook (November 20, 2016)",
         "Book Soup, with Jed Rasula (November 21, 2016)",
+        "Poetic Research Bureau, with Aaron Kunin and Matt Timmons (February 7, 2010)",
         "Beyond Baroque, with Kit Robinson (1977)",
       ],
     },
@@ -115,8 +120,10 @@ function SelectedReadings() {
     {
       location: "Portland, Ore.",
       readings: [
-        "Passages Bookshop (Dec. 6, 2016); with Anabel Lee (June 24, 2023); with (January 31, 2021); with Seann McCollum (June 8, 2019)",
-        "Spare Room at Glyph Café, with Stephanie Strickland (Feb. 23, 2014)",
+        "Passages Bookshop, with Anabel Lee (June 24, 2023)",
+        "Passages Bookshop, with Seann McCollum (June 8, 2019)",
+        "Passages Bookshop, (Dec. 6, 2016)",
+        "Spare Room at Glyph Café, with Stephanie Strickland (February 23, 2014)",
       ],
     },
     {
@@ -144,11 +151,14 @@ function SelectedReadings() {
           link: "https://diaart.org/media/watch-listen/alan-bernheimer-and-jean-day-video-from-readings-in-contemporary-poetry",
         },
         "Berl's Poetry Shop (January 22, 2017)",
-        "Unnameable Books, Jackie Wang, Oki Sogumi, and Nat Raha (June 6, 2015)",
         "192 Books (January 19, 2017)",
         "KGB Bar, with Aaron Simon and Genya Turovskaya (February 8, 2016)",
+        "Unnameable Books, with Jackie Wang, Oki Sogumi, and Nat Raha (June 6, 2015)",
         "Segue Series at the Bowery Poetry Club, with Daniel Snelson (December 12, 2009)",
-        "The Poetry Project, with Paul Metcalf (1979); with Tim Davis (April 18, 2001); Bill Berkson memorial (September 14, 2016); Ted Greenwald memorial (September 16, 2016)",
+        "The Poetry Project, Ted Greenwald memorial (September 16, 2016)",
+        "The Poetry Project, Bill Berkson memorial (September 14, 2016)",
+        "The Poetry Project, with Tim Davis (April 18, 2001)",
+        "The Poetry Project, with Paul Metcalf (1979)",
         "The Ear Inn (197?)",
         "98 Greene St. Gallery (197?)",
       ],
@@ -156,7 +166,7 @@ function SelectedReadings() {
     {
       location: "Philadelphia",
       readings: [
-        "Frank O'Hara's Last Lover at Sam's Morning Glory Diner, with Ryan Dobran and Quyen Nghiem (May 13, 2019)",
+        "Frank O'Hara's Last Lover, at Sam's Morning Glory Diner, with Ryan Dobran and Quyen Nghiem (May 13, 2019)",
         "Kelly Writers House, University of Pennsylvania, with Ariel Resnikoff (January 17, 2017)",
       ],
     },
@@ -173,20 +183,23 @@ function SelectedReadings() {
     {
       location: "Great Barrington, Mass.",
       readings: [
-        "Geoff Young Gallery, with",
         "Familiar Trees, with Cynthia Zarin (September 28, 2024)",
+        "Geoffrey Young Gallery (May 5, 2017)",
       ],
     },
     {
       location: "Washington, D.C.",
       readings: [
-        "Bridge Street Books (January 16, 2017); with Jean Day and Tina Darragh, (May 12, 2019); ComputerLand Poets Reading, with Ron Silliman, Bill Luoma and Kit Robinson (August, 1990)",
+        "Bridge Street Books, with Jean Day and Tina Darragh, (May 12, 2019)",
+        "Bridge Street Books, (January 16, 2017)",
+        "Bridge Street Books, ComputerLand Poets Reading, with Ron Silliman, Bill Luoma and Kit Robinson (August, 1990)",
       ],
     },
     {
       location: "Milwaukee",
       readings: [
-        "Woodland Pattern (January 25, 2017); with Karl Gartung (October 2, 2019)",
+        "Woodland Pattern, with Karl Gartung (October 2, 2019)",
+        "Woodland Pattern (January 25, 2017)",
       ],
     },
     {
