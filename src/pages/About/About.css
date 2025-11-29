@@ -96,7 +96,7 @@
 .about__collage-stack {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
+  gap: 0;
 }
 
 .about__collage-image {
