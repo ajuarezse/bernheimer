@@ -29,12 +29,12 @@ function About() {
               <img
                 src={collage2}
                 alt="Alan Bernheimer"
-                className="about__collage-image about__collage-image--span-2"
+                className="about__collage-image"
               />
               <img
                 src={collage4}
                 alt="Alan Bernheimer"
-                className="about__collage-image"
+                className="about__collage-image about__collage-image--span-2"
               />
               <img
                 src={collage6}
@@ -42,7 +42,7 @@ function About() {
                 className="about__collage-image"
               />
               <img
-                src={collage3}
+                src={collage1}
                 alt="Alan Bernheimer"
                 className="about__collage-image about__collage-image--span-2"
               />
@@ -62,7 +62,7 @@ function About() {
                 className="about__collage-image"
               />
               <img
-                src={collage1}
+                src={collage3}
                 alt="Alan Bernheimer"
                 className="about__collage-image about__collage-image--span-2"
               />
