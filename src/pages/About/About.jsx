@@ -83,7 +83,7 @@ function About() {
           <div className="about__content-column">
             <div className="about__bio-text">
               <p>
-                Alan Bernheimer is a poet, writer, and translator, living in
+                <strong>Alan Bernheimer</strong> is a poet, writer, and translator, living in
                 Berkeley. He was born in 1948 in New York City, where he grew
                 up, spending summers at a rustic science colony on the north
                 shore of Long Island with his microbiologist parents. He
