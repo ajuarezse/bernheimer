@@ -29,7 +29,7 @@ function About() {
               <img
                 src={collage2}
                 alt="Alan Bernheimer"
-                className="about__collage-image"
+                className="about__collage-image about__collage-image--span-2"
               />
               <img
                 src={collage4}
@@ -44,20 +44,15 @@ function About() {
               <img
                 src={collage3}
                 alt="Alan Bernheimer"
+                className="about__collage-image about__collage-image--span-2"
+              />
+              <img
+                src={collage8}
+                alt="Alan Bernheimer"
                 className="about__collage-image"
               />
               <img
                 src={collage10}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage1}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage8}
                 alt="Alan Bernheimer"
                 className="about__collage-image"
               />
@@ -67,6 +62,11 @@ function About() {
                 className="about__collage-image"
               />
               <img
+                src={collage1}
+                alt="Alan Bernheimer"
+                className="about__collage-image about__collage-image--span-2"
+              />
+              <img
                 src={collage5}
                 alt="Alan Bernheimer"
                 className="about__collage-image"
@@ -74,7 +74,7 @@ function About() {
               <img
                 src={collage7}
                 alt="Alan Bernheimer"
-                className="about__collage-image"
+                className="about__collage-image about__collage-image--span-2"
               />
             </div>
           </div>
