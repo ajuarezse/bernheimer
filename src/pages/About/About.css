@@ -101,53 +101,113 @@
 }
 
 @keyframes fallDown1 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-2deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(-2deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(-2deg);
+  }
 }
 
 @keyframes fallDown2 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(3deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(3deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(3deg);
+  }
 }
 
 @keyframes fallDown3 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-1deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(-1deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(-1deg);
+  }
 }
 
 @keyframes fallDown4 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(2deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(2deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(2deg);
+  }
 }
 
 @keyframes fallDown5 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-3deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(-3deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(-3deg);
+  }
 }
 
 @keyframes fallDown6 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(1deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(1deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(1deg);
+  }
 }
 
 @keyframes fallDown7 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-2deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(-2deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(-2deg);
+  }
 }
 
 @keyframes fallDown8 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(4deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(4deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(4deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(4deg);
+  }
 }
 
 @keyframes fallDown9 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-1deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(-1deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(-1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(-1deg);
+  }
 }
 
 @keyframes fallDown10 {
-  0% { opacity: 0; transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(2deg); }
-  100% { opacity: 1; transform: scale(1) translateZ(0) rotateX(0deg) rotate(2deg); }
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateZ(500px) rotateX(-30deg) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0) rotateX(0deg) rotate(2deg);
+  }
 }
 
 .about__collage-image {

@@ -83,13 +83,13 @@ function About() {
           <div className="about__content-column">
             <div className="about__bio-text">
               <p>
-                <strong>Alan Bernheimer</strong> is a poet, writer, and translator, living in
-                Berkeley. He was born in 1948 in New York City, where he grew
-                up, spending summers at a rustic science colony on the north
-                shore of Long Island with his microbiologist parents. He
-                graduated from Yale in 1970 with a degree in English literature
-                and spent several years in NYC and on Cape Cod before settling
-                in the San Francisco Bay Area.
+                <strong>Alan Bernheimer</strong> is a poet, writer, and
+                translator, living in Berkeley. He was born in 1948 in New York
+                City, where he grew up, spending summers at a rustic science
+                colony on the north shore of Long Island with his microbiologist
+                parents. He graduated from Yale in 1970 with a degree in English
+                literature and spent several years in NYC and on Cape Cod before
+                settling in the San Francisco Bay Area.
               </p>
               <p>
                 Bernheimer wrote for and performed in San Francisco Poets
