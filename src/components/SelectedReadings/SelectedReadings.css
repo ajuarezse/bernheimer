@@ -36,31 +36,43 @@
   margin: 0 auto;
   text-align: left;
   column-count: 2;
-  column-gap: 2rem;
+  column-gap: 0;
+  column-rule: 2px solid #e5e5e5;
 }
 
 .about__readings-city {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   padding: 0;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   break-inside: avoid;
   page-break-inside: avoid;
   background: none;
   border: none;
-  box-shadow: none;
+  border-bottom: 4px solid #e5e5e5;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.about__readings-city:last-child {
+  border-bottom: none;
+}
+
+.about__readings-city:hover {
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .about__readings-city-header {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 0;
+  justify-content: center;
+  padding: 1rem 0;
   background: none;
   border: none;
   cursor: pointer;
   font-family: inherit;
-  text-align: left;
+  text-align: center;
   transition: opacity 0.2s ease;
 }
 
@@ -72,14 +84,20 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: #2c2c2c;
-  flex: 1;
   letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.about__readings-city-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .about__readings-city-count {
   font-size: 0.8rem;
   color: #999;
-  margin-right: 0.75rem;
   font-weight: 400;
 }
 

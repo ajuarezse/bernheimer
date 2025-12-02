@@ -232,17 +232,19 @@ function SelectedReadings() {
               <span className="about__readings-city-name">
                 {cityData.location}
               </span>
-              <span className="about__readings-city-count">
-                {cityData.readings.length}{" "}
-                {cityData.readings.length === 1 ? "reading" : "readings"}
-              </span>
-              <span
-                className={`about__readings-toggle ${
-                  expandedSections[cityData.location] ? "expanded" : ""
-                }`}
-              >
-                ▼
-              </span>
+              <div className="about__readings-city-meta">
+                <span className="about__readings-city-count">
+                  {cityData.readings.length}{" "}
+                  {cityData.readings.length === 1 ? "reading" : "readings"}
+                </span>
+                <span
+                  className={`about__readings-toggle ${
+                    expandedSections[cityData.location] ? "expanded" : ""
+                  }`}
+                >
+                  ▼
+                </span>
+              </div>
             </button>
             {expandedSections[cityData.location] && (
               <ul className="about__readings-list">
