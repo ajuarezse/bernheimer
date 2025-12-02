@@ -13,14 +13,14 @@
 
 .selected-readings-title {
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #2c2c2c;
   margin-bottom: 1.5rem;
   margin-top: 0;
   letter-spacing: -0.02em;
 }
 
-.about__reading-image {
+.selected-readings__image {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -31,7 +31,7 @@
   border: 8px solid white;
 }
 
-.about__readings-container {
+.selected-readings__container {
   max-width: 1000px;
   margin: 0 auto;
   column-count: 2;
@@ -39,7 +39,7 @@
   column-rule: 2px solid #e5e5e5;
 }
 
-.about__readings-city {
+.selected-readings__city {
   margin-bottom: 0;
   padding: 0;
   transition: all 0.3s ease;
@@ -47,20 +47,20 @@
   page-break-inside: avoid;
   background: none;
   border: none;
-  border-bottom: 4px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
   border-radius: 0;
   overflow: hidden;
 }
 
-.about__readings-city:last-child {
+.selected-readings__city:last-child {
   border-bottom: none;
 }
 
-.about__readings-city:hover {
+.selected-readings__city:hover {
   background: rgba(0, 0, 0, 0.02);
 }
 
-.about__readings-city-header {
+.selected-readings__city-header {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -75,11 +75,11 @@
   transition: opacity 0.2s ease;
 }
 
-.about__readings-city-header:hover {
+.selected-readings__city-header:hover {
   opacity: 0.7;
 }
 
-.about__readings-city-name {
+.selected-readings__city-name {
   font-size: 1.1rem;
   font-weight: 600;
   color: #2c2c2c;
@@ -89,31 +89,31 @@
   width: 100%;
 }
 
-.about__readings-city-meta {
+.selected-readings__city-meta {
   display: block;
   width: 100%;
   text-align: center;
 }
 
-.about__readings-city-count {
+.selected-readings__city-count {
   font-size: 0.8rem;
   color: #999;
   font-weight: 400;
   display: inline-block;
 }
 
-.about__readings-toggle {
+.selected-readings__toggle {
   color: #666;
   font-size: 0.7rem;
   transition: transform 0.3s ease;
   display: inline-block;
 }
 
-.about__readings-toggle.expanded {
+.selected-readings__toggle.expanded {
   transform: rotate(180deg);
 }
 
-.about__readings-list {
+.selected-readings__list {
   list-style: none;
   padding: 0.5rem 0 1rem 0;
   margin: 0;
@@ -131,7 +131,7 @@
   }
 }
 
-.about__readings-item {
+.selected-readings__item {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
@@ -141,11 +141,11 @@
   background: none;
 }
 
-.about__readings-item:last-child {
+.selected-readings__item:last-child {
   margin-bottom: 0;
 }
 
-.about__readings-item::before {
+.selected-readings__item::before {
   content: "•";
   color: #d4c5b0;
   position: absolute;
@@ -153,14 +153,14 @@
   font-weight: bold;
 }
 
-.about__readings-link {
+.selected-readings__link {
   color: #4a4237;
   text-decoration: none;
   border-bottom: 1.5px solid #d4c5b0;
   transition: all 0.2s ease;
 }
 
-.about__readings-link:hover {
+.selected-readings__link:hover {
   color: #2a2318;
   border-bottom-color: #4a4237;
   background: rgba(212, 197, 176, 0.1);
@@ -168,7 +168,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
-  .about__readings-container {
+  .selected-readings__container {
     column-count: 1;
     max-width: 800px;
   }

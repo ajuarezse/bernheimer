@@ -218,31 +218,31 @@ function SelectedReadings() {
         <img
           src={alanReadingImage}
           alt="Alan Bernheimer reading"
-          className="about__reading-image"
+          className="selected-readings__image"
         />
       </div>
-      <div className="about__readings-container">
+      <div className="selected-readings__container">
         {readingsData.map((cityData) => (
-          <div key={cityData.location} className="about__readings-city">
+          <div key={cityData.location} className="selected-readings__city">
             <button
-              className="about__readings-city-header"
+              className="selected-readings__city-header"
               onClick={() => toggleSection(cityData.location)}
               aria-expanded={expandedSections[cityData.location]}
             >
-              <span className="about__readings-city-name">
+              <span className="selected-readings__city-name">
                 {cityData.location}
               </span>
-              <div className="about__readings-city-meta">
-                <span className="about__readings-city-count">
+              <div className="selected-readings__city-meta">
+                <span className="selected-readings__city-count">
                   {cityData.readings.length}{" "}
                   {cityData.readings.length === 1 ? "reading" : "readings"}
                 </span>
               </div>
             </button>
             {expandedSections[cityData.location] && (
-              <ul className="about__readings-list">
+              <ul className="selected-readings__list">
                 {cityData.readings.map((reading, index) => (
-                  <li key={index} className="about__readings-item">
+                  <li key={index} className="selected-readings__item">
                     {typeof reading === "string" ? (
                       reading
                     ) : (
@@ -250,7 +250,7 @@ function SelectedReadings() {
                         href={reading.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="about__readings-link"
+                        className="selected-readings__link"
                       >
                         {reading.text}
                       </a>
