@@ -1065,13 +1065,6 @@
   flex: 1;
 }
 
-.about__readings-city-count {
-  font-size: 0.85rem;
-  color: #7f8c8d;
-  margin-right: 1rem;
-  font-weight: 500;
-}
-
 .about__readings-toggle {
   color: #d4c5b0;
   font-size: 0.8rem;

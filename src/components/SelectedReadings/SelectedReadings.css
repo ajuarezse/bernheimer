@@ -34,7 +34,6 @@
 .about__readings-container {
   max-width: 1000px;
   margin: 0 auto;
-  text-align: left;
   column-count: 2;
   column-gap: 0;
   column-rule: 2px solid #e5e5e5;
@@ -86,19 +85,21 @@
   color: #2c2c2c;
   letter-spacing: -0.01em;
   margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
 }
 
 .about__readings-city-meta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .about__readings-city-count {
   font-size: 0.8rem;
   color: #999;
   font-weight: 400;
+  display: inline-block;
 }
 
 .about__readings-toggle {

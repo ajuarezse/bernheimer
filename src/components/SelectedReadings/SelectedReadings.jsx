@@ -237,13 +237,6 @@ function SelectedReadings() {
                   {cityData.readings.length}{" "}
                   {cityData.readings.length === 1 ? "reading" : "readings"}
                 </span>
-                <span
-                  className={`about__readings-toggle ${
-                    expandedSections[cityData.location] ? "expanded" : ""
-                  }`}
-                >
-                  ▼
-                </span>
               </div>
             </button>
             {expandedSections[cityData.location] && (
