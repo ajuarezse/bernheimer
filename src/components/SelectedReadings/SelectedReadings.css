@@ -1,8 +1,8 @@
 /* Selected Readings Section */
 .selected-readings-wrapper {
   background: linear-gradient(135deg, #f8f6f3 0%, #f0ede8 100%);
-  padding: 4rem 2rem;
-  margin: 2rem 0;
+  padding: 2rem 2rem 4rem 2rem;
+  margin: 4rem 0 2rem 0;
 }
 
 .selected-readings-header {
@@ -13,9 +13,10 @@
 
 .selected-readings-title {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 500;
   color: #2c2c2c;
   margin-bottom: 1.5rem;
+  margin-top: 0;
   letter-spacing: -0.02em;
 }
 
@@ -39,16 +40,14 @@
 }
 
 .about__readings-city {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  margin-bottom: 0;
-  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
   transition: all 0.2s ease;
   break-inside: avoid;
   page-break-inside: avoid;
-}
-
-.about__readings-city:last-child {
-  border-bottom: none;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
 .about__readings-city-header {
@@ -56,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0;
+  padding: 0.5rem 0;
   background: none;
   border: none;
   cursor: pointer;
@@ -120,6 +119,7 @@
   margin-bottom: 0.75rem;
   padding-left: 1.2rem;
   position: relative;
+  background: none;
 }
 
 .about__readings-item:last-child {
