@@ -212,13 +212,15 @@ function SelectedReadings() {
   ];
 
   return (
-    <section className="about__section about__section--centered">
-      <h2>Selected Readings</h2>
-      <img
-        src={alanReadingImage}
-        alt="Alan Bernheimer reading"
-        className="about__reading-image"
-      />
+    <section className="selected-readings-wrapper">
+      <div className="selected-readings-header">
+        <h2 className="selected-readings-title">Selected Readings</h2>
+        <img
+          src={alanReadingImage}
+          alt="Alan Bernheimer reading"
+          className="about__reading-image"
+        />
+      </div>
       <div className="about__readings-container">
         {readingsData.map((cityData) => (
           <div key={cityData.location} className="about__readings-city">

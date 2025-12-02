@@ -1,36 +1,54 @@
-/* Collapsible Readings Styles */
+/* Selected Readings Section */
+.selected-readings-wrapper {
+  background: linear-gradient(135deg, #f8f6f3 0%, #f0ede8 100%);
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+}
+
+.selected-readings-header {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.selected-readings-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
 .about__reading-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   height: auto;
   display: block;
-  margin: 2rem auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 8px solid white;
 }
 
 .about__readings-container {
-  max-width: 1200px;
-  margin: 3rem auto 0;
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: left;
   column-count: 2;
-  column-gap: 1.5rem;
+  column-gap: 2rem;
 }
 
 .about__readings-city {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(212, 197, 176, 0.3);
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0;
+  padding: 0.5rem 0;
+  transition: all 0.2s ease;
   break-inside: avoid;
   page-break-inside: avoid;
 }
 
-.about__readings-city:hover {
-  border-color: #d4c5b0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.about__readings-city:last-child {
+  border-bottom: none;
 }
 
 .about__readings-city-header {
@@ -38,36 +56,37 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.5rem;
+  padding: 0.75rem 0;
   background: none;
   border: none;
   cursor: pointer;
   font-family: inherit;
   text-align: left;
-  transition: background 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .about__readings-city-header:hover {
-  background: rgba(212, 197, 176, 0.1);
+  opacity: 0.7;
 }
 
 .about__readings-city-name {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: #3d3529;
+  color: #2c2c2c;
   flex: 1;
+  letter-spacing: -0.01em;
 }
 
 .about__readings-city-count {
-  font-size: 0.85rem;
-  color: #7f8c8d;
-  margin-right: 1rem;
-  font-weight: 500;
+  font-size: 0.8rem;
+  color: #999;
+  margin-right: 0.75rem;
+  font-weight: 400;
 }
 
 .about__readings-toggle {
-  color: #d4c5b0;
-  font-size: 0.8rem;
+  color: #666;
+  font-size: 0.7rem;
   transition: transform 0.3s ease;
   display: inline-block;
 }
@@ -78,7 +97,7 @@
 
 .about__readings-list {
   list-style: none;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0.5rem 0 1rem 0;
   margin: 0;
   animation: slideDown 0.3s ease;
 }
