@@ -50,7 +50,7 @@ function Translations() {
   ];
 
   return (
-    <ScrollFadeIn selector=".translations__card">
+    <ScrollFadeIn selector=".translations__card--animated">
       <div className="translations">
         {/* <PageHeader
           title="Translation"
@@ -71,7 +71,7 @@ function Translations() {
                   Purchase
                 </Button>
               }
-              className="translations__card"
+              className="translations__card translations__card--animated"
             />
 
             <PublicationCard
@@ -117,7 +117,7 @@ function Translations() {
               year="1981"
               description="Valery Larbaud's nostalgic tribute to the tiny citizens that inhabit a small colony at his family home, and their fellowship to humankind."
               // TODO: [link to flappable page image pdfs]
-              className="translations__card"
+              className="translations__card translations__card--animated"
             />
           </div>
         </section>
