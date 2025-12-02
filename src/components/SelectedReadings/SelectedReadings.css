@@ -97,9 +97,13 @@
 
 .selected-readings__city-count {
   font-size: 0.8rem;
-  color: #999;
-  font-weight: 400;
+  color: #666;
+  font-weight: 500;
   display: inline-block;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .selected-readings__toggle {
