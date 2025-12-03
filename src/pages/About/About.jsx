@@ -5,6 +5,7 @@ import pa12Image from "../../assets/pa12.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import FishEyeMagnifier from "../../components/FishEyeMagnifier/FishEyeMagnifier";
 import SelectedReadings from "../../components/SelectedReadings/SelectedReadings";
+import Button from "../../components/Button/Button";
 
 // Collage images
 import collage1 from "../../assets/collage/3SomeCrop.webp";
@@ -189,14 +190,12 @@ function About() {
                     </a>
                   </div>
                   <div className="about__photo-links">
-                    <a
+                    <Button
                       href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
-                      className="about__photo-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      external
                     >
                       View Collection
-                    </a>
+                    </Button>
                   </div>
                 </div>
               </article>
@@ -216,14 +215,12 @@ function About() {
                     />
                   </div>
                   <div className="about__photo-links">
-                    <a
+                    <Button
                       href="https://reflectographs.com/reflectographs/"
-                      className="about__photo-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      external
                     >
                       Explore Series
-                    </a>
+                    </Button>
                   </div>
                 </div>
               </article>
@@ -242,14 +239,9 @@ function About() {
                     the lazy dog.
                   </p>
                   <div className="about__photo-links">
-                    <a
-                      href="#"
-                      className="about__photo-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Button href="#" external>
                       Follow on Instagram
-                    </a>
+                    </Button>
                   </div>
                 </div>
               </article>
