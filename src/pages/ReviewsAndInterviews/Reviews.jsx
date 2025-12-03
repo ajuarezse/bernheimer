@@ -212,7 +212,7 @@ function Reviews() {
             <li className="reviews__item">
               <div className="reviews__content">
                 <div className="reviews__item-header">
-                  <h3 className="reviews__source">Brandon Brown</h3>
+                  <h3 className="reviews__source">Review of From Nature</h3>
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Brandon Brown</span>
