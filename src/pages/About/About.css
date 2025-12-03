@@ -639,7 +639,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
 }
 
