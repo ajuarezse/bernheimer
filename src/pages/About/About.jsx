@@ -251,36 +251,40 @@ function About() {
 
         <section className="about__section about__section--contact">
           <div className="about__contact-simple">
-            <h2>Contact</h2>
-            <p>For inquiries, please fill out this form:</p>
-            <form className="about__form-compact">
-              <div className="about__form-row">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  className="about__form-input-compact"
+            <div className="about__contact-header">
+              <h2>Contact</h2>
+            </div>
+            <div className="about__contact-form-wrapper">
+              <p>For inquiries, please fill out this form:</p>
+              <form className="about__form-compact">
+                <div className="about__form-row">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    className="about__form-input-compact"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    className="about__form-input-compact"
+                    required
+                  />
+                </div>
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  rows="3"
+                  className="about__form-textarea-compact"
                   required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  className="about__form-input-compact"
-                  required
-                />
-              </div>
-              <textarea
-                name="message"
-                placeholder="Message"
-                rows="3"
-                className="about__form-textarea-compact"
-                required
-              ></textarea>
-              <button type="submit" className="about__form-submit-compact">
-                Send Message
-              </button>
-            </form>
+                ></textarea>
+                <button type="submit" className="about__form-submit-compact">
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </section>
       </div>
