@@ -1,13 +1,9 @@
 import "./About.css";
-import poetsComposite from "../../assets/poets composite.webp";
-import reflectograph from "../../assets/reflectograph.webp";
-import instagramWall from "../../assets/instagramWall.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
-import FishEyeMagnifier from "../../components/FishEyeMagnifier/FishEyeMagnifier";
 import SelectedReadings from "../../components/SelectedReadings/SelectedReadings";
-import Button from "../../components/Button/Button";
 import Collage from "../../components/Collage/Collage";
 import AlanBernheimerPages from "../../components/AlanBernheimerPages/AlanBernheimerPages";
+import Photography from "../../components/Photography/Photography";
 
 function About() {
   return (
@@ -50,96 +46,7 @@ function About() {
         {/* Pages section and below - outside the collage layout */}
         <AlanBernheimerPages />
 
-        <section className="about__section about__section--centered">
-          <h2>Photography</h2>
-          <div className="about__photography">
-            <div className="about__photo-grid">
-              <article className="about__photo-card about__photo-card--landscape">
-                <div className="about__photo-content">
-                  <h3 className="about__photo-title">Poets Reading</h3>
-                  <p className="about__photo-description">
-                    1,000 portraits of poets reading, from 2008 to the present
-                  </p>
-                  <div className="about__photo-image-landscape">
-                    <a
-                      href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ display: "inline-block", cursor: "pointer" }}
-                      className="about__photo-link-image"
-                    >
-                      <FishEyeMagnifier
-                        src={poetsComposite}
-                        alt="Composite of poets reading"
-                        magnifierSize={160}
-                        zoom={2}
-                        className="about__photo-landscape"
-                      />
-                    </a>
-                  </div>
-                  <div className="about__photo-links">
-                    <Button
-                      href="https://www.flickr.com/photos/alanbernheimer/albums/72157604126064313/"
-                      external
-                    >
-                      View Collection
-                    </Button>
-                  </div>
-                </div>
-              </article>
-
-              <article className="about__photo-card about__photo-card--landscape">
-                <div className="about__photo-content">
-                  <h3 className="about__photo-title">Reflectographs</h3>
-                  <p className="about__photo-description">
-                    My father's cameraless photographs made by a point of light
-                    reflected onto photosensitive paper
-                  </p>
-                  <div className="about__photo-image-landscape">
-                    <img
-                      src={reflectograph}
-                      alt="Reflectograph artwork"
-                      className="about__photo-landscape"
-                    />
-                  </div>
-                  <div className="about__photo-links">
-                    <Button
-                      href="https://reflectographs.com/reflectographs/"
-                      external
-                    >
-                      Explore Series
-                    </Button>
-                  </div>
-                </div>
-              </article>
-
-              <article className="about__photo-card about__photo-card--instagram">
-                <h3 className="about__photo-title">Instagram</h3>
-                <div className="about__instagram-image-wrapper">
-                  <a
-                    href="https://www.instagram.com/alanbernheimer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={instagramWall}
-                      alt="Instagram gallery preview"
-                      className="about__instagram-image"
-                    />
-                  </a>
-                </div>
-                <div className="about__photo-links">
-                  <Button
-                    href="https://www.instagram.com/alanbernheimer"
-                    external
-                  >
-                    Follow on Instagram
-                  </Button>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
+        <Photography />
 
         <section className="about__section about__section--contact">
           <div className="about__contact-simple">
