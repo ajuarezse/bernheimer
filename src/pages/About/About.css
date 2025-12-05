@@ -638,9 +638,10 @@
 }
 
 .about__contact-header {
-  text-align: left;
+  text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .about__contact-header h2 {
