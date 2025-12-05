@@ -2,6 +2,7 @@ import "./About.css";
 import poetsComposite from "../../assets/poets composite.webp";
 import reflectograph from "../../assets/reflectograph.webp";
 import pa12Image from "../../assets/pa12.webp";
+import instagramWall from "../../assets/instagramWall.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import FishEyeMagnifier from "../../components/FishEyeMagnifier/FishEyeMagnifier";
 import SelectedReadings from "../../components/SelectedReadings/SelectedReadings";
@@ -227,9 +228,11 @@ function About() {
 
               <article className="about__photo-card">
                 <div className="about__photo-image">
-                  <div className="about__photo-placeholder">
-                    <span>Instagram Preview</span>
-                  </div>
+                  <img
+                    src={instagramWall}
+                    alt="Instagram gallery preview"
+                    className="about__photo-placeholder"
+                  />
                 </div>
                 <div className="about__photo-content">
                   <h3 className="about__photo-title">Instagram Gallery</h3>
@@ -239,7 +242,10 @@ function About() {
                     the lazy dog.
                   </p>
                   <div className="about__photo-links">
-                    <Button href="#" external>
+                    <Button
+                      href="https://www.instagram.com/alanbernheimer"
+                      external
+                    >
                       Follow on Instagram
                     </Button>
                   </div>
