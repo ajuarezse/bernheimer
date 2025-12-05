@@ -226,29 +226,28 @@ function About() {
                 </div>
               </article>
 
-              <article className="about__photo-card">
-                <div className="about__photo-image">
-                  <img
-                    src={instagramWall}
-                    alt="Instagram gallery preview"
-                    className="about__photo-placeholder"
-                  />
+              <article className="about__photo-card about__photo-card--instagram">
+                <h3 className="about__photo-title">Instagram</h3>
+                <div className="about__instagram-image-wrapper">
+                  <a
+                    href="https://www.instagram.com/alanbernheimer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={instagramWall}
+                      alt="Instagram gallery preview"
+                      className="about__instagram-image"
+                    />
+                  </a>
                 </div>
-                <div className="about__photo-content">
-                  <h3 className="about__photo-title">Instagram Gallery</h3>
-                  <p className="about__photo-description">
-                    The quick brown fox jumps over the lazy dog. The quick brown
-                    fox jumps over the lazy dog. The quick brown fox jumps over
-                    the lazy dog.
-                  </p>
-                  <div className="about__photo-links">
-                    <Button
-                      href="https://www.instagram.com/alanbernheimer"
-                      external
-                    >
-                      Follow on Instagram
-                    </Button>
-                  </div>
+                <div className="about__photo-links">
+                  <Button
+                    href="https://www.instagram.com/alanbernheimer"
+                    external
+                  >
+                    Follow on Instagram
+                  </Button>
                 </div>
               </article>
             </div>

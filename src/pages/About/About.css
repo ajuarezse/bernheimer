@@ -520,6 +520,67 @@
   border: 1px solid #eee;
 }
 
+/* Instagram card styling */
+.about__photo-card--instagram {
+  grid-template-columns: 240px 1fr;
+}
+
+.about__instagram-preview {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about__instagram-image {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid #eee;
+}
+
+/* Instagram card styling */
+.about__photo-card--instagram {
+  grid-template-columns: 1fr !important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about__instagram-image-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.about__instagram-image-wrapper a {
+  display: block;
+  cursor: pointer;
+}
+
+.about__instagram-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid #eee;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.about__instagram-image-wrapper a:hover .about__instagram-image {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.about__photo-card--instagram .about__photo-title {
+  margin-bottom: 0;
+}
+
+.about__photo-card--instagram .about__photo-links {
+  margin-top: 0;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .about__photo-card {
