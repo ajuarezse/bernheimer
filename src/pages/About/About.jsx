@@ -1,13 +1,13 @@
 import "./About.css";
 import poetsComposite from "../../assets/poets composite.webp";
 import reflectograph from "../../assets/reflectograph.webp";
-import pa12Image from "../../assets/pa12.webp";
 import instagramWall from "../../assets/instagramWall.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import FishEyeMagnifier from "../../components/FishEyeMagnifier/FishEyeMagnifier";
 import SelectedReadings from "../../components/SelectedReadings/SelectedReadings";
 import Button from "../../components/Button/Button";
 import Collage from "../../components/Collage/Collage";
+import AlanBernheimerPages from "../../components/AlanBernheimerPages/AlanBernheimerPages";
 
 function About() {
   return (
@@ -48,56 +48,7 @@ function About() {
         {/* End of about__layout */}
 
         {/* Pages section and below - outside the collage layout */}
-        <section className="about__section about__section--centered about__section--pages">
-          <div className="about__pages-wrapper">
-            <div className="about__pages-container">
-              <div className="about__pages-header">
-                <img
-                  src={pa12Image}
-                  alt="San Francisco Poets Theater"
-                  className="about__pages-header-image"
-                />
-                <div className="about__pages-overlay">
-                  <h2 className="about__pages-title">Alan Bernheimer Pages</h2>
-                  <div className="about__pages-links">
-                    <a
-                      href="https://writing.upenn.edu/pennsound/x/Bernheimer.php"
-                      className="about__pages-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      PennSound
-                    </a>
-                    <a
-                      href="https://en.wikipedia.org/wiki/Alan_Bernheimer"
-                      className="about__pages-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Wikipedia
-                    </a>
-                    <a
-                      href="https://writing.upenn.edu/epc/authors/bernheimer/"
-                      className="about__pages-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Electronic Poetry Center
-                    </a>
-                    <a
-                      href="https://www.thegrandpiano.org/poetstheater.html"
-                      className="about__pages-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      SF Poets Theater
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <AlanBernheimerPages />
 
         <section className="about__section about__section--centered">
           <h2>Photography</h2>
