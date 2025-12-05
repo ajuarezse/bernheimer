@@ -7,18 +7,7 @@ import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import FishEyeMagnifier from "../../components/FishEyeMagnifier/FishEyeMagnifier";
 import SelectedReadings from "../../components/SelectedReadings/SelectedReadings";
 import Button from "../../components/Button/Button";
-
-// Collage images
-import collage1 from "../../assets/collage/3SomeCrop.webp";
-import collage2 from "../../assets/collage/702Some.webp";
-import collage3 from "../../assets/collage/aAndLily.webp";
-import collage4 from "../../assets/collage/abReadingHolloway.webp";
-import collage5 from "../../assets/collage/athens.webp";
-import collage6 from "../../assets/collage/bridge.webp";
-import collage7 from "../../assets/collage/galerie2.webp";
-import collage8 from "../../assets/collage/hat.webp";
-import collage9 from "../../assets/collage/pointing.webp";
-import collage10 from "../../assets/collage/sailing1.webp";
+import Collage from "../../components/Collage/Collage";
 
 function About() {
   return (
@@ -26,60 +15,7 @@ function About() {
       <div className="about__container">
         <div className="about__layout">
           {/* Left side - Stacked Collage */}
-          <div className="about__collage-column">
-            <div className="about__collage-stack">
-              <img
-                src={collage2}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage4}
-                alt="Alan Bernheimer"
-                className="about__collage-image about__collage-image--span-2"
-              />
-              <img
-                src={collage6}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage1}
-                alt="Alan Bernheimer"
-                className="about__collage-image about__collage-image--span-2"
-              />
-              <img
-                src={collage8}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage10}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage9}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage3}
-                alt="Alan Bernheimer"
-                className="about__collage-image about__collage-image--span-2"
-              />
-              <img
-                src={collage5}
-                alt="Alan Bernheimer"
-                className="about__collage-image"
-              />
-              <img
-                src={collage7}
-                alt="Alan Bernheimer"
-                className="about__collage-image about__collage-image--span-2"
-              />
-            </div>
-          </div>
+          <Collage />
 
           {/* Right side - Content */}
           <div className="about__content-column">
