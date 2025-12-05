@@ -654,6 +654,10 @@
 
 .about__contact-form-wrapper {
   text-align: left;
+  background: #fefefe;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
 }
 
 .about__contact-simple p {
