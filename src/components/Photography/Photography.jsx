@@ -8,8 +8,8 @@ import Button from "../Button/Button";
 function Photography() {
   return (
     <section className="photography">
-      <h2 className="photography__title">Photography</h2>
       <div className="photography__container">
+        <h2 className="photography__title">Photography</h2>
         <div className="photography__grid">
           <article className="photography__card photography__card--landscape">
             <div className="photography__content">

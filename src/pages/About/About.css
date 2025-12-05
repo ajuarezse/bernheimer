@@ -320,9 +320,10 @@
 
 /* Contact Section Styles */
 .about__section--contact {
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: center;
+  margin-top: 4rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about__section--contact h2 {
@@ -627,16 +628,19 @@
 
 /* Compact Contact Form Styles */
 .about__contact-simple {
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f8f6f3 0%, #f0ede8 100%);
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 3rem;
-  align-items: start;
+  align-items: center;
 }
 
 .about__contact-header {
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .about__contact-header h2 {
@@ -653,6 +657,7 @@
 }
 
 .about__contact-simple p {
+  margin-top: 0;
   margin-bottom: 1rem;
   color: #666;
   font-size: 0.9rem;
