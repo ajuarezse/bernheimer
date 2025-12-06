@@ -38,10 +38,10 @@ function PublicationCard({
         )}
 
         {description && (
-          <p className="publication-card__description">{description}</p>
+          <div className="publication-card__description">{description}</div>
         )}
 
-        {quote && <p className="publication-card__quote">{quote}</p>}
+        {quote && <div className="publication-card__quote">{quote}</div>}
 
         {customButton && (
           <div className="publication-card__links">{customButton}</div>
@@ -66,8 +66,8 @@ PublicationCard.propTypes = {
   title: PropTypes.string.isRequired,
   publisher: PropTypes.string,
   year: PropTypes.string,
-  description: PropTypes.string,
-  quote: PropTypes.string,
+  description: PropTypes.node,
+  quote: PropTypes.node,
   links: PropTypes.arrayOf(
     PropTypes.shape({
       url: PropTypes.string.isRequired,
