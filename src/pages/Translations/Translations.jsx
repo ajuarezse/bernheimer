@@ -12,18 +12,6 @@ import parisByNight from "../../assets/parisByNight.webp";
 function Translations() {
   const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
 
-  const handlePurchaseSubmit = async (formData) => {
-    console.log("Purchase inquiry:", formData);
-    // TODO: Connect to email service (EmailJS, Formspree, etc.)
-    // For now, just close the modal
-    setTimeout(() => {
-      setIsPurchaseModalOpen(false);
-      alert(
-        "Thank you! Your inquiry will be sent once the email service is connected."
-      );
-    }, 1000);
-  };
-
   const purchaseFormFields = [
     {
       name: "name",
@@ -127,7 +115,6 @@ function Translations() {
           onClose={() => setIsPurchaseModalOpen(false)}
           title="Purchase Paris by Night"
           fields={purchaseFormFields}
-          onSubmit={handlePurchaseSubmit}
           submitLabel="Send Inquiry"
         />
       </div>

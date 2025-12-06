@@ -1,96 +1,17 @@
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import "./About.css";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import SelectedReadings from "../../components/SelectedReadings/SelectedReadings";
 import Collage from "../../components/Collage/Collage";
 import AlanBernheimerPages from "../../components/AlanBernheimerPages/AlanBernheimerPages";
 import Photography from "../../components/Photography/Photography";
+import { useEmailForm } from "../../hooks/useEmailForm";
 
 function About() {
-  const [formData, setFormData] = useState({
-    from_name: "",
-    reply_to: "",
-    message: "",
-    honeypot: "", // Bot trap field
-  });
-  const [formStatus, setFormStatus] = useState({
-    loading: false,
-    success: false,
-    error: "",
-  });
-  const [canSubmit, setCanSubmit] = useState(true);
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
+  const { formData, formStatus, canSubmit, handleChange, handleSubmit } =
+    useEmailForm({
+      templateId: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
+      storageKey: "lastContactSubmit",
     });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    // Honeypot check - if filled, it's a bot
-    if (formData.honeypot) {
-      console.log("Bot detected");
-      return;
-    }
-
-    // Rate limiting check
-    const lastSubmit = localStorage.getItem("lastContactSubmit");
-    const now = Date.now();
-    const cooldownPeriod = 60000; // 60 seconds
-
-    if (lastSubmit && now - parseInt(lastSubmit) < cooldownPeriod) {
-      const remainingTime = Math.ceil(
-        (cooldownPeriod - (now - parseInt(lastSubmit))) / 1000
-      );
-      setFormStatus({
-        loading: false,
-        success: false,
-        error: `Please wait ${remainingTime} seconds before submitting again.`,
-      });
-      return;
-    }
-
-    setFormStatus({ loading: true, success: false, error: "" });
-
-    try {
-      // Remove honeypot from data sent to EmailJS
-      const { honeypot, ...emailData } = formData;
-
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
-        emailData,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      );
-
-      // Store submission time
-      localStorage.setItem("lastContactSubmit", now.toString());
-
-      setFormStatus({ loading: false, success: true, error: "" });
-      setFormData({ from_name: "", reply_to: "", message: "", honeypot: "" });
-
-      // Disable submit button for cooldown period
-      setCanSubmit(false);
-      setTimeout(() => {
-        setCanSubmit(true);
-      }, cooldownPeriod);
-
-      // Clear success message after 5 seconds
-      setTimeout(() => {
-        setFormStatus({ loading: false, success: false, error: "" });
-      }, 5000);
-    } catch (error) {
-      setFormStatus({
-        loading: false,
-        success: false,
-        error: "Failed to send message. Please try again.",
-      });
-    }
-  };
   return (
     <ScrollFadeIn selector=".about__section, .about__bio-section">
       <div className="about__container">
@@ -151,7 +72,6 @@ function About() {
                 </div>
               )}
               <form className="about__form-compact" onSubmit={handleSubmit}>
-                {/* Honeypot field - hidden from users, visible to bots */}
                 <input
                   type="text"
                   name="honeypot"
