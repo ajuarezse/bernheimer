@@ -723,7 +723,11 @@
 
 .about__form-submit-compact:disabled {
   background: #999;
-  cursor: not-allowed;
+  cursor: default;
+}
+
+.about__form-submit-compact:disabled:hover {
+  cursor: default;
 }
 
 .about__form-input-compact:disabled,

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 
 export const useEmailForm = ({ templateId, storageKey }) => {
@@ -24,9 +24,21 @@ export const useEmailForm = ({ templateId, storageKey }) => {
     });
   };
 
-  const resetForm = () => {
+  const resetForm = useCallback(() => {
     setFormData({ from_name: "", reply_to: "", message: "", honeypot: "" });
-  };
+  }, []);
+
+  const isFormValid = useMemo(() => {
+    const { from_name, reply_to, message } = formData;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    return (
+      from_name.trim() !== "" &&
+      reply_to.trim() !== "" &&
+      emailRegex.test(reply_to) &&
+      message.trim() !== ""
+    );
+  }, [formData]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -90,6 +102,7 @@ export const useEmailForm = ({ templateId, storageKey }) => {
     formData,
     formStatus,
     canSubmit,
+    isFormValid,
     handleChange,
     handleSubmit,
     resetForm,

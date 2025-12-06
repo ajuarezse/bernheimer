@@ -7,11 +7,17 @@ import Photography from "../../components/Photography/Photography";
 import { useEmailForm } from "../../hooks/useEmailForm";
 
 function About() {
-  const { formData, formStatus, canSubmit, handleChange, handleSubmit } =
-    useEmailForm({
-      templateId: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
-      storageKey: "lastContactSubmit",
-    });
+  const {
+    formData,
+    formStatus,
+    canSubmit,
+    isFormValid,
+    handleChange,
+    handleSubmit,
+  } = useEmailForm({
+    templateId: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
+    storageKey: "lastContactSubmit",
+  });
   return (
     <ScrollFadeIn selector=".about__section, .about__bio-section">
       <div className="about__container">
@@ -90,7 +96,7 @@ function About() {
                     value={formData.from_name}
                     onChange={handleChange}
                     required
-                    disabled={formStatus.loading || !canSubmit}
+                    disabled={formStatus.loading}
                   />
                   <input
                     type="email"
@@ -100,7 +106,7 @@ function About() {
                     value={formData.reply_to}
                     onChange={handleChange}
                     required
-                    disabled={formStatus.loading || !canSubmit}
+                    disabled={formStatus.loading}
                   />
                 </div>
                 <textarea
@@ -111,12 +117,12 @@ function About() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  disabled={formStatus.loading || !canSubmit}
+                  disabled={formStatus.loading}
                 ></textarea>
                 <button
                   type="submit"
                   className="about__form-submit-compact"
-                  disabled={formStatus.loading || !canSubmit}
+                  disabled={formStatus.loading || !canSubmit || !isFormValid}
                 >
                   {formStatus.loading ? "Sending..." : "Send Message"}
                 </button>

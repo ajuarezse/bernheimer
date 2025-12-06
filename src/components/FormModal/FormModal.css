@@ -210,6 +210,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.form-modal-button-submit:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.form-modal-button-submit:disabled:hover {
+  cursor: default;
+}
+
 .form-modal-success {
   background: #d4edda;
   color: #155724;

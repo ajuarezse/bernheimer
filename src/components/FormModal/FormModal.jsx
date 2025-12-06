@@ -7,6 +7,7 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
     formData: emailFormData,
     formStatus,
     canSubmit,
+    isFormValid,
     handleChange: handleEmailChange,
     handleSubmit: handleEmailSubmit,
     resetForm,
@@ -173,7 +174,7 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
                     className={`form-modal-textarea ${
                       errors[field.name] ? "form-modal-input-error" : ""
                     }`}
-                    disabled={formStatus.loading || !canSubmit}
+                    disabled={formStatus.loading}
                   />
                 ) : (
                   <input
@@ -186,7 +187,7 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
                     className={`form-modal-input ${
                       errors[field.name] ? "form-modal-input-error" : ""
                     }`}
-                    disabled={formStatus.loading || !canSubmit}
+                    disabled={formStatus.loading}
                   />
                 )}
 
@@ -209,7 +210,7 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
             <button
               type="submit"
               className="form-modal-button form-modal-button-submit"
-              disabled={formStatus.loading || !canSubmit}
+              disabled={formStatus.loading || !canSubmit || !isFormValid}
             >
               {formStatus.loading ? "Sending..." : submitLabel}
             </button>
