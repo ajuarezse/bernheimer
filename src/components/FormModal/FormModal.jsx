@@ -2,13 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import "./FormModal.css";
 import { useEmailForm } from "../../hooks/useEmailForm";
 
-function FormModal({
-  isOpen,
-  onClose,
-  title,
-  fields,
-  submitLabel = "Submit",
-}) {
+function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
   const {
     formData: emailFormData,
     formStatus,
