@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Poetry.css";
 import cafeImage from "../../assets/cafeIsotope.webp";
 import fromNatureImage from "../../assets/From Nature.webp";
@@ -7,8 +8,37 @@ import billionesqueImage from "../../assets/Billionesque.webp";
 import stateLoungeImage from "../../assets/State Lounge.webp";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import PublicationCard from "../../components/PublicationCard/PublicationCard";
+import Button from "../../components/Button/Button";
+import FormModal from "../../components/FormModal/FormModal";
 
 function Poetry() {
+  const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
+
+  const purchaseFormFields = [
+    {
+      name: "name",
+      label: "Name",
+      type: "text",
+      required: true,
+      placeholder: "Your full name",
+    },
+    {
+      name: "email",
+      label: "Email Address",
+      type: "email",
+      required: true,
+      placeholder: "your.email@example.com",
+    },
+    {
+      name: "message",
+      label: "Message (Optional)",
+      type: "textarea",
+      required: false,
+      placeholder: "Any additional questions or comments...",
+      rows: 4,
+    },
+  ];
+
   return (
     <ScrollFadeIn selector=".poetry__publication-card">
       <div className="poetry__container">
@@ -33,7 +63,7 @@ function Poetry() {
               links={[
                 {
                   url: "https://www.cuneiformpress.com/collections/catalog/products/alan-bernheimer-from-nature",
-                  text: "Order",
+                  text: "Purchase",
                 },
               ]}
               className="poetry__publication-card poetry__publication-card--book"
@@ -57,7 +87,7 @@ function Poetry() {
               links={[
                 {
                   url: "https://www.zephyrpress.org/product-page/the-spoonlight-institute",
-                  text: "Order",
+                  text: "Purchase",
                 },
               ]}
               className="poetry__publication-card poetry__publication-card--book"
@@ -97,12 +127,11 @@ function Poetry() {
                   </span>
                 </>
               }
-              links={[
-                {
-                  url: "/contact",
-                  text: "Use contact form to order from author",
-                },
-              ]}
+              customButton={
+                <Button onClick={() => setIsPurchaseModalOpen(true)}>
+                  Purchase
+                </Button>
+              }
               className="poetry__publication-card poetry__publication-card--book"
             />
 
@@ -136,6 +165,14 @@ function Poetry() {
             />
           </div>
         </section>
+
+        <FormModal
+          isOpen={isPurchaseModalOpen}
+          onClose={() => setIsPurchaseModalOpen(false)}
+          title="Purchase Billionesque"
+          fields={purchaseFormFields}
+          submitLabel="Send Inquiry"
+        />
       </div>
     </ScrollFadeIn>
   );

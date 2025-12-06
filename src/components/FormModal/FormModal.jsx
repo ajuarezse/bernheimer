@@ -48,6 +48,38 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
     }
   };
 
+  const validateField = (fieldName, value) => {
+    const field = fields.find((f) => f.name === fieldName);
+    if (!field) return;
+
+    const newErrors = { ...errors };
+
+    if (field.required && !value?.trim()) {
+      newErrors[fieldName] = `${field.label} is required`;
+    } else if (
+      field.type === "email" &&
+      value &&
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
+    ) {
+      newErrors[fieldName] = "Please enter a valid email address";
+    } else {
+      delete newErrors[fieldName];
+    }
+
+    setErrors(newErrors);
+  };
+
+  const handleBlur = (fieldName) => {
+    const fieldValue =
+      fieldName === "name"
+        ? emailFormData.from_name
+        : fieldName === "email"
+        ? emailFormData.reply_to
+        : emailFormData.message;
+
+    validateField(fieldName, fieldValue);
+  };
+
   const validateForm = () => {
     const newErrors = {};
 
@@ -120,6 +152,10 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
 
         <h2 className="form-modal-title">{title}</h2>
 
+        <p className="form-modal-description">
+          Please fill out the form below and we'll get back to you about your purchase inquiry.
+        </p>
+
         {formStatus.success && (
           <div className="form-modal-success">
             Message sent successfully! We'll get back to you soon.
@@ -169,6 +205,7 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
                     name={field.name}
                     value={fieldValue || ""}
                     onChange={(e) => handleChange(field.name, e.target.value)}
+                    onBlur={() => handleBlur(field.name)}
                     placeholder={field.placeholder}
                     rows={field.rows || 4}
                     className={`form-modal-textarea ${
@@ -183,6 +220,7 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
                     name={field.name}
                     value={fieldValue || ""}
                     onChange={(e) => handleChange(field.name, e.target.value)}
+                    onBlur={() => handleBlur(field.name)}
                     placeholder={field.placeholder}
                     className={`form-modal-input ${
                       errors[field.name] ? "form-modal-input-error" : ""

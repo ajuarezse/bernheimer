@@ -29,14 +29,13 @@ export const useEmailForm = ({ templateId, storageKey }) => {
   }, []);
 
   const isFormValid = useMemo(() => {
-    const { from_name, reply_to, message } = formData;
+    const { from_name, reply_to } = formData;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     return (
       from_name.trim() !== "" &&
       reply_to.trim() !== "" &&
-      emailRegex.test(reply_to) &&
-      message.trim() !== ""
+      emailRegex.test(reply_to)
     );
   }, [formData]);
 
