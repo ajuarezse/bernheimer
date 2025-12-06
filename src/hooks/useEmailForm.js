@@ -6,7 +6,7 @@ export const useEmailForm = ({ templateId, storageKey }) => {
     from_name: "",
     reply_to: "",
     message: "",
-    honeypot: "", // Bot trap field
+    honeypot: "",
   });
 
   const [formStatus, setFormStatus] = useState({
@@ -31,16 +31,14 @@ export const useEmailForm = ({ templateId, storageKey }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Honeypot check - if filled, it's a bot
     if (formData.honeypot) {
       console.log("Bot detected");
       return;
     }
 
-    // Rate limiting check
     const lastSubmit = localStorage.getItem(storageKey);
     const now = Date.now();
-    const cooldownPeriod = 60000; // 60 seconds
+    const cooldownPeriod = 60000;
 
     if (lastSubmit && now - parseInt(lastSubmit) < cooldownPeriod) {
       const remainingTime = Math.ceil(
@@ -57,7 +55,6 @@ export const useEmailForm = ({ templateId, storageKey }) => {
     setFormStatus({ loading: true, success: false, error: "" });
 
     try {
-      // Remove honeypot from data sent to EmailJS
       const { honeypot, ...emailData } = formData;
 
       await emailjs.send(
@@ -67,19 +64,16 @@ export const useEmailForm = ({ templateId, storageKey }) => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
-      // Store submission time
       localStorage.setItem(storageKey, now.toString());
 
       setFormStatus({ loading: false, success: true, error: "" });
       resetForm();
 
-      // Disable submit button for cooldown period
       setCanSubmit(false);
       setTimeout(() => {
         setCanSubmit(true);
       }, cooldownPeriod);
 
-      // Clear success message after 5 seconds
       setTimeout(() => {
         setFormStatus({ loading: false, success: false, error: "" });
       }, 5000);
