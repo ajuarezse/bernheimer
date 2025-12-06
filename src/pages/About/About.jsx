@@ -1,3 +1,5 @@
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./About.css";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import SelectedReadings from "../../components/SelectedReadings/SelectedReadings";
@@ -6,6 +8,89 @@ import AlanBernheimerPages from "../../components/AlanBernheimerPages/AlanBernhe
 import Photography from "../../components/Photography/Photography";
 
 function About() {
+  const [formData, setFormData] = useState({
+    from_name: "",
+    reply_to: "",
+    message: "",
+    honeypot: "", // Bot trap field
+  });
+  const [formStatus, setFormStatus] = useState({
+    loading: false,
+    success: false,
+    error: "",
+  });
+  const [canSubmit, setCanSubmit] = useState(true);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Honeypot check - if filled, it's a bot
+    if (formData.honeypot) {
+      console.log("Bot detected");
+      return;
+    }
+
+    // Rate limiting check
+    const lastSubmit = localStorage.getItem("lastContactSubmit");
+    const now = Date.now();
+    const cooldownPeriod = 60000; // 60 seconds
+
+    if (lastSubmit && now - parseInt(lastSubmit) < cooldownPeriod) {
+      const remainingTime = Math.ceil(
+        (cooldownPeriod - (now - parseInt(lastSubmit))) / 1000
+      );
+      setFormStatus({
+        loading: false,
+        success: false,
+        error: `Please wait ${remainingTime} seconds before submitting again.`,
+      });
+      return;
+    }
+
+    setFormStatus({ loading: true, success: false, error: "" });
+
+    try {
+      // Remove honeypot from data sent to EmailJS
+      const { honeypot, ...emailData } = formData;
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
+        emailData,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      // Store submission time
+      localStorage.setItem("lastContactSubmit", now.toString());
+
+      setFormStatus({ loading: false, success: true, error: "" });
+      setFormData({ from_name: "", reply_to: "", message: "", honeypot: "" });
+
+      // Disable submit button for cooldown period
+      setCanSubmit(false);
+      setTimeout(() => {
+        setCanSubmit(true);
+      }, cooldownPeriod);
+
+      // Clear success message after 5 seconds
+      setTimeout(() => {
+        setFormStatus({ loading: false, success: false, error: "" });
+      }, 5000);
+    } catch (error) {
+      setFormStatus({
+        loading: false,
+        success: false,
+        error: "Failed to send message. Please try again.",
+      });
+    }
+  };
   return (
     <ScrollFadeIn selector=".about__section, .about__bio-section">
       <div className="about__container">
@@ -55,21 +140,47 @@ function About() {
             </div>
             <div className="about__contact-form-wrapper">
               <p>For inquiries, please fill out this form:</p>
-              <form className="about__form-compact">
+              {formStatus.success && (
+                <div className="about__form-message about__form-message--success">
+                  Message sent successfully! We'll get back to you soon.
+                </div>
+              )}
+              {formStatus.error && (
+                <div className="about__form-message about__form-message--error">
+                  {formStatus.error}
+                </div>
+              )}
+              <form className="about__form-compact" onSubmit={handleSubmit}>
+                {/* Honeypot field - hidden from users, visible to bots */}
+                <input
+                  type="text"
+                  name="honeypot"
+                  value={formData.honeypot}
+                  onChange={handleChange}
+                  style={{ display: "none" }}
+                  tabIndex="-1"
+                  autoComplete="off"
+                />
                 <div className="about__form-row">
                   <input
                     type="text"
-                    name="name"
+                    name="from_name"
                     placeholder="Name"
                     className="about__form-input-compact"
+                    value={formData.from_name}
+                    onChange={handleChange}
                     required
+                    disabled={formStatus.loading || !canSubmit}
                   />
                   <input
                     type="email"
-                    name="email"
+                    name="reply_to"
                     placeholder="Email"
                     className="about__form-input-compact"
+                    value={formData.reply_to}
+                    onChange={handleChange}
                     required
+                    disabled={formStatus.loading || !canSubmit}
                   />
                 </div>
                 <textarea
@@ -77,10 +188,17 @@ function About() {
                   placeholder="Message"
                   rows="3"
                   className="about__form-textarea-compact"
+                  value={formData.message}
+                  onChange={handleChange}
                   required
+                  disabled={formStatus.loading || !canSubmit}
                 ></textarea>
-                <button type="submit" className="about__form-submit-compact">
-                  Send Message
+                <button
+                  type="submit"
+                  className="about__form-submit-compact"
+                  disabled={formStatus.loading || !canSubmit}
+                >
+                  {formStatus.loading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
