@@ -166,6 +166,9 @@
   font-weight: 600;
 }
 
+/* Responsive Design */
+
+/* Tablet and small desktop */
 @media (min-width: 768px) {
   .header__nav {
     justify-content: flex-start;
@@ -173,5 +176,110 @@
 
   .header__logo--with-nav {
     transform: translateX(-80px);
+  }
+}
+
+/* Mobile - Portrait and small screens */
+@media (max-width: 767px) {
+  .header {
+    height: 70px;
+    min-height: 70px;
+  }
+
+  .header__grid {
+    padding: 0 1rem;
+  }
+
+  .header__logo {
+    font-size: 1.5em;
+  }
+
+  .header__logo--with-nav {
+    transform: translateX(-20px);
+  }
+
+  .header__nav {
+    gap: 1rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .header__nav-link {
+    padding: 0.4rem 0;
+  }
+
+  /* Adjust dropdown for mobile */
+  .header__dropdown {
+    min-width: 180px;
+    font-size: 0.85rem;
+    left: -0.5rem;
+  }
+
+  .header__dropdown-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .header__dropdown-link:hover {
+    padding-left: 1.25rem;
+  }
+}
+
+/* Small mobile - Very narrow screens */
+@media (max-width: 480px) {
+  .header {
+    height: 60px;
+    min-height: 60px;
+  }
+
+  .header__logo {
+    font-size: 1.25em;
+  }
+
+  .header__logo--with-nav {
+    transform: translateX(-10px);
+  }
+
+  .header__nav {
+    gap: 0.75rem;
+    margin-left: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .header__nav-link {
+    padding: 0.3rem 0;
+  }
+
+  /* Stack navigation vertically on very small screens */
+  .header__dropdown {
+    min-width: 160px;
+    font-size: 0.8rem;
+    left: -0.25rem;
+  }
+
+  .header__dropdown-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .header__dropdown-link:hover {
+    padding-left: 1rem;
+  }
+}
+
+/* Extra small mobile - Optimize for smallest screens */
+@media (max-width: 375px) {
+  .header__logo {
+    font-size: 1.1em;
+  }
+
+  .header__nav {
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .header__dropdown {
+    min-width: 150px;
   }
 }
