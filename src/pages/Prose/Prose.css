@@ -133,6 +133,28 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
+.prose-item--yty {
+  flex-direction: row;
+  align-items: center;
+}
+
+.prose-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.prose-swazzle-image {
+  width: 150px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .prose-item:last-child {
   border-bottom: 1px solid rgba(212, 197, 176, 0.3);
 }

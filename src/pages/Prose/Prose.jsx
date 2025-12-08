@@ -89,46 +89,47 @@ function Prose() {
             </ul>
           </div>
 
-          <img
-            src={swazzleImage}
-            alt="Swazzle illustration"
-            className="prose-header-image"
-          />
-
           <ul className="prose-items">
-            <li className="prose-item">
-              <span className="prose-title-text">Younger Than Yesterday</span>
-              <Button
-                onClick={() =>
-                  openGallery(
-                    [
-                      ytyPg01,
-                      ytyPg02,
-                      ytyPg03,
-                      ytyPg04,
-                      ytyPg05,
-                      ytyPg06,
-                      ytyPg07,
-                      ytyPg08,
-                      ytyPg09,
-                      ytyPg10,
-                      ytyPg11,
-                      ytyPg12,
-                      ytyPg13,
-                      ytyPg14,
-                      ytyPg15,
-                      ytyPg16,
-                      ytyPg17,
-                      ytyPg18,
-                      ytyPg19,
-                      ytyPg20,
-                    ],
-                    "Younger Than Yesterday"
-                  )
-                }
-              >
-                Read
-              </Button>
+            <li className="prose-item prose-item--yty">
+              <img
+                src={swazzleImage}
+                alt="Swazzle illustration"
+                className="prose-swazzle-image"
+              />
+              <div className="prose-item-content">
+                <span className="prose-title-text">Younger Than Yesterday</span>
+                <Button
+                  onClick={() =>
+                    openGallery(
+                      [
+                        ytyPg01,
+                        ytyPg02,
+                        ytyPg03,
+                        ytyPg04,
+                        ytyPg05,
+                        ytyPg06,
+                        ytyPg07,
+                        ytyPg08,
+                        ytyPg09,
+                        ytyPg10,
+                        ytyPg11,
+                        ytyPg12,
+                        ytyPg13,
+                        ytyPg14,
+                        ytyPg15,
+                        ytyPg16,
+                        ytyPg17,
+                        ytyPg18,
+                        ytyPg19,
+                        ytyPg20,
+                      ],
+                      "Younger Than Yesterday"
+                    )
+                  }
+                >
+                  Read
+                </Button>
+              </div>
             </li>
             <li className="prose-item">
               <span className="prose-title-text">Subject Matter</span>

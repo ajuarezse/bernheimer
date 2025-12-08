@@ -153,7 +153,8 @@ function FormModal({ isOpen, onClose, title, fields, submitLabel = "Submit" }) {
         <h2 className="form-modal-title">{title}</h2>
 
         <p className="form-modal-description">
-          Please fill out the form below and we'll get back to you about your purchase inquiry.
+          Please fill out the form below and we'll get back to you about your
+          purchase inquiry.
         </p>
 
         {formStatus.success && (
