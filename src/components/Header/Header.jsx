@@ -1,27 +1,46 @@
+import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const [navOpen, setNavOpen] = useState(false);
+
+  const handleLogoClick = (e) => {
+    if (isHomePage) {
+      e.preventDefault();
+      setNavOpen(!navOpen);
+    }
+  };
+
   return (
     <header className="header">
       <div
         className={`header__grid ${
-          !isHomePage ? "header__grid--with-nav" : ""
+          !isHomePage ? "header__grid--with-nav" : navOpen ? "header__grid--with-nav" : ""
         }`}
       >
         <NavLink
           to="/"
           className={`header__logo ${
-            isHomePage ? "header__logo--centered" : "header__logo--with-nav"
+            isHomePage 
+              ? navOpen 
+                ? "header__logo--with-nav" 
+                : "header__logo--centered" 
+              : "header__logo--with-nav"
           }`}
+          onClick={handleLogoClick}
         >
           Alan Bernheimer
         </NavLink>
         <nav
           className={`header__nav ${
-            isHomePage ? "header__nav--hidden" : "header__nav--visible"
+            isHomePage 
+              ? navOpen 
+                ? "header__nav--visible" 
+                : "header__nav--hidden" 
+              : "header__nav--visible"
           }`}
         >
           <div className="header__nav-item header__nav-item--dropdown">
