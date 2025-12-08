@@ -7,7 +7,7 @@ import Button from "../Button/Button";
 
 function Photography() {
   return (
-    <section className="photography">
+    <section className="photography" id="photography">
       <div className="photography__container">
         <h2 className="photography__title">Photography</h2>
         <div className="photography__grid">

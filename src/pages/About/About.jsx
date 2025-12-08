@@ -26,7 +26,7 @@ function About() {
           <Collage />
 
           {/* Right side - Content */}
-          <div className="about__content-column">
+          <div className="about__content-column" id="bio">
             <div className="about__bio-text">
               <p>
                 <strong>Alan Bernheimer</strong> is a poet, writer, and
@@ -60,7 +60,10 @@ function About() {
 
         <Photography />
 
-        <section className="about__section about__section--contact">
+        <section
+          className="about__section about__section--contact"
+          id="contact"
+        >
           <div className="about__contact-simple">
             <div className="about__contact-header">
               <h2>Contact</h2>

@@ -24,9 +24,31 @@ function Header() {
             isHomePage ? "header__nav--hidden" : "header__nav--visible"
           }`}
         >
-          <NavLink to="/about" className="header__nav-link">
-            About
-          </NavLink>
+          <div className="header__nav-item header__nav-item--dropdown">
+            <NavLink to="/about" className="header__nav-link">
+              About
+            </NavLink>
+            <div className="header__dropdown">
+              <a href="/about#bio" className="header__dropdown-link">
+                Bio
+              </a>
+              <a
+                href="/about#selected-readings"
+                className="header__dropdown-link"
+              >
+                Selected Readings
+              </a>
+              <a href="/about#pages" className="header__dropdown-link">
+                Alan Bernheimer Pages
+              </a>
+              <a href="/about#photography" className="header__dropdown-link">
+                Photography
+              </a>
+              <a href="/about#contact" className="header__dropdown-link">
+                Contact
+              </a>
+            </div>
+          </div>
           <NavLink to="/poetry" className="header__nav-link">
             Poetry
           </NavLink>

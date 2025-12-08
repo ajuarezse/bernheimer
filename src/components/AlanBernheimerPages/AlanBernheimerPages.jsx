@@ -3,7 +3,7 @@ import pa12Image from "../../assets/pa12.webp";
 
 function AlanBernheimerPages() {
   return (
-    <section className="pages">
+    <section className="pages" id="pages">
       <div className="pages__wrapper">
         <div className="pages__container">
           <div className="pages__header">

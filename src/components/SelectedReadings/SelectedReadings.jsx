@@ -212,7 +212,7 @@ function SelectedReadings() {
   ];
 
   return (
-    <section className="selected-readings-wrapper">
+    <section className="selected-readings-wrapper" id="selected-readings">
       <div className="selected-readings-header">
         <h2 className="selected-readings-title">Selected Readings</h2>
         <img
