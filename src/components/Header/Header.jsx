@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
 
@@ -6,6 +6,13 @@ function Header() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const [navOpen, setNavOpen] = useState(false);
+
+  // Reset nav to hidden when navigating back to home page
+  useEffect(() => {
+    if (isHomePage) {
+      setNavOpen(false);
+    }
+  }, [isHomePage]);
 
   const handleLogoClick = (e) => {
     if (isHomePage) {
