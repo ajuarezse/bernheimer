@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./About.css";
 import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import SelectedReadings from "../../components/SelectedReadings/SelectedReadings";
@@ -7,6 +9,7 @@ import Photography from "../../components/Photography/Photography";
 import { useEmailForm } from "../../hooks/useEmailForm";
 
 function About() {
+  const location = useLocation();
   const {
     formData,
     formStatus,
@@ -18,6 +21,20 @@ function About() {
     templateId: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
     storageKey: "lastContactSubmit",
   });
+
+  useEffect(() => {
+    // Handle hash navigation after component mounts
+    if (location.hash) {
+      // Small delay to ensure content is rendered
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <ScrollFadeIn selector=".about__section, .about__bio-section">
       <div className="about__container">
