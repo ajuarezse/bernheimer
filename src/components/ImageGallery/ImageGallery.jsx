@@ -44,7 +44,9 @@ function ImageGallery({ images, isOpen, onClose, title }) {
 
         <div className="gallery__header">
           <h3 className="gallery__title">{title}</h3>
-          <span className="gallery__counter">{images.length} pages</span>
+          <span className="gallery__counter">
+            {images.length} {images.length === 1 ? "page" : "pages"}
+          </span>
         </div>
 
         <div

@@ -25,16 +25,20 @@ function Header() {
     <header className="header">
       <div
         className={`header__grid ${
-          !isHomePage ? "header__grid--with-nav" : navOpen ? "header__grid--with-nav" : ""
+          !isHomePage
+            ? "header__grid--with-nav"
+            : navOpen
+            ? "header__grid--with-nav"
+            : ""
         }`}
       >
         <NavLink
           to="/"
           className={`header__logo ${
-            isHomePage 
-              ? navOpen 
-                ? "header__logo--with-nav" 
-                : "header__logo--centered" 
+            isHomePage
+              ? navOpen
+                ? "header__logo--with-nav"
+                : "header__logo--centered"
               : "header__logo--with-nav"
           }`}
           onClick={handleLogoClick}
@@ -43,10 +47,10 @@ function Header() {
         </NavLink>
         <nav
           className={`header__nav ${
-            isHomePage 
-              ? navOpen 
-                ? "header__nav--visible" 
-                : "header__nav--hidden" 
+            isHomePage
+              ? navOpen
+                ? "header__nav--visible"
+                : "header__nav--hidden"
               : "header__nav--visible"
           }`}
         >
