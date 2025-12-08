@@ -29,7 +29,15 @@ function About() {
       setTimeout(() => {
         const element = document.querySelector(location.hash);
         if (element) {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
+          const headerOffset = 100; // Height of sticky header + some padding
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
         }
       }, 100);
     }

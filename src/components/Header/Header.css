@@ -66,14 +66,14 @@
 .header__nav-item--dropdown:hover .header__dropdown {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
 
 .header__dropdown {
   position: absolute;
   top: calc(100% + 0.5rem);
-  left: 50%;
-  transform: translateX(-50%) translateY(-10px);
+  left: 0;
+  transform: translateY(-10px);
   background: rgba(42, 35, 24, 0.98);
   backdrop-filter: blur(16px);
   border: 1px solid rgba(212, 197, 176, 0.3);
