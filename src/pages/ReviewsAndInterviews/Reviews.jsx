@@ -193,6 +193,18 @@ function Reviews() {
             <li className="reviews__item">
               <div className="reviews__content">
                 <div className="reviews__item-header">
+                  <h3 className="reviews__source">Northwest Review of Books</h3>
+                </div>
+                <div className="reviews__details">
+                  <span className="reviews__work">Patrick Dunagan</span>
+                  <span className="reviews__coming-soon">Coming soon</span>
+                </div>
+              </div>
+            </li>
+
+            <li className="reviews__item">
+              <div className="reviews__content">
+                <div className="reviews__item-header">
                   <h3 className="reviews__source">
                     Introduction to Segue reading
                   </h3>
