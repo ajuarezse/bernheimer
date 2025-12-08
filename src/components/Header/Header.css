@@ -66,12 +66,12 @@
 .header__nav-item--dropdown:hover .header__dropdown {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
 }
 
 .header__dropdown {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 0.5rem);
   left: 50%;
   transform: translateX(-50%) translateY(-10px);
   background: rgba(42, 35, 24, 0.98);
@@ -85,7 +85,16 @@
   visibility: hidden;
   transition: all 0.3s ease;
   z-index: 1000;
-  margin-top: 0.5rem;
+}
+
+.header__dropdown::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  background: transparent;
 }
 
 .header__dropdown-link {

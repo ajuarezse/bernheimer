@@ -39,7 +39,7 @@ function Header() {
                 Selected Readings
               </a>
               <a href="/about#pages" className="header__dropdown-link">
-                Alan Bernheimer Pages
+                AB Pages
               </a>
               <a href="/about#photography" className="header__dropdown-link">
                 Photography
