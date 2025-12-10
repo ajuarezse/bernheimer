@@ -59,24 +59,24 @@ function Header() {
               About
             </NavLink>
             <div className="header__dropdown">
-              <a href="/about#bio" className="header__dropdown-link">
+              <NavLink to="/about#bio" className="header__dropdown-link">
                 Bio
-              </a>
-              <a
-                href="/about#selected-readings"
+              </NavLink>
+              <NavLink
+                to="/about#selected-readings"
                 className="header__dropdown-link"
               >
                 Selected Readings
-              </a>
-              <a href="/about#pages" className="header__dropdown-link">
+              </NavLink>
+              <NavLink to="/about#pages" className="header__dropdown-link">
                 AB Pages
-              </a>
-              <a href="/about#photography" className="header__dropdown-link">
+              </NavLink>
+              <NavLink to="/about#photography" className="header__dropdown-link">
                 Photography
-              </a>
-              <a href="/about#contact" className="header__dropdown-link">
+              </NavLink>
+              <NavLink to="/about#contact" className="header__dropdown-link">
                 Contact
-              </a>
+              </NavLink>
             </div>
           </div>
           <NavLink to="/poetry" className="header__nav-link">
