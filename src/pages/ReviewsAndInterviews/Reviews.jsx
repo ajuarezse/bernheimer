@@ -18,6 +18,9 @@ import bBrownPg1 from "../../assets/reviews/brown/bBReviewFromNature-1.webp";
 import bBrownPg2 from "../../assets/reviews/brown/bBReviewFromNature-2.webp";
 import bBrownPg3 from "../../assets/reviews/brown/bBReviewFromNature-3.webp";
 import bBrownPg4 from "../../assets/reviews/brown/bBReviewFromNature-4.webp";
+import northwestPg1 from "../../assets/reviews/northwest/northwest1.webp";
+import northwestPg2 from "../../assets/reviews/northwest/northwest2.webp";
+import northwestPg3 from "../../assets/reviews/northwest/northwest3.webp";
 
 function Reviews() {
   const [galleryOpen, setGalleryOpen] = useState(false);
@@ -197,7 +200,16 @@ function Reviews() {
                 </div>
                 <div className="reviews__details">
                   <span className="reviews__work">Patrick Dunagan</span>
-                  <span className="reviews__coming-soon">Coming soon</span>
+                  <Button
+                    onClick={() =>
+                      openGallery(
+                        [northwestPg1, northwestPg2, northwestPg3],
+                        "Northwest Review of Books - Patrick Dunagan"
+                      )
+                    }
+                  >
+                    Read
+                  </Button>
                 </div>
               </div>
             </li>
