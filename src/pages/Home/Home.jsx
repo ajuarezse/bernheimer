@@ -75,48 +75,27 @@ function Home() {
                 : ""
             }`}
             style={{
-              backgroundColor:
-                category.image &&
-                category.name !== "Prose" &&
-                category.name !== "Poetry" &&
-                category.name !== "Reviews & Interviews"
-                  ? "white"
-                  : (category.name === "Prose" ||
-                      category.name === "Poetry" ||
-                      category.name === "Reviews & Interviews") &&
-                    category.image
-                  ? "transparent"
-                  : category.color || category.fallbackColor,
-              ...(category.image &&
-                category.name !== "Prose" &&
-                category.name !== "Poetry" &&
-                category.name !== "Reviews & Interviews" && {
-                  backgroundImage: `url(${category.image})`,
-                  backgroundSize: "auto 100%",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }),
+              backgroundColor: category.image
+                ? "white"
+                : category.color || category.fallbackColor,
             }}
           >
-            {(category.name === "Prose" ||
-              category.name === "Poetry" ||
-              category.name === "Reviews & Interviews") &&
-              category.image && (
-                <>
-                  <div
-                    className="home__category-bg-mask"
-                    style={{
-                      backgroundImage: `url(${category.image})`,
-                    }}
-                  />
-                  <div
-                    className="home__category-main-image"
-                    style={{
-                      backgroundImage: `url(${category.image})`,
-                    }}
-                  />
-                </>
-              )}
+            {category.image && (
+              <>
+                <div
+                  className="home__category-bg-mask"
+                  style={{
+                    backgroundImage: `url(${category.image})`,
+                  }}
+                />
+                <div
+                  className="home__category-main-image"
+                  style={{
+                    backgroundImage: `url(${category.image})`,
+                  }}
+                />
+              </>
+            )}
           </div>
         </NavLink>
       ))}
