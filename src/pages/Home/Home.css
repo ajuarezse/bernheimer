@@ -135,14 +135,19 @@
     flex-direction: column;
     height: auto;
     min-height: 100vh;
-    gap: 0;
-    padding: 0;
-    margin-top: 0;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: transparent;
   }
 
   .home__category-section {
     flex: none;
     width: 100%;
+    border: 2px solid #3d3529;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: white;
   }
 
   /* Disable hover expansion on touch devices */
@@ -151,8 +156,8 @@
   }
 
   .home__category-title {
-    margin: 0;
-    padding: 0.75rem 0;
+    margin: 0 0 0.75rem 0;
+    padding: 0;
     font-size: 1.25rem;
   }
 
@@ -166,14 +171,15 @@
     min-height: 0;
     height: auto;
     padding-bottom: 75%;
-    border-radius: 0;
+    border-radius: 0.25rem;
     position: relative;
     width: 100%;
+    background-color: transparent;
   }
 
-  /* Show blurred background mask on mobile to fill gaps */
+  /* Hide blurred background on mobile */
   .home__category-bg-mask {
-    display: block;
+    display: none;
   }
 
   /* Show sharp centered image on mobile */
