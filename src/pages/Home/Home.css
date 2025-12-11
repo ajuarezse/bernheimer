@@ -146,7 +146,7 @@
     width: 100%;
     border: none;
     border-radius: 0.75rem;
-    padding: 0;
+    padding: 0 0 1rem 0;
     background-color: white;
     box-shadow: 0 4px 12px rgba(61, 53, 41, 0.15), 
                 0 2px 4px rgba(61, 53, 41, 0.1);
@@ -183,10 +183,12 @@
     min-height: 0;
     height: auto;
     padding-bottom: 75%;
-    border-radius: 0.25rem;
+    border-radius: 0;
     position: relative;
     width: 100%;
     background-color: transparent;
+    margin: 0 1rem 0 1rem;
+    width: calc(100% - 2rem);
   }
 
   /* Hide blurred background on mobile */
