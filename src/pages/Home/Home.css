@@ -171,13 +171,14 @@
     width: 100%;
   }
 
-  /* Hide blurred background mask on mobile */
+  /* Show blurred background mask on mobile to fill gaps */
   .home__category-bg-mask {
-    display: none;
+    display: block;
   }
 
-  /* Make main image fill full width on mobile */
+  /* Show sharp centered image on mobile */
   .home__category-main-image {
+    display: block;
     background-size: contain;
     background-position: center;
   }
