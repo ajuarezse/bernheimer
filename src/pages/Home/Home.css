@@ -126,3 +126,98 @@
 .home__category-section:hover .category-overlay {
   opacity: 1;
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    gap: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .home__category-section {
+    flex: none;
+    width: 100%;
+  }
+
+  /* Disable hover expansion on touch devices */
+  .home__category-section:hover {
+    flex: none;
+  }
+
+  .home__category-title {
+    margin: 0;
+    padding: 0.75rem 0;
+    font-size: 1.25rem;
+  }
+
+  /* Disable title expansion effect on touch devices */
+  .home__category-section:hover .home__category-title {
+    letter-spacing: normal;
+    font-weight: 700;
+  }
+
+  .home__category {
+    min-height: 0;
+    height: auto;
+    padding-bottom: 75%;
+    border-radius: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  /* Hide blurred background mask on mobile */
+  .home__category-bg-mask {
+    display: none;
+  }
+
+  /* Make main image fill full width on mobile */
+  .home__category-main-image {
+    background-size: contain;
+    background-position: center;
+  }
+
+  /* Disable hover transform on touch devices */
+  .home__category:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Keep grayscale effect visible on mobile (no hover needed) */
+  .home__category-section--about .home__category {
+    filter: grayscale(0%);
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .home {
+    padding: 0;
+    gap: 0;
+  }
+
+  .home__category {
+    padding-bottom: 100%;
+  }
+
+  .home__category-title {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+  .home__category-title {
+    font-size: 1rem;
+  }
+
+  .home__category {
+    padding-bottom: 120%;
+  }
+}
