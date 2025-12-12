@@ -211,16 +211,18 @@
 
   .header__hamburger {
     display: flex;
-    right: 1rem;
+    position: relative;
+    right: auto;
+    margin-left: 4rem;
   }
 
   .header__grid {
-    padding: 0 1rem;
-    justify-content: space-between;
+    padding: 0 2rem;
+    justify-content: center;
   }
 
   .header__logo {
-    font-size: 1.4em;
+    font-size: 1.8em;
     transform: translateX(0) !important;
   }
 
@@ -302,15 +304,18 @@
 
   .header__hamburger {
     display: flex;
-    right: 1rem;
+    position: relative;
+    right: auto;
+    margin-left: 3.5rem;
   }
 
   .header__grid {
-    padding: 0 1rem;
+    padding: 0 2rem;
+    justify-content: center;
   }
 
   .header__logo {
-    font-size: 1.25em;
+    font-size: 1.4em;
   }
 
   .header__nav {
