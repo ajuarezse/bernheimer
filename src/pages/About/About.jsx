@@ -25,8 +25,8 @@ function About() {
   useEffect(() => {
     // Handle hash navigation after component mounts
     if (location.hash) {
-      // Small delay to ensure content is rendered
-      setTimeout(() => {
+      // Longer delay to ensure mobile menu has closed and content is fully rendered
+      const timeoutId = setTimeout(() => {
         const element = document.querySelector(location.hash);
         if (element) {
           const headerOffset = 100; // Height of sticky header + some padding
@@ -39,9 +39,14 @@ function About() {
             behavior: "smooth",
           });
         }
-      }, 100);
+      }, 200);
+
+      return () => clearTimeout(timeoutId);
+    } else if (location.pathname === "/about") {
+      // Only scroll to top if navigating to about page without hash
+      window.scrollTo(0, 0);
     }
-  }, [location]);
+  }, [location.pathname, location.hash]);
 
   return (
     <ScrollFadeIn selector=".about__section, .about__bio-section">

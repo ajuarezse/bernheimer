@@ -250,10 +250,12 @@
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 
   .header__nav--hidden {
     display: flex;
+    pointer-events: auto;
   }
 
   .header__nav-item {

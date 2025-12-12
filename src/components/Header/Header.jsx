@@ -15,6 +15,11 @@ function Header() {
     }
   }, [isHomePage]);
 
+  // Close mobile menu when location changes
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location]);
+
   const handleLogoClick = (e) => {
     if (isHomePage) {
       e.preventDefault();
