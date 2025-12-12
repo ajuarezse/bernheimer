@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Header.css";
 
@@ -7,6 +7,8 @@ function Header() {
   const isHomePage = location.pathname === "/";
   const [navOpen, setNavOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
   // Reset nav to hidden when navigating back to home page
   useEffect(() => {
@@ -19,6 +21,29 @@ function Header() {
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location]);
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        mobileMenuOpen &&
+        mobileMenuRef.current &&
+        hamburgerRef.current &&
+        !mobileMenuRef.current.contains(event.target) &&
+        !hamburgerRef.current.contains(event.target)
+      ) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [mobileMenuOpen]);
 
   const handleLogoClick = (e) => {
     if (isHomePage) {
@@ -60,6 +85,7 @@ function Header() {
           Alan Bernheimer
         </NavLink>
         <button
+          ref={hamburgerRef}
           className="header__hamburger"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
@@ -69,6 +95,7 @@ function Header() {
           <span className="header__hamburger-line"></span>
         </button>
         <nav
+          ref={mobileMenuRef}
           className={`header__nav ${
             isHomePage
               ? navOpen
@@ -77,6 +104,13 @@ function Header() {
               : "header__nav--visible"
           } ${mobileMenuOpen ? "header__nav--mobile-open" : ""}`}
         >
+          <NavLink
+            to="/"
+            className="header__nav-link header__nav-link--home"
+            onClick={closeMobileMenu}
+          >
+            Home
+          </NavLink>
           <div className="header__nav-item header__nav-item--dropdown">
             <NavLink
               to="/about"

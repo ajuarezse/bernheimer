@@ -189,6 +189,10 @@
   font-weight: 600;
 }
 
+.header__nav-link--home {
+  display: none;
+}
+
 /* Responsive Design */
 
 /* Tablet and small desktop */
@@ -267,6 +271,10 @@
     padding: 0.95rem 1.5rem;
     font-size: 1.05rem;
     border-bottom: 1px solid rgba(212, 197, 176, 0.2);
+  }
+
+  .header__nav-link--home {
+    display: block;
   }
 
   .header__nav-item--dropdown .header__nav-link {
