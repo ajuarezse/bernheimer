@@ -208,23 +208,26 @@
 
   /* Individual category heights based on typical aspect ratios */
   .home__category-section--about .home__category-main-image {
-    padding-bottom: 100%; /* square-ish */
+    padding-bottom: 132%; /* square-ish */
   }
 
   .home__category-section--poetry .home__category-main-image {
-    padding-bottom: 180%; /* tall book cover */
+    padding-bottom: 152%; /* tall book cover */
   }
 
   .home__category-section--prose .home__category-main-image {
-    padding-bottom: 141.4%; /* map is tall */
+    padding-bottom: 155%; /* map is tall */
   }
 
   .home__category-section--reviews .home__category-main-image {
-    padding-bottom: 150%; /* Q:A cover */
+    padding-bottom: 170%; /* Q:A cover */
   }
 
-  .home__category-section:not(.home__category-section--about):not(.home__category-section--poetry):not(.home__category-section--prose):not(.home__category-section--reviews) .home__category-main-image {
-    padding-bottom: 160%; /* Translation and others */
+  .home__category-section:not(.home__category-section--about):not(
+      .home__category-section--poetry
+    ):not(.home__category-section--prose):not(.home__category-section--reviews)
+    .home__category-main-image {
+    padding-bottom: 137%; /* Translation and others */
   }
 
   /* Disable hover transform on touch devices */
