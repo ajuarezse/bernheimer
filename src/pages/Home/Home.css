@@ -252,13 +252,9 @@
     gap: 1.5rem;
   }
 
-  .home__category {
-    padding-bottom: 100%;
-  }
-
   .home__category-title {
     font-size: 1.1rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
   }
 }
 
@@ -266,9 +262,6 @@
 @media (max-width: 375px) {
   .home__category-title {
     font-size: 1rem;
-  }
-
-  .home__category {
-    padding-bottom: 120%;
+    padding: 0.5rem;
   }
 }
