@@ -217,7 +217,7 @@
     display: flex;
     position: relative;
     right: auto;
-    margin-left: 4rem;
+    margin-left: 5rem;
   }
 
   .header__grid {
@@ -226,7 +226,7 @@
   }
 
   .header__logo {
-    font-size: 1.8em;
+    font-size: 2em;
     transform: translateX(0) !important;
   }
 
@@ -316,7 +316,7 @@
     display: flex;
     position: relative;
     right: auto;
-    margin-left: 3.5rem;
+    margin-left: 4.5rem;
   }
 
   .header__grid {
@@ -325,7 +325,7 @@
   }
 
   .header__logo {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 
   .header__nav {
