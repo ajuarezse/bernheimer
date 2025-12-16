@@ -114,8 +114,8 @@
   }
 
   .publication-card__cover {
-    width: 180px;
-    height: 270px;
+    width: 240px;
+    height: 360px;
   }
 
   .publication-card__links {
@@ -129,8 +129,8 @@
   }
 
   .publication-card__cover {
-    width: 120px;
-    height: 180px;
+    width: 200px;
+    height: 300px;
   }
 
   .publication-card__links {
