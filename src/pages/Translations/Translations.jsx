@@ -4,13 +4,35 @@ import ScrollFadeIn from "../../components/ScrollFadeIn/ScrollFadeIn";
 import PublicationCard from "../../components/PublicationCard/PublicationCard";
 import Button from "../../components/Button/Button";
 import FormModal from "../../components/FormModal/FormModal";
+import ImageGallery from "../../components/ImageGallery/ImageGallery";
 
 import theHamletOfTheBees from "../../assets/translation/hamletOfTheBees/theHamletOfTheBees.webp";
+import hamlet1 from "../../assets/translation/hamletOfTheBees/hamlet-1.webp";
+import hamlet2 from "../../assets/translation/hamletOfTheBees/hamlet-2.webp";
+import hamlet3 from "../../assets/translation/hamletOfTheBees/hamlet-3.webp";
+import hamlet4 from "../../assets/translation/hamletOfTheBees/hamlet-4.webp";
+import hamlet5 from "../../assets/translation/hamletOfTheBees/hamlet-5.webp";
+import hamlet6 from "../../assets/translation/hamletOfTheBees/hamlet-6.webp";
+import hamlet7 from "../../assets/translation/hamletOfTheBees/hamlet-7.webp";
 import lostProfile from "../../assets/lostProfiles.webp";
 import parisByNight from "../../assets/parisByNight.webp";
 
 function Translations() {
   const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [currentGallery, setCurrentGallery] = useState({
+    images: [],
+    title: "",
+  });
+
+  const openGallery = (images, title) => {
+    setCurrentGallery({ images, title });
+    setGalleryOpen(true);
+  };
+
+  const closeGallery = () => {
+    setGalleryOpen(false);
+  };
 
   const purchaseFormFields = [
     {
@@ -104,7 +126,26 @@ function Translations() {
               publisher="Whale Cloth Press"
               year="1981"
               description="Valery Larbaud's nostalgic tribute to the tiny citizens that inhabit a small colony at his family home, and their fellowship to humankind."
-              // TODO: [link to flappable page image pdfs]
+              customButton={
+                <Button
+                  onClick={() =>
+                    openGallery(
+                      [
+                        hamlet1,
+                        hamlet2,
+                        hamlet3,
+                        hamlet4,
+                        hamlet5,
+                        hamlet6,
+                        hamlet7,
+                      ],
+                      "The Hamlet of the Bees",
+                    )
+                  }
+                >
+                  Read
+                </Button>
+              }
               className="translations__card translations__card--animated"
             />
           </div>
@@ -116,6 +157,13 @@ function Translations() {
           title="Purchase Paris by Night"
           fields={purchaseFormFields}
           submitLabel="Send Inquiry"
+        />
+
+        <ImageGallery
+          images={currentGallery.images}
+          title={currentGallery.title}
+          isOpen={galleryOpen}
+          onClose={closeGallery}
         />
       </div>
     </ScrollFadeIn>
