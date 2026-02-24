@@ -5,7 +5,7 @@ import PublicationCard from "../../components/PublicationCard/PublicationCard";
 import Button from "../../components/Button/Button";
 import FormModal from "../../components/FormModal/FormModal";
 
-import theHamletOfTheBees from "../../assets/theHamletOfTheBees.webp";
+import theHamletOfTheBees from "../../assets/translation/hamletOfTheBees/theHamletOfTheBees.webp";
 import lostProfile from "../../assets/lostProfiles.webp";
 import parisByNight from "../../assets/parisByNight.webp";
 

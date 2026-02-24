@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./Home.css";
 import cafeImage from "../../assets/cafeIsotope.webp";
-import translationBookCover from "../../assets/theHamletOfTheBees.webp";
+import theHamletOfTheBees from "../../assets/translation/hamletOfTheBees/theHamletOfTheBees.webp";
 import heroImage from "../../assets/heroImage.webp";
 import qaImage from "../../assets/qa.webp";
 import parisMapImage from "../../assets/parisMap.webp";
@@ -35,7 +35,7 @@ function Home() {
     },
     {
       name: "Translation",
-      image: translationBookCover,
+      image: theHamletOfTheBees,
       color: "#A78BFA",
       path: "translations",
     },
