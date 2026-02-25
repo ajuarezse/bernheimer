@@ -8,7 +8,7 @@ import Prose from "../pages/Prose/Prose";
 import Reviews from "../pages/ReviewsAndInterviews/Reviews";
 import Translations from "../pages/Translations/Translations";
 
-const basename = import.meta.env.MODE === "development" ? "/" : "/bernheimer";
+const basename = "/";
 
 export const router = createBrowserRouter(
   [
@@ -27,5 +27,5 @@ export const router = createBrowserRouter(
   ],
   {
     basename: basename,
-  }
+  },
 );
