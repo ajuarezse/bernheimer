@@ -11,7 +11,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "homepage": "https://ajuarezse.github.io/bernheimer/",
+  "homepage": "https://alanbernheimer.com",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "normalize.css": "^8.0.1",
