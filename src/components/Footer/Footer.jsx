@@ -16,7 +16,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__bottom">
-          <p>&copy; {currentYear} AB. All rights reserved.</p>
+          <p>&copy; {currentYear} Alan Bernheimer. All rights reserved.</p>
         </div>
       </div>
     </footer>
