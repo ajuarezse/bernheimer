@@ -157,7 +157,7 @@ function Poetry() {
               description="Out of print"
               links={[
                 {
-                  url: "https://www.biblio.com/search.php?stage=1&author=alan+bernheimer&title=cafe+isotope&isbn=&keyisbn=&publisher=&illustrator=&mindate=&maxdate=&minprice=&maxprice=&country=&format=&cond=&days_back=&order=priceasc&pageper=20&dist=50&zip=&quantity=",
+                  url: "https://www.abebooks.com/servlet/SearchResults?an=bernheimer&cm_sp=SearchF-_-home-_-Results&ref_=search_f_hp&sts=t&tn=cafe%20isotope",
                   text: "Buy used",
                 },
               ]}
